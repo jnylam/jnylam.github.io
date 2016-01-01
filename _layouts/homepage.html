@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>{{ page.title }}</title>
+  <meta name="author" content="{{ site.name }}"/>
+  <meta name="description" content="{{ page.description }}"/>
+
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/homepage.css"/>
+
+  {% if page.mathjax %}
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                processEscapes: true
+            },
+        });
+  </script>
+  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  {% endif %}
+
+
+</head>
+
+<body>
+{{ content }}
+</body>
+
+</html>

@@ -1,20 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-  {% include head.html %}
+<head>
 
-  <body>
 
-    {% include header.html %}
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>{{ page.title }}</title>
+  <meta name="author" content="{{ site.name }}"/>
+  <meta name="description" content="{{ page.description }}"/>
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/default.css"/>
 
-    {% include footer.html %}
+  {% if page.mathjax %}
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                processEscapes: true
+            },
+        });
+  </script>
+  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  {% endif %}
 
-  </body>
+
+</head>
+
+<body>
+<h1 class="page-title">{{ page.title }}</h1>
+{{ content }}
+</body>
 
 </html>

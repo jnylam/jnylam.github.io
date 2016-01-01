@@ -1,23 +1,69 @@
 ---
-layout: default
+title: Jenny Lam
+layout: homepage
 ---
 
-<div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+<header>
+  <img alt="{{ site.name }}" src="{{ site.img }}"/>
+  <div id="letterhead">
+    <h1>{{ site.name }}</h1>
+    <h2>{{ site.title}}</h2>
+    <h2>{{ site.department }}</h2>
+    <h2>{{ site.school }}</h2>
+    <ul id="contacts">
+      {% for contact in site.contacts %}
+      <li>{% if contact.link %}<a href="{{ contact.link }}">{{ contact.name }}</a>{% else %}{{ contact.name }}{% endif %}</li>
+      {% endfor %}
+    </ul>
+    <ul id="profiles">
+      {% for profile in site.profiles %}
+      <li>{% if profile.link %}<a href="{{ profile.link }}">{{ profile.name }}</a>{% else %}{{ profile.name }}{% endif %}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</header>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
+<section id="teaching">
+  <h2>Teaching</h2>
+    <article>
+      <h3>Spring 2016</h3>
+      <ul>
+        <li><a href="">CSCI055 PO-02 Discrete math</a>, Pomona College</li>
+        <li><a href="courses/ds">CSCI189A PO-01 Distributed systems</a>, Pomona College</li>
+      </ul>
+    </article>
+    <article>
+      <h3>Fall 2015</h3>
+      <ul>
+        <li><a href="courses/161">CS/CSE161 Algorithms</a>, University of California, Irvine</li>
+      </ul>
+    </article>
+    <article>
+      <h3>Spring 2015</h3>
+      <ul>
+        <li><a href="courses/163">CS 163/265 Graph algorithms</a>, University of California, Irvine</li>
+      </ul>
+    </article>
+</section>
+
+
+<section id="research">
+  <h2>Publications</h2>
+  <article>
+  <ul>
+    <li class='title'>Cache replacement with memory allocation</li>
+    <li>S Ghandeharizadeh, S Irani, J Lam, ALENEX 2015.</li>
+    <li><a href="http://epubs.siam.org/doi/abs/10.1137/1.9781611973754.1">conference paper</a> &nbsp;&nbsp;  <a href="campm.pdf">presentation</a></li>
   </ul>
+  </article>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+  <article>
+  <ul>
+    <li class='title'>CAMP: a cost adaptive multi-queue eviction policy for key-value stores</li>
+    <li>S Ghandeharizadeh, S Irani, J Lam, J Yap, Middleware 2014.</li>
+    <li><a href="http://dblab.usc.edu/users/papers/CAMPTR.pdf">technical report</a> &nbsp;&nbsp; <a href="http://dl.acm.org/citation.cfm?id=2663165.2663317">conference paper</a> &nbsp;&nbsp; <a href="camp.pdf">presentation</a></li>
+  </ul>
+  </article>
+</section>

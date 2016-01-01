@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>{{ page.title }}</title>
+  <meta name="author" content="{{ site.name }}"/>
+  <meta name="description" content="{{ page.description }}"/>
+
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/course.css"/>
+
+  {% if page.mathjax %}
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                processEscapes: true
+            },
+        });
+  </script>
+  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  {% endif %}
+
+
+</head>
+
+<body>
+ {% assign pages_list = site.courses | sort:"url" %}
+ {% for node in pages_list %}
+   {% if node.title != null and node.courseid == page.courseid %}
+     	{% if node.homepage %}
+        {% assign homepage = node %}
+      {% else %}
+        {% assign show_navbar = true %}
+     	{% endif %}
+   {% endif %}
+ {% endfor %}
+
+  <header>
+    <h1>{{ homepage.title }}</h1>
+    {% if show_navbar %}
+      <nav>
+        <ul>
+          {% for node in pages_list %}
+            {% if node.title != null and node.courseid == page.courseid %}
+              {% assign label = node.title %}
+              {% if node.homepage %}
+                {% assign label = "Home" %}
+              {% endif %}
+              {% if node.url == page.url %}
+                <li>{{ label }}</li>
+              {% else %}
+                <li><a href="{{node.url}}">{{ label }}</a></li>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </nav>
+      <br/>
+      <hr>
+    {% endif %}
+  </header>
+
+  {% unless page.homepage %}
+     <h2 class="page-title">{{ page.title }}</h2>
+  {% endunless %}
+
+  {{ content }}
+</body>
+
+</html>
