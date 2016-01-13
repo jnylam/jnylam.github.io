@@ -49,9 +49,9 @@ Unless the instructions for an assignment explicitly allow a form of collaborati
 
 Submitted code may be analyzed by automated plagiarism detection software, which detects structural similarities in your code with other students submitted code (this quarter and in the past) and code available on Internet repositories.
 
-All __exams__ will be closed-note, closed-book, closed-computer and individual effort.
+All exams will be closed-note, closed-book, closed-computer and individual effort.
 
-If you do not abide by the academic honest policies, expect severe __penalties__. The first offense will result in failure in the course and will be reported to the Dean of Students Office. In the event of a second offense, the offense will be reported to the Board of Academic Discipline. For further explanation of the penalties see the academic honest policies linked above.
+If you do not abide by the academic honest policies, expect severe penalties. The first offense will result in failure in the course and will be reported to the Dean of Students Office. In the event of a second offense, the offense will be reported to the Board of Academic Discipline. For further explanation of the penalties see the academic honest policies linked above.
 
 ## Academic accommodations
 
