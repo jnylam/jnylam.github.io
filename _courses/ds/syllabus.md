@@ -6,11 +6,11 @@ courseid: ds
 
 ## General information and resources
 
-* Instructor: [Jenny Lam](mailto:jenny.lam@pomona.edu)
-* Lectures: MW  11:00AM-12:15PM. HN Room 214 (Hahn Social Science Bldg)
-* Office hours: TBD in Edmonds 231
-* Piazza: TBD
-* [System hacker's view of software engineering](http://www.cs.cmu.edu/~dga/systems-se.pdf), David Andersen
+Instructor: [Jenny Lam](mailto:jenny.lam@pomona.edu)  
+Lectures: MW  11:00AM-12:15PM. HN Room 214 (Hahn Social Science Bldg)  
+Office hours: TBD in Edmonds 231  
+[Piazza](HTTP://WWW.piazza.com/pomona/spring2016/cs189a)  
+[System hacker's view of software engineering](http://www.cs.cmu.edu/~dga/systems-se.pdf), David Andersen
 
 ![textbook cover](textbook.jpg){: style="width: 10rem;"}
 
