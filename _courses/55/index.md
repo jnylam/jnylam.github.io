@@ -1,7 +1,7 @@
 ---
 layout: course
 title: "CS 55: Discrete mathematics"
-subtitle: CS 55 PO-02 &mdash; Spring 2016 &mdash; Pomona College
+subtitle: CS 55 Section 2 &mdash; Spring 2016 &mdash; Pomona College
 courseid: "55"
 homepage: true
 mathjax: true
@@ -12,10 +12,12 @@ Instructor: Jenny Lam
 Office: Edmunds Hall 231  
 Email: jenny.lam@pomona.edu  
 Lectures: MW 2:45pm--4:00pm in Edmunds Hall 114  
-Office hours: MW 1:30PM-2:30PM and 4:05PM-5:05PM in Edmonds 231 or by appointment    
+Office hours: MW 1:30PM-2:30PM and 4:05PM-5:05PM in Edmunds 231 or by appointment    
 
 Mentors: Emily Chen, Anant Jaitha, Ethan Prater-Fahey, James Waller, Li Zhao  
 Mentor hours: Tuesday 8--10pm, Monday 7--9pm, Saturday 8--10pm, Sunday 6--8pm  
+
+[Webpage for Section 1 of CS 55](http://www.michaeljbannister.com/teaching/55-s16)
 
 [Piazza discussion board](https://piazza.com/pomona/spring2016/cs55/home)
 
