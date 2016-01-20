@@ -8,36 +8,37 @@ courseid: ds
 
 Instructor: [Jenny Lam](mailto:jenny.lam@pomona.edu)  
 Lectures: MW  11:00AM-12:15PM. HN Room 214 (Hahn Social Science Bldg)  
-Office hours: TBD in Edmonds 231  
+Office hours: MW 1:30PM-2:30PM and 4:05PM-5:05PM in Edmonds 231  
 [Piazza](HTTP://WWW.piazza.com/pomona/spring2016/cs189a)  
 [System hacker's view of software engineering](http://www.cs.cmu.edu/~dga/systems-se.pdf), David Andersen
 
 ![textbook cover](textbook.jpg){: style="width: 10rem;"}
 
-Required textbook: Distributed Systems Principles and Paradigms, 2nd ed. Andrew S. Tanenbaum & Maarten Van Steen, Pearson. ISBN 0-13-239227-5.
+Required textbook: Distributed Systems Principles and Paradigms, 2nd ed. Andrew S. Tannenbaum & Maarten Van Steen, Pearson. ISBN 0-13-239227-5.
 
 ## Assignments and grading
 
 The final course grade in the class will be computed as a weighted average of the following assignments and then converted to a letter grade based on a scale that will be determined at the end of the semester.
 
-* 45% projects
+* 50% projects
   * 5% project 1
-  * 10% project 2
+  * 15% project 2
   * 15% project 3
   * 15% project 4
-* 35% exams
+* 30% exams
   * 10% exam 1 (Monday 2/22/2016)
   * 10% exam 2 (Wednesday 3/30/2016)
-  * 15% final exam (Monday 5/2/2016)
+  * 10% exam 3 (Monday 5/2/2016)
 * 20% homework
   * roughly one assignment every week, all equally weighted
+  * lowest two scores will be dropped
 
 Projects and homework may be turned in late without prior notification or justification and will be subject to the following point deduction:
 
 * 0&ndash;24 hours late: 3%
 * 24&ndash;48 hours late: 9%
-* 48&ndash;36 hours late: 27%
-* 36+ hours late: assignment is no longer accepted
+* 48&ndash;72 hours late: 27%
+* 72+ hours late: assignment is no longer accepted
 
 Only under documented extenuating circumstances, you may be granted a make-up exam or have an assignment due date postponed. If you need such an exception, please talk to the instructor as early as possible.
 
