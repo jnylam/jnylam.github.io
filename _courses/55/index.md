@@ -1,6 +1,6 @@
 ---
 layout: course
-title: "CS 55: Discrete mathematics"
+title: "Discrete mathematics"
 subtitle: CS 55 Section 2 &mdash; Spring 2016 &mdash; Pomona College
 courseid: "55"
 homepage: true
