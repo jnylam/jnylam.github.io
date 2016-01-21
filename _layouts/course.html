@@ -29,10 +29,10 @@
 </head>
 
 <body>
- {% assign pages_list = site.courses | sort:"url" %}
+ {% assign pages_list = site.courses | sort:"navorder" %}
  {% for node in pages_list %}
    {% if node.title != null and node.courseid == page.courseid %}
-     	{% if node.homepage %}
+     	{% if node.coursetitle %}
         {% assign homepage = node %}
       {% else %}
         {% assign show_navbar = true %}
@@ -41,17 +41,14 @@
  {% endfor %}
 
   <header>
-    <h1>{{ homepage.title }}</h1>
-    <h2>{{ homepage.subtitle }}</h2>
+    <h1>{{ homepage.coursetitle }}</h1>
+    <h2>{{ homepage.coursesubtitle }}</h2>
     {% if show_navbar %}
       <nav>
         <ul>
           {% for node in pages_list %}
-            {% if node.title != null and node.courseid == page.courseid %}
+            {% if node.title != null and node.courseid == page.courseid and node.navorder != 0 %}
               {% assign label = node.title %}
-              {% if node.homepage %}
-                {% assign label = "Home" %}
-              {% endif %}
               {% if node.url == page.url %}
                 <li>{{ label }}</li>
               {% else %}
@@ -66,9 +63,9 @@
     {% endif %}
   </header>
 
-  {% unless page.homepage %}
-     <h1 class="page-title">{{ page.title }}</h1>
-  {% endunless %}
+{% unless page.title == homepage.coursetitle %}
+  <h1 class="page-title">{{ page.title }}</h1>
+{% endunless %}
 
   {{ content }}
 </body>

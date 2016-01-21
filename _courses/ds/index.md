@@ -1,12 +1,12 @@
 ---
 layout: course
-title: Distributed Systems
-subtitle: CSCI189A PO-01 &mdash; Spring 2016 &mdash; Pomona College
-courseid: ds
 homepage: true
----
+coursetitle: Distributed Systems
+coursesubtitle: CSCI189A PO-01 &mdash; Spring 2016 &mdash; Pomona College
+courseid: ds
+title: Schedule
 
-# Schedule
+---
 
 _This schedule is tentative and subject to change during the semester._
 
