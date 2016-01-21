@@ -12,7 +12,7 @@ _This schedule is tentative and subject to change during the semester._
 
 Date|Lecture|Reading
 ----|-------|-------
-W 1/20  |  [Introduction to distributed systems](#intro) | 1.1, 1.2
+W 1/20  |  [Introduction to distributed systems](#introduction-to-distributed-systems) | 1.1, 1.2
 M 1/25  |  Communication 1  | 2.1
 W 1/27  |  Communication 2  |
 M 2/1   |  Introduction to Go |
@@ -46,7 +46,7 @@ W 5/4   |**Project presentationss** |
 
 ---
 
-# <a name="intro"></a>Introduction to distributed systems
+# Introduction to distributed systems
 
 ## What is a distributed system?
   - single system image: a collection of independent computers that appears as a single coherent system to users and applications, Tannenbaum
@@ -124,4 +124,4 @@ Project 4: design your own distributed service
 - Name
 - College, year, major
 - Where will you be this summer, next year?
-- What you hope to be get out of this course?
+- What do you hope to get out of this course?
