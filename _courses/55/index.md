@@ -2,7 +2,7 @@
 layout: course
 title: "Discrete mathematics"
 subtitle: CS 55 Section 2 &mdash; Spring 2016 &mdash; Pomona College
-courseid: "55"
+courseid: 55
 homepage: true
 mathjax: true
 ---
@@ -69,43 +69,6 @@ You are encouraged to work together while solving homework problems, but all sub
 We will have weekly quizzes on Mondays at the beginning of class, covering the material from the previous week's lectures unless otherwise announced. Make up quizzes will only be given for extreme and verifiable circumstances. The two lowest quizzes scores will be dropped.
 
 There will be two in-class exams in addition to a scheduled comprehensive final exam. The dates for the exams are given in the course schedule and are unlikely to change.
-
-## Schedule
-
-Date|Lecture|Reading and Homework
-----|-------|-------
-W 1/20 | Introduction & Propositional logic |<!-- Week 0 -->Reading: 1.1-1.2; Homework 1
-M 1/25 | Predicate logic |<!-- Week 1 -->Reading: 1.3
-W 1/27 | Naive set theory | Reading: 1.4-1.5; Homework 2
-M 2/1  | Functions and cardinality | <!-- Week 2 -->
-W 2/3  | Sequences and summations |
-M 2/8  | Asymptotics | <!-- Week 3 -->
-W 2/10 | Induction |
-M 2/15 | Number theory | <!-- Week 4 -->
-W 2/17 | Number theory |
-M 2/22 | Cryptography / Representation of numbers | <!-- Week 5 -->
-W 2/24 | Flex day |
-M 2/29 | __Exam 1__ | <!-- Week 6 -->
-W 3/2  | Counting | <!-- Send out low grade notifications -->
-M 3/7  | Counting and recursive definitions | <!-- Week 7 -->
-W 3/9  | Counting | <!-- Mar 10: last day to drop -->
-M 3/14 | _Spring recess_ |
-W 3/16 | _Spring recess_ |
-M 3/21 | Probability | <!-- Week 8 -->
-W 3/23 | Probability |
-M 3/28 | Probability | <!-- Week 9 -->
-W 3/30 | Advanced counting |
-M 4/4  | Advanced counting | <!-- Week 10 -->
-W 4/6  | Flex day |
-M 4/11 | __Exam 2__ | <!-- Week 11 -->
-W 4/13 | Equivalence relations |
-M 4/18 | Graphs | <!-- Week 12 -->
-W 4/20 | Graphs |
-M 4/25 | Graphs | <!-- Week 13 -->
-W 4/27 | Graphs |
-M 5/2  | Graphs | <!-- Week 14 -->
-W 5/4  | Flex day |
-Th 5/12 | __Final Exam (9:00am)__ |
 
 ## Collaboration and Academic Honesty Policy
 
