@@ -13,7 +13,7 @@ _This schedule is tentative and subject to change during the semester._
 Date|Lecture|Reading
 ----|-------|-------
 W 1/20  |  [Introduction to distributed systems](#introduction-to-distributed-systems) | 1.1, 1.2
-M 1/25  |  Communication 1  | 2.1
+M 1/25  |  Communication 1  | 2.1, [Design philosophy of the Internet](http://http://dl.acm.org/citation.cfm?id=52336)
 W 1/27  |  Communication 2  |
 M 2/1   |  Introduction to Go |
 W 2/3   |  Concurrency in Go  | [Concurrency notes](http://www.andrew.cmu.edu/course/15-440-kesden/index/lecture_index.html) by Kesden
