@@ -24,7 +24,7 @@ W 2/17  |  Time  | 6.1, 6.2
 M 2/22  |**Exam 1** |
 W 2/24  |  Mutual exclusion  |  6.3
 M 2/29  |  Fault tolerance   |  8.5
-W 3/1   |  Concurrency control  |  8.5
+W 3/2   |  Concurrency control  |  8.5
 M 3/7   |  RAID  |  [RAID chapter](http://pages.cs.wisc.edu/~remzi/OSTEP/file-raid.pdf)<br/> (from the online textbook [Operating Systems: Three Easy Pieces](http://pages.cs.wisc.edu/~remzi/OSTEP/))
 W 3/9   |  Logging and crash recovery  | 8.6
         | _Spring recess_ |
@@ -41,7 +41,7 @@ W 4/20  |  Byzantine fault tolerance  |  [BFT lecture by Barbara Liskov](http://
 M 4/25  |  Security  |  9.1, 9.2, 9.4.1
 W 4/27  |  TOR  |  [TOR paper](https://svn.torproject.org/svn/projects/design-paper/tor-design.pdf) and [TOR presentation](http://freehaven.net/~arma/slides-toorcon05.pdf)
 M 5/2   |**Final exam** |
-W 5/4   |**Project presentationss** |
+W 5/4   |**Project presentations** |
         | _Finals week: no meeting_ |
 
 ---
