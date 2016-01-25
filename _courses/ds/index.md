@@ -13,7 +13,6 @@ _This schedule is tentative and subject to change during the semester._
 Date|Lecture|Reading
 ----|-------|-------
 W 1/20  |  [Introduction to distributed systems](#introduction-to-distributed-systems) | 1.1, 1.2
-<<<<<<< HEAD
 M 1/25  |  [Internet 1](#internet-1)  | 2.1, [Design philosophy of the Internet](http://dl.acm.org/citation.cfm?id=52336)
 W 1/27  |  Internet 2  |
 M 2/1   |  Introduction to Go |
