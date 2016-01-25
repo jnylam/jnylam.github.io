@@ -13,8 +13,8 @@ _This schedule is tentative and subject to change during the semester._
 Date|Lecture|Reading
 ----|-------|-------
 W 1/20  |  [Introduction to distributed systems](#introduction-to-distributed-systems) | 1.1, 1.2
-M 1/25  |  Communication 1  | 2.1
-W 1/27  |  Communication 2  |
+M 1/25  |  [Internet 1](#internet-1)  | 2.1
+W 1/27  |  Internet 2  |
 M 2/1   |  Introduction to Go |
 W 2/3   |  Concurrency in Go  | [Concurrency notes](http://www.andrew.cmu.edu/course/15-440-kesden/index/lecture_index.html) by Kesden
 M 2/8   |  Remote procedure calls  |  4.1, 4.2
@@ -125,3 +125,118 @@ Project 4: design your own distributed service
 - College, year, major
 - Where will you be this summer, next year?
 - What do you hope to get out of this course?
+
+[&uarr; back to the top](#Schedule)
+
+---
+
+# Internet 1
+
+## Top level goal: "develop an effective technique for multiplexed utilization of existing interconnected networks"
+
+__Design philosophy of the DARPA internet protocols (1988)__
+
+- components: networks to be interconnected to provide some larger service
+- originally: ARPANET with ARPA packet radio network
+- networks could represent administrative boundaries of control
+- alternative: design a unified system from scratch
+- multiplexing:
+  - use packet switching
+  - alternative: circuit switching
+  - why multiplex?
+  - addressing
+- mechanism for interconnecting the networks:
+  - networks will be interconnected by a layer of Internet packet switches called gateways.
+  - store and forward packet forwarding algorithm
+
+## Secondary goals
+
+Note: priorities for a military use, but would be different for commercial use
+
+- Internet communication must continue despite loss of network or gateways
+- The Internet must support multiple types of communication service.
+- The Internet architecture must accommodate a variety of networks.
+- The Internet architecture must permit distributed management of its resources
+- The Internet architecture must be cost effective.
+- The Internet architecture must permit host attachment with a low level of effort.
+- The resources used in the Internet architecture must be accountable.
+
+## Internet communication must continue despite loss of network or gateways
+
+- achieved by storing state of on-going conversation at the endpoints of the network, at the entity which is utilizing the service of the network
+- state information
+  - number of packets transmitted
+  - number of packets acknowledged
+  - number of outstanding flow control permissions
+- not in the packets themselves
+
+## The Internet must support multiple types of communication service.
+
+- traditionally: bi-directional reliable delivery of data
+- called "virtual circuit"
+- applications: file transfer, remote login
+- different applications have different constraints: reliability, delay, bandwidth
+- different transport services required --> separation of IP and TCP layers
+- IP provides a basic building block out of which different transport services can be built
+- Transmission Control Protocol or TCP provides reliable sequenced data stream
+- User datagram protocol or UDP provides an application interface to the basic datagram service of Internet.
+- The Internet architecture must accommodate a variety of networks.
+- assumes minimum set of assumptions about the function which the net will provide
+  - can transport a packet
+  - the packet must be of reasonable size (100 bytes min)
+  - packet delivery with reasonable, but not perfect reliability
+  - must have some suitable form of addressing if more than a point to point link
+- Ethernet
+  - frame structure:
+    - preamble
+    - destination address
+    - source address
+    - Ethertype
+    - data or payload
+    - CRC - checksum for error correction
+  - addressing mechanism: MAC addresses
+- Token Ring
+- Wifi
+- Fiber optic cable
+
+## The Internet architecture must permit distributed management of its resources
+
+- originally managed by manual table entry, automated by routing protocols
+- Within the Internet, an autonomous system (AS) is a collection of connected Internet Protocol (IP) routing prefixes under the control of one or more network operators on behalf of a single administrative entity or domain that presents a common, clearly defined routing policy to the Internet. (RFC 1930)
+- interior gateway protocols type 1
+  - link-state routing protocol: need to inform all nodes in a network of topology changes
+  - uses Dijkstra's algorithm
+  - OSPF - Open Shortest Path First
+    - defined in RFC 2328 (1998) for IPv5 and RFC 5340 (2008) for IPv6
+    - most widely used interior gateway protocol
+    - loop-free routing, fast convergence
+    - works better with under 100 routers
+    - link cost factor - round-trip time, throughput, availability and reliability
+  - IS-IS - Intermediate System to Intermediate System
+    - common in large service provider networks
+- interior gateway protocols type 2
+  - distance-vector routing protocols
+    - a router only needs to inform its neighbors of topology changes periodically
+    - used Bellman-Ford, Ford-Fullkerson
+    - count-to-infinity problem
+    - convergence
+  - Routing Information Protocol v1 and v2, ng
+    - v1 proposed in 1988 (RFC 1058)
+    - v2 support for router authentication
+    - ng (next gen) support for IPv6 addressing
+    - uses UDP
+- exterior gateway protocols
+  - to exchange info between autonomous systems
+  - BGP - Border Gateway Protocol
+    - between ISPs
+    - uses TCP
+    - many decision factors
+
+## The Internet architecture must be cost effective.
+
+- inefficiency in retransmission of packets
+- TCP handshake may be expensive
+- large headers
+- possible solution
+  - CDNs as cache: reduces transmission time
+  - CDNs to keep live TCP connections: reduce cost of 3-way handshake
