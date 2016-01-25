@@ -6,7 +6,7 @@ navorder: 0
 mathjax: true
 ---
 
-Due date: 2/27/2016 in class  
+Due date: <del>2/27/2016</del> <ins>1/27/2016</ins> in class  
 Instructions: please turn in each part stapled separately, labeled with your name, homework number, part and instructor.
 
 ## Part 1
