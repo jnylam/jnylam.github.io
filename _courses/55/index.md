@@ -38,4 +38,4 @@ M 4/25 | Graphs | <!-- Week 13 -->
 W 4/27 | Graphs |
 M 5/2  | Graphs | <!-- Week 14 -->
 W 5/4  | Flex day |
-Th 5/12 | __Final Exam__ |
+Th 5/12 | __Final Exam__ 2:00pm--5:00pm |

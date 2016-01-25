@@ -13,7 +13,8 @@ _This schedule is tentative and subject to change during the semester._
 Date|Lecture|Reading
 ----|-------|-------
 W 1/20  |  [Introduction to distributed systems](#introduction-to-distributed-systems) | 1.1, 1.2
-M 1/25  |  [Internet 1](#internet-1)  | 2.1
+<<<<<<< HEAD
+M 1/25  |  [Internet 1](#internet-1)  | 2.1, [Design philosophy of the Internet](http://dl.acm.org/citation.cfm?id=52336)
 W 1/27  |  Internet 2  |
 M 2/1   |  Introduction to Go |
 W 2/3   |  Concurrency in Go  | [Concurrency notes](http://www.andrew.cmu.edu/course/15-440-kesden/index/lecture_index.html) by Kesden
@@ -24,7 +25,7 @@ W 2/17  |  Time  | 6.1, 6.2
 M 2/22  |**Exam 1** |
 W 2/24  |  Mutual exclusion  |  6.3
 M 2/29  |  Fault tolerance   |  8.5
-W 3/1   |  Concurrency control  |  8.5
+W 3/2   |  Concurrency control  |  8.5
 M 3/7   |  RAID  |  [RAID chapter](http://pages.cs.wisc.edu/~remzi/OSTEP/file-raid.pdf)<br/> (from the online textbook [Operating Systems: Three Easy Pieces](http://pages.cs.wisc.edu/~remzi/OSTEP/))
 W 3/9   |  Logging and crash recovery  | 8.6
         | _Spring recess_ |
@@ -41,7 +42,7 @@ W 4/20  |  Byzantine fault tolerance  |  [BFT lecture by Barbara Liskov](http://
 M 4/25  |  Security  |  9.1, 9.2, 9.4.1
 W 4/27  |  TOR  |  [TOR paper](https://svn.torproject.org/svn/projects/design-paper/tor-design.pdf) and [TOR presentation](http://freehaven.net/~arma/slides-toorcon05.pdf)
 M 5/2   |**Final exam** |
-W 5/4   |**Project presentationss** |
+W 5/4   |**Project presentations** |
         | _Finals week: no meeting_ |
 
 ---
