@@ -8,7 +8,7 @@ courseid: 55
 Date|Lecture|Reading|Homework
 ----|-------|-------|--------
 W 1/20 | Introduction & Propositional logic [[pdf](lecture01.pdf)] |<!-- Week 0 -->1.1-1.2 | [Homework 1](homework01.html)
-M 1/25 | Predicate logic |<!-- Week 1 -->1.3
+M 1/25 | Predicate logic [[pdf](lecture02.pdf)] |<!-- Week 1 -->1.3
 W 1/27 | Naive set theory | 1.4-1.5 | Homework 2
 M 2/1  | Functions and cardinality | <!-- Week 2 -->
 W 2/3  | Sequences and summations |
