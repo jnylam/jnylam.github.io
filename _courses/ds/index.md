@@ -14,7 +14,7 @@ Date|Lecture|Reading
 ----|-------|-------
 W 1/20  |  [Introduction to distributed systems](#introduction-to-distributed-systems) | 1.1, 1.2
 M 1/25  |  [Internet 1](#internet-1)  | 2.1, [Design philosophy of the Internet](http://dl.acm.org/citation.cfm?id=52336)
-W 1/27  |  Internet 2  |
+W 1/27  |  [Internet 2](#internet-2)  |
 M 2/1   |  Introduction to Go |
 W 2/3   |  Concurrency in Go  | [Concurrency notes](http://www.andrew.cmu.edu/course/15-440-kesden/index/lecture_index.html) by Kesden
 M 2/8   |  Remote procedure calls  |  4.1, 4.2
@@ -240,3 +240,190 @@ Note: priorities for a military use, but would be different for commercial use
 - possible solution
   - CDNs as cache: reduces transmission time
   - CDNs to keep live TCP connections: reduce cost of 3-way handshake
+
+
+
+[&uarr; back to the top](#Schedule)
+
+---
+
+# Internet 2
+
+## Review question
+
+Of TCP and UDP, which is most similar to postal mail? to the telephone service?
+
+What are the similarities?
+
+- reliability
+- order
+- connection-oriented?
+- route taken
+- handling
+
+
+## Review question 2
+
+Why datagrams?
+
+- minimum network assumption
+- can implement multiple connection services
+- can easily implement reliable connections with unreliable underlying network
+
+
+## Internet wrap up
+
+- OSI networking stack
+- IP stack: putting it all together
+
+
+## Network diagnostic tools
+
+- ping
+- traceroute
+- ifconfig
+
+
+## Coping with addresses running out
+
+- classless inter-domain routing (CIDR) - 1993
+- Network address translation - NAT
+  - coping with limitations of NAT: [NAT traversal](https://en.wikipedia.org/wiki/NAT_traversal)
+- IPv6
+
+
+## Security
+The Internet is not secure:
+
+- IP spoofing
+- denial of service
+- routing and DNS corruption
+- Wifi insecurities
+
+Solutions
+
+- Cryptography and encryption good for secrecy and privacy, but doest not directly address denial-of-service attacks
+- Distributed systems can't assume underlying network is trustworthy, must address that issue
+
+## Web architecture
+
+Acknowledgement: this section is based on the [lecture notes](https://www.cs.columbia.edu/~du/ds/schedule.html) by Roxana Geambasu, Peter Du, Yu Qiao.
+
+### External caching
+
+- Who?
+  - Squid,
+  - Apache mod_proxy,
+  - CDNs
+- What?
+  - caches outbound data: images, videos, text files (css, xml, html)
+  - DoS defense
+  - latency reduction by being closer
+- How?
+  - lots of memory
+  - moderate to little CPU
+  - fast network
+  - potentially distributed across the world
+
+
+### Front-end tier: webservers
+
+- Who?
+  - Apache
+  - thttpd
+  - Tux Web server
+  - IIS
+- What?
+  - HTTP, HTTPS
+  - serves static content from disk
+  - generates dynamic content: CGI, PHP, Python, Django
+  - dispatches requests to app server tier
+- How?
+  - lots of memory - main bottleneck
+  - CPU: low if static, some if dynamic
+  - slow disk enough
+
+
+### Application server tier
+
+- Who?
+  - Apache Tomcat
+  - Oracle Weblogic
+  - IBM Websphere
+  - Adobe JRun
+- What?
+  - dynamic page processing: ASP, JSP, servlets
+  - internal services: search, shopping cart, credit card processing
+- How?
+  - first, web tier generates request using
+    - home-brewed RPC
+    - REST
+    - Corba
+    - Java RMI
+    - SOAP
+    - XMLRPC
+  - then, app server processes request and responds
+  - lots (x3) of memory
+  - lots of fast CPU
+  - disk not typically needed
+- So?
+  - pro: decoupling of services/APIs helps with managing complexity
+  - con: remote calling overhead can be expensive
+    - marshalling of data, sockets, net latency
+    - SOAP, XMLRPC don't scale well
+
+
+### Database tier
+
+- Who/what?
+  - relational databases: PostgreSQL, SQLite, Oracle, MySQL, Berkeley DB
+  - non-relational databases or distributed file systems: Bigtable, Megastore, MongoDB, Hadoop Hbase, HDFS
+- So?
+  - relational DBs: convenient interface, sound properties (strong consistency)
+  - non-relational: scale better
+- How?
+  - lots of memory
+  - large disks - RAID useful for redundancy
+
+
+### Internal caching tier
+
+- what?
+  - object cache: intermediary app-level results
+  - tuned for the application - vs generic external cache
+  - fast access (< 1 ms)
+- who?
+  - memcached
+  - application-level caching inside app servers
+- how?
+  - lots of memory
+  - little to no disk
+  - low CPU
+  - fast network
+
+
+### Miscellaneous services
+
+- DNS
+- time synchronization
+- system health monitoring
+- intrusion detection systems
+
+
+### Glue
+
+- load balancers
+- routers
+- switches
+- firewalls
+
+
+### Summary
+
+- web architectures are complex
+  - lots of tradeoffs
+  - each layer has distinct hardware requirements and bottlenecks
+- but
+  - all layers need RAM
+  - well-known solutions exist
+  - understand workload is key to choosing right product at each layer
