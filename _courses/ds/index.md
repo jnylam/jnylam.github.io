@@ -10,11 +10,11 @@ title: Schedule
 
 _This schedule is tentative and subject to change during the semester._
 
-Date|Lecture|Reading
-----|-------|-------
+Date|Lecture|Reading|Assignments
+----|-------|-------|-----------
 W 1/20  |  [Introduction to distributed systems](#introduction-to-distributed-systems) | 1.1, 1.2
 M 1/25  |  [Internet 1](#internet-1)  | 2.1, [Design philosophy of the Internet](http://dl.acm.org/citation.cfm?id=52336)
-W 1/27  |  [Internet 2](#internet-2)  |
+W 1/27  |  [Internet 2](#internet-2)  | |[Homework 1](homework01.html)
 M 2/1   |  Introduction to Go |
 W 2/3   |  Concurrency in Go  | [Concurrency notes](http://www.andrew.cmu.edu/course/15-440-kesden/index/lecture_index.html) by Kesden
 M 2/8   |  Remote procedure calls  |  4.1, 4.2

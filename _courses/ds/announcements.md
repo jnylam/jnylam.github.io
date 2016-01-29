@@ -2,6 +2,7 @@
 layout: course
 title: Announcements
 courseid: ds
+navorder: 0 
 ---
 
 ## 1/7/2016: Welcome!
