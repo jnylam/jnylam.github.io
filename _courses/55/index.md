@@ -11,9 +11,9 @@ W 1/20 | [Introduction & Propositional logic](lecture01.pdf) |<!-- Week 0 -->1.1
 M 1/25 | [Predicate logic](lecture02.pdf) |<!-- Week 1 -->1.3
 W 1/27 | [Naive set theory](lecture03.pdf) | 1.4-1.5 | [Homework 2](homework02.html)
 M 2/1  | __Quiz__<br/>
-Functions and cardinality | <!-- Week 2 -->
-W 2/3  | Sequences and summations |
-M 2/8  | Asymptotics | <!-- Week 3 -->
+Functions and cardinality | 1.6<!-- Week 2 -->
+W 2/3  | Sequences and summations | 1.7
+M 2/8  | Asymptotics | 1.8<!-- Week 3 -->
 W 2/10 | Induction |
 M 2/15 | Number theory | <!-- Week 4 -->
 W 2/17 | Number theory |
