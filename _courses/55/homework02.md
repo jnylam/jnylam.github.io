@@ -78,7 +78,7 @@ __d)__ $\\{\varnothing, \\{a\\}, \\{b\\}, \\{a, b\\}\\}$
 
 ### Problem 7
 
-Let $A$ be sets. Show that
+Let $A$, <ins>$B$ and $C$</ins> be sets. Show that
 
 __a)__ $A - B \subseteq A$  
 __b)__ $A \cap (B - A) = \varnothing$  
