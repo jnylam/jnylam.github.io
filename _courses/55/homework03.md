@@ -38,7 +38,7 @@ __d)__ neither one-to-one nor onto.
 Note: the identity function is the function that returns as output its input.
 
 ### Problem 3
-Let $$f(x) = ax + b$$ and $$g(x) = cx+d$$ where $$a, b, c, d$$ are constants. Determine for which constants $$a, b, c$$ and $$d$$ it is true that $$f \circ g = g \circ f$$.
+Let $$f(x) = ax + b$$ and $$g(x) = cx+d$$ where $$a, b, c, d$$ are constants. Determine for which constants $$a, b, c$$ and $$d$$ it is true that $$f \circ g = g \circ f$$. Justify your answer.
 
 ## Part 2
 
