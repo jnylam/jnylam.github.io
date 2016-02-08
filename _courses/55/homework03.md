@@ -50,6 +50,15 @@ $$f(n) = \begin{cases}
 k+1 & \text{if } n \text{ is odd, ie, } \exists k\in\mathbb{N} \text{ such that } n = 2k+1\\
 \end{cases}$$
 
+<ins>or equivalently</ins>
+
+<ins>
+$$f(n) = \begin{cases}
+-n/2 & \text{if } n \text{ is even},\\
+(n+1)/2 & \text{if } n \text{ is odd},\\
+\end{cases}$$
+</ins>
+
 is a bijection. In other words, show that $$f$$ is a surjection and an injection.
 
 ### Problem 5
@@ -57,7 +66,7 @@ is a bijection. In other words, show that $$f$$ is a surjection and an injection
 For each of the following lists of integers, provide a simple formula that generates the terms of an integer sequence that begins with the given list.
 
 __a)__ 3, 6, 12, 24, 48, 96, 192, ...  
-__b)__ 15, 8, 1, -6, -23, -20, -27, ...  
+__b)__ 15, 8, 1, -6, <del>-23,</del> <ins>-13,</ins> -20, -27, ...  
 __c)__ 3, 5, 8, 12, 17, 23, 30, 38, 47, ...  
 __d)__ 0, 1, 0, 3, 0, 5, 0, 7, 0, 9, 0, ...  
 
