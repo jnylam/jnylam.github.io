@@ -16,8 +16,8 @@ W 1/20  |  [Introduction to distributed systems](#introduction-to-distributed-sy
 M 1/25  |  [Internet 1](#internet-1)  | 2.1, [Design philosophy of the Internet](http://dl.acm.org/citation.cfm?id=52336)
 W 1/27  |  [Internet 2](#internet-2)  | |[Homework 1](homework01.html)
 M 2/1   |  [Introduction to Go](https://github.com/jnylam/cs189a/tree/master/intro) | [Intro to programming in Go](http://www.golang-book.com/books/intro) Chapters 1-7
-W 2/3   |  Concurrency in Go  | [Intro to programming in Go](http://www.golang-book.com/books/intro) Chapters 8-14<br/>[Concurrency notes](http://www.andrew.cmu.edu/course/15-440-kesden/index/lecture_index.html) by Kesden
-M 2/8   |  Remote procedure calls  |  4.1, 4.2
+W 2/3   |  [Concurrency in Go](https://github.com/jnylam/cs189a/tree/master/concurrency)  | [Intro to programming in Go](http://www.golang-book.com/books/intro) Chapters 8-14<br/>[Concurrency notes](http://www.andrew.cmu.edu/course/15-440-kesden/index/lecture_index.html) by Kesden
+M 2/8   |  [Remote procedure calls](#remote-procedure-calls)  |  4.1, 4.2
 W 2/10  |  DFS 1 |
 M 2/15  |  DFS 2 |
 W 2/17  |  Time  | 6.1, 6.2
@@ -427,3 +427,52 @@ Acknowledgement: this section is based on the [lecture notes](https://www.cs.col
   - all layers need RAM
   - well-known solutions exist
   - understand workload is key to choosing right product at each layer
+
+
+
+[&uarr; back to the top](#Schedule)
+
+---
+
+# Remote Procedure calls
+
+## Why remote procedure calls?
+
+- Why not sockets: read/write interface
+- LPC: transfer control and data on local programs
+- goal: make client/server com look like LPC,
+- hide complexity
+
+## How it works under the hood
+
+- simulated using LPC and sockets
+- the stack
+- marshalling:
+  - pass by value, pass by ref
+  - byte-order: big-endian, example
+  - network-byte-order (big-endian)
+  - floating-point
+  - nested structures, complex data structures
+  - typing: implicit vs explicit, JSON, XML
+- compilation process
+- finding a server, registration
+
+## How it’s different from a local procedure call
+
+- potential failures
+- semantics
+  - goal: run exactly once
+  - at least once: good for idempotent: time of day, math, read
+  - at most once: modify file
+- performance
+  - inefficiencies with waiting->asynchronous RPC
+  - overhead: be thousands of times slower
+
+## Examples
+
+- [using Go's RPC package](https://golang.org/pkg/net/rpc/)
+- [RPC implementation in Go](http://nil.csail.mit.edu/6.824/2015/notes/l-rpc.go)
+- Popular RPC in other languages
+  - XML RPC
+  - Java RMI
+  - Sun RPC
