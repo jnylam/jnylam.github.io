@@ -69,7 +69,7 @@ Give a big-$$O$$ estimate for each of the following functions. For the function 
 
 __a)__ $$5n^3 - 7n^2 + 88$$  
 __b)__ $$ (n\log n + n^2)(n^3 + 2)$$  
-__c)__ $$n \log(n^2 + 1) + n^2 \log n$$  
+__c)__ <del>$$n \log(n^2 + 1) + n^2 \log n$$</del>  <ins>$$\log(n^3 + 1) + (\log n)^2$$ </ins>
 __d)__ $$(n \log n + 1)^2 + (\log n + 1)(n^2 + 1)$$  
 __e)__ $$n^{2n} + n^{n^2}$$  
 __f)__ $$(n! + 2^n)(n^3 + \log(n^2 + 1))$$  
