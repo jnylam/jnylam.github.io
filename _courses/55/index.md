@@ -10,10 +10,10 @@ Date|Lecture|Reading|Homework
 W 1/20 | [Introduction & Propositional logic](lecture01.pdf) |<!-- Week 0 -->1.1-1.2 | [Homework 1](homework01.html)
 M 1/25 | [Predicate logic](lecture02.pdf) |<!-- Week 1 -->1.3
 W 1/27 | [Naive set theory](lecture03.pdf) | 1.4-1.5 | [Homework 2](homework02.html)
-M 2/1  | __Quiz__<br/>[Functions and cardinality](lecture04.pdf) | 1.6<!-- Week 2 -->
+M 2/1  | [Functions and cardinality](lecture04.pdf) | 1.6<!-- Week 2 -->
 W 2/3  | [Functions and cardinality](lecture05.pdf) | 1.6 | [Homework 3](homework03.html)
 M 2/8  | [Sequences and summations](lecture06.pdf) | 1.7<!-- Week 3 -->
-W 2/10 | Asymptotics | 1.8
+W 2/10 | Asymptotics | 1.8 | [Homework 4](homework04.html)
 M 2/15 | Induction | <!-- Week 4 -->
 W 2/17 | Number theory |
 M 2/22 | Number theory | <!-- Week 5 -->
