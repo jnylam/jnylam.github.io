@@ -18,10 +18,34 @@ W 1/27  |  [Internet 2](#internet-2)  | |[Homework 1](homework01.html)
 M 2/1   |  [Introduction to Go](https://github.com/jnylam/cs189a/tree/master/intro) | [Intro to programming in Go](http://www.golang-book.com/books/intro) Chapters 1-7
 W 2/3   |  [Concurrency in Go](https://github.com/jnylam/cs189a/tree/master/concurrency)  | [Intro to programming in Go](http://www.golang-book.com/books/intro) Chapters 8-14<br/>[Concurrency notes](http://www.andrew.cmu.edu/course/15-440-kesden/index/lecture_index.html) by Kesden
 M 2/8   |  [Remote procedure calls](#remote-procedure-calls)  |  4.1, 4.2
-W 2/10  |  DFS 1 |
-M 2/15  |  DFS 2 |
-W 2/17  |  Time  | 6.1, 6.2
-M 2/22  |**Exam 1** |
+W 2/10  |  No class |
+M 2/15  |  Time | 6.1, 6.2 | [Project 1](https://github.com/jnylam/cs189a/tree/master/project1)
+W 2/17  |  Mutual exclusion  | 6.3
+M 2/22  | |
+W 2/24  | |
+M 2/29  | |
+W 3/2   | |
+M 3/7   | |  
+W 3/9   | **Exam 1**|
+        | _Spring recess_ |
+M 3/21  |  |
+W 3/23  |  |
+M 3/28  |  |
+W 3/30  |  |
+M 4/4   |  |
+W 4/6   |  |
+M 4/11  |  |
+W 4/13  |  |
+M 4/18  |  |
+W 4/20  |  |
+M 4/25  |  |
+W 4/27  |  |
+M 5/2   |**Exam 2** |
+W 5/4   |**Project presentations** |
+        | _Finals week: no meeting_ |
+
+<!--
+M 2/22  | |
 W 2/24  |  Mutual exclusion  |  6.3
 M 2/29  |  Fault tolerance   |  8.5
 W 3/2   |  Concurrency control  |  8.5
@@ -43,7 +67,7 @@ W 4/27  |  TOR  |  [TOR paper](https://svn.torproject.org/svn/projects/design-pa
 M 5/2   |**Final exam** |
 W 5/4   |**Project presentations** |
         | _Finals week: no meeting_ |
-
+-->
 ---
 
 # Introduction to distributed systems
