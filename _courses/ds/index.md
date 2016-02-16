@@ -19,7 +19,7 @@ M 2/1   |  [Introduction to Go](https://github.com/jnylam/cs189a/tree/master/int
 W 2/3   |  [Concurrency in Go](https://github.com/jnylam/cs189a/tree/master/concurrency)  | [Intro to programming in Go](http://www.golang-book.com/books/intro) Chapters 8-14<br/>[Concurrency notes](http://www.andrew.cmu.edu/course/15-440-kesden/index/lecture_index.html) by Kesden
 M 2/8   |  [Remote procedure calls](#remote-procedure-calls)  |  4.1, 4.2
 W 2/10  |  No class |
-M 2/15  |  Time | 6.1, 6.2 | [Project 1](https://github.com/jnylam/cs189a/tree/master/project1)
+M 2/15  |  Time | 6.1, 6.2 | [Project 1](https://github.com/jnylam/cs189a/tree/master/project1) due 2/26 at 11:59pm<br/>[Submit on Sakai](https://sakai.claremont.edu)
 W 2/17  |  Mutual exclusion  | 6.3
 M 2/22  | |
 W 2/24  | |
