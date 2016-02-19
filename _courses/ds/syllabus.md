@@ -2,6 +2,7 @@
 layout: course
 title: Syllabus
 courseid: ds
+navorder: 2
 ---
 
 ## General information and resources
