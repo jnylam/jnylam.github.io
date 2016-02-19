@@ -8,19 +8,21 @@ title: Schedule
 
 ---
 
+<a name="schedule"></a>
+
 _This schedule is tentative and subject to change during the semester._
 
 Date|Lecture|Reading|Assignments
 ----|-------|-------|-----------
 W 1/20  |  [Introduction to distributed systems](#introduction-to-distributed-systems) | 1.1, 1.2
-M 1/25  |  [Internet 1](#internet-1)  | 2.1, [Design philosophy of the Internet](http://dl.acm.org/citation.cfm?id=52336)
-W 1/27  |  [Internet 2](#internet-2)  | |[Homework 1](homework01.html)
+M 1/25  |  Communication: [Internet 1](#internet-1)  | 2.1, [Design philosophy of the Internet](http://dl.acm.org/citation.cfm?id=52336)
+W 1/27  |  Communication: [Internet 2](#internet-2)  | |[Homework 1](homework01.html)
 M 2/1   |  [Introduction to Go](https://github.com/jnylam/cs189a/tree/master/intro) | [Intro to programming in Go](http://www.golang-book.com/books/intro) Chapters 1-7
 W 2/3   |  [Concurrency in Go](https://github.com/jnylam/cs189a/tree/master/concurrency)  | [Intro to programming in Go](http://www.golang-book.com/books/intro) Chapters 8-14<br/>[Concurrency notes](http://www.andrew.cmu.edu/course/15-440-kesden/index/lecture_index.html) by Kesden
-M 2/8   |  [Remote procedure calls](#remote-procedure-calls)  |  4.1, 4.2
+M 2/8   |  Communication: [Remote procedure calls](#remote-procedure-calls)  |  4.1, 4.2
 W 2/10  |  No class |
-M 2/15  |  Time | 6.1, 6.2 | [Project 1](https://github.com/jnylam/cs189a/tree/master/project1) due 2/26 at 11:59pm<br/>[Submit on Sakai](https://sakai.claremont.edu)
-W 2/17  |  Mutual exclusion  | 6.3
+M 2/15  |  Coordination: [Time](#time) | 6.1, 6.2 | [Project 1](https://github.com/jnylam/cs189a/tree/master/project1) due 2/26 at 11:59pm on [Sakai](https://sakai.claremont.edu)
+W 2/17  |  Coordination: [Mutual exclusion](#mutual-exclusion)<br/>Coordination: [Leader election](#leader-election)  | 6.3, 6.5
 M 2/22  | |
 W 2/24  | |
 M 2/29  | |
@@ -45,8 +47,9 @@ W 5/4   |**Project presentations** |
         | _Finals week: no meeting_ |
 
 <!--
-M 2/22  | |
-W 2/24  |  Mutual exclusion  |  6.3
+skipped
+distributed file systems
+
 M 2/29  |  Fault tolerance   |  8.5
 W 3/2   |  Concurrency control  |  8.5
 M 3/7   |  RAID  |  [RAID chapter](http://pages.cs.wisc.edu/~remzi/OSTEP/file-raid.pdf)<br/> (from the online textbook [Operating Systems: Three Easy Pieces](http://pages.cs.wisc.edu/~remzi/OSTEP/))
@@ -68,6 +71,7 @@ M 5/2   |**Final exam** |
 W 5/4   |**Project presentations** |
         | _Finals week: no meeting_ |
 -->
+
 ---
 
 # Introduction to distributed systems
@@ -150,7 +154,7 @@ Project 4: design your own distributed service
 - Where will you be this summer, next year?
 - What do you hope to get out of this course?
 
-[&uarr; back to the top](#Schedule)
+[&uarr; back to the top](#schedule)
 
 ---
 
@@ -267,7 +271,7 @@ Note: priorities for a military use, but would be different for commercial use
 
 
 
-[&uarr; back to the top](#Schedule)
+[&uarr; back to the top](#schedule)
 
 ---
 
@@ -454,7 +458,7 @@ Acknowledgement: this section is based on the [lecture notes](https://www.cs.col
 
 
 
-[&uarr; back to the top](#Schedule)
+[&uarr; back to the top](#schedule)
 
 ---
 
@@ -500,3 +504,222 @@ Acknowledgement: this section is based on the [lecture notes](https://www.cs.col
   - XML RPC
   - Java RMI
   - Sun RPC
+
+
+
+
+[&uarr; back to the top](#schedule)
+
+---
+
+# Time
+
+## Synchronizing clocks
+
+Measuring time
+
+- rotation of the earth
+- atomic clocks: based on transitions in Cesium-133
+- UTC: available via radio signal 0.1-10ms, telephone line, satellite (GPS) 1 microsec
+- computer clocks: crystal oscillation counters tat
+
+Terminology
+
+- time: C(t) = t for perfect clock
+- frequency: C'(t) rate t which clock progresses
+- offset: C(t) - t at a particular time, C_a(t) - C_b(t) relative offset
+- skew: diff in frequencies of the clock relative to perfect clock
+- drift (rate): second derivative
+  - usually 10e-6 sec/sec
+  - high precision clocks: 10e-7 to 10e-8 sec/sec
+- graph: relationship between fast and slow clocks
+  - 10e-6 --> 1 ms ~ 17 min
+
+Why synchronize clocks in a distributed system?
+
+- keeping track of latest update on a file: example: make tool checks timestamp of last change on object and source files
+- trading systems (high frequency trading)
+- logging and recovery: getting time information about other processes is crucial in designing a fault-tolerant system
+
+The formal synchronization problem
+
+- all clocks within a distributed system must have skew within D of each other
+- constraints
+  - don't want time to set clock back
+  - don't want to jump forward too much
+
+Solution 1: Christian's algorithm
+
+- external synchronization: sync to authoritative source
+- algorithm
+- example
+
+Solution 2: Berkeley algorithm
+
+- goal: internal sync: syn a distributed system of clocks so all have skew within constant bound
+- reference: The accuracy of the clock synchronization achieved by TEMPO in Berkeley UNIX 4.3BSD, R Gusella and S Zatti, 1989
+- idea: master slave architecture, master periodically polls slaves for time differences and sends corrections
+- robustness mechanism: averages time of non-faulty servers, new master elected if current fails
+  - assumes: small transmission delay (no byzantine fault)
+
+Solution 3: NTP
+
+- what: one of the oldest IP protocols
+- goals: reliably sync to UTC via Internet (packet switched, variable latencies)
+- idea: multi layer (strata) client-server architecture, based on UDP
+- robustness mechanism: higher strata servers can be demoted to lower strata if failing
+- modes:
+  - multicast: periodic multicast to network, assumes small transmission delay (high speed LANs), low accuracy
+  - procedure-call: similar to Christian's protocol, use when high accuracy needed
+  - symmetric: use when high-accuracy needed
+- security issues
+
+## Logical clocks
+
+- set of events that are partially ordered, together with clock function that is partially ordered
+- partial order captures "happens before" causality
+- motivation: causality between events if fundamental to design and analysis of parallel and distributed computing and OS
+  - dependency of events
+  - progress of computation
+  - distributed algorithms
+- can use global time. logical time is sufficient
+
+Lamport timestamps (1978)
+
+- satisfies clock consistency condition: e -> f => C(e) < C(f)
+- example
+
+Vector clocks
+
+- example
+- satisfies strong consistency: e -> f iff C(e) < C(f)
+- actual implementation
+  - Dynamo - Amazon's KVS
+  - Voldemort - LinkedIn
+  - Riak - NoSQL
+- applications
+  - version control
+  - snapshot of distributed systems
+- use when need to detect merge conflicts and merge conflicts are easy to handle
+  - by having user resolve the conflict (git)
+  - using last-write wins, but may be bad idea due to loss of data
+  - ex: web shopping cart: take union of items in conflicting carts
+- limitations of vector clocks
+  - overhead linear in number of total users: solution is to prune the list, at the expense of detecting false merge conflicts
+  - http://basho.com/posts/technical/why-vector-clocks-are-hard/
+  - Cassandra
+
+
+[&uarr; back to the top](#schedule)
+
+---
+
+Last time: crucial aspect of coordinated work: achieving global state  
+Today: two other aspects of coordinated work: reservation of shared resources and selecting a coordinator
+
+# Mutual exclusion
+
+Solution 1: Token ring
+
+Solution 2: Centralized algorithm
+
+- coordinator and normal nodes
+- algorithm: request -> OK/request denied/no reply -> release
+
+Solution 3: Decentralized algorithm (Lin et al. 2004) see homework
+
+- algorithm
+- analysis of correctness
+- example of the analysis
+- availability
+
+Solution 4: Distributed algorithm (Ricart and Agrawala 1981)
+
+- based on Lamport clock sync 1978, more efficient
+- alg: wait for ok, tie breaking with time stamps.
+- many points of failure
+- many messages
+- much processing
+=> not scalable
+
+Comparing the 4 solutions
+
+- number of messages as a function of number of requests
+- average time to obtaining the resource
+
+# Leader election
+
+Why? (applications)
+
+- last time: Berkeley algorithm for fault-tolerant clock synchronization
+- access to a shared resource controlled by a coordinator that can crash
+- super peers in peer-to-peer systems
+
+What? (problem 1)
+
+- given a set of nodes with unique identifiers
+- processes can be running or down
+- processes can communicate with each other directly via message passing (they form a complete graph)
+- processes know everyone else's process number
+- design a scheme for the processes to all agree to elect a single process
+
+
+Solution 1: ring algorithm
+
+- the algorithm: election -> coordinator
+- example
+- analysis: correctness (what if multiple elections are initiated?), efficiency, quality (waste in bandwidth)
+- etymology?
+
+Solution 2: bully algorithm (Garcia-Molina, 1982)
+
+- the algorithm: election -> ok/no-reply -> coordinator
+- example
+- analysis: correctness (what if multiple elections are initiated?), efficiency
+- how long to wait to consider a process to be down?
+- etymology?
+
+Unrealistic assumptions of the problem
+
+- reliable network - no dropped messages
+- topology of the network does not change - connections between two nodes is permanent
+- elected process is chosen at random, not based on merit
+
+Problem: election in a wireless environment
+
+- network topology is a sparse graph, definitely not complete
+- each node comes with a suitability score (battery life, reliability, processing power, resource capacities)
+- design a scheme for the processes to all agree on the best process to be the leader
+
+Solution (proposed by Vasudevan et al. 2004)
+
+- algorithm: distributed BFS, election -> vote -> broadcast result
+- example
+- analysis: correctness - multiple ongoing elections
+- efficiency (suitable for networks of small diameter)
+- variants in presence of network partitions, and nodes joining/leaving
+
+Problem: election in a P2P network
+
+- need to elect multiple super-peers
+- super-peers must be well distributed across network
+- there must be at least a fixed fraction being elected
+- super-peers should be highly available
+
+Solution
+
+- used DHT-based system to randomly assign identifiers
+- if want N super-peers, use the top log N bits as mask
+- example p & 11100000 --> super-peer
+
+Summary
+
+- looked at synchronization: problem of coordinating the effort of multiple participants
+- designing algorithms to
+  - synchronize clocks
+  - detect conflict between multiple versions of a file
+  - control access to a shared resource
+  - elect a leader
+
+<!-- - solutions treat failures as a reality, need to be fault-tolerant
+- next time: minimize fault-tolerance -->
