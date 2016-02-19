@@ -14,19 +14,19 @@ M 2/1  | [Functions and cardinality](lecture04.pdf) | 1.6<!-- Week 2 -->
 W 2/3  | [Functions and cardinality](lecture05.pdf) | 1.6 | [Homework 3](homework03.html)
 M 2/8  | [Sequences and summations](lecture06.pdf) | 1.7<!-- Week 3 -->
 W 2/10 | Asymptotics | 1.8 | [Homework 4](homework04.html)
-M 2/15 | Induction | <!-- Week 4 -->
-W 2/17 | Number theory |
-M 2/22 | Number theory | <!-- Week 5 -->
-W 2/24 | Cryptography / Representation of numbers<br/>Flex day |
+M 2/15 | Induction | 3.2 <!-- Week 4 -->
+W 2/17 | Recursion | 3.3 | [Homework 5](homework05.html)
+M 2/22 | Number theory | 2.3<!-- Week 5 -->
+W 2/24 | Number theory<br/>Review | 2.5
 M 2/29 | __Exam 1__ | <!-- Week 6 -->
-W 3/2  | Counting | <!-- Send out low grade notifications -->
-M 3/7  | Counting and recursive definitions | <!-- Week 7 -->
-W 3/9  | Counting | <!-- Mar 10: last day to drop -->
+W 3/2  | Number theory applications | 2.5 | <!-- Send out low grade notifications -->
+M 3/7  | Counting | 4.1<!-- Week 7 -->
+W 3/9  | Counting | 4.2<!-- Mar 10: last day to drop -->
 M 3/14 | _Spring recess_ |
 W 3/16 | _Spring recess_ |
-M 3/21 | Probability | <!-- Week 8 -->
-W 3/23 | Probability |
-M 3/28 | Probability | <!-- Week 9 -->
+M 3/21 | Counting | 4.3<!-- Week 8 -->
+W 3/23 | Probability | 4.4
+M 3/28 | Probability | 4.5<!-- Week 9 -->
 W 3/30 | Advanced counting |
 M 4/4  | Advanced counting | <!-- Week 10 -->
 W 4/6  | Flex day |
