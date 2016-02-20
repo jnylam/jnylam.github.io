@@ -6,7 +6,7 @@ navorder: 0
 mathjax: true
 ---
 
-Due 2/29 at 11:59pm through [Sakai](http://sakai.claremont.edu).
+__Instructions:__ due 2/29 at 11:59pm through [Sakai](http://sakai.claremont.edu) as a PDF file.
 
 ### Problem 1
 
