@@ -22,7 +22,7 @@ W 2/3   |  [Concurrency in Go](https://github.com/jnylam/cs189a/tree/master/conc
 M 2/8   |  Communication: [Remote procedure calls](#remote-procedure-calls)  |  4.1, 4.2
 W 2/10  |  No class |
 M 2/15  |  Coordination: [Time](#time) | 6.1, 6.2 | [Project 1](https://github.com/jnylam/cs189a/tree/master/project1) due 2/26 at 11:59pm on [Sakai](https://sakai.claremont.edu)
-W 2/17  |  Coordination: [Mutual exclusion](#mutual-exclusion)<br/>Coordination: [Leader election](#leader-election)  | 6.3, 6.5 | [Homework 2](#homework 2) due 2/29 at 11:59pm on [Sakai](https://sakai.claremont.edu)
+W 2/17  |  Coordination: [Mutual exclusion](#mutual-exclusion)<br/>Coordination: [Leader election](#leader-election)  | 6.3, 6.5 | [Homework 2](homework02.html) due 2/29 at 11:59pm on [Sakai](https://sakai.claremont.edu)
 M 2/22  | |
 W 2/24  | |
 M 2/29  | |
