@@ -54,6 +54,8 @@ $$\sum_{s \in P(\{1, 2, \dots, n\})} \frac{1}{\prod_{x \in s}x} = \xcancel{n} n 
 
 <ins>Recall that $$\displaystyle \prod_{x \in \varnothing} x = 1$$.</ins>
 
+## Part 2
+
 ### Problem 6
 
 Let $$T: \mathbf{N} \to \mathbf{R}$$ be defined recursively by <ins>$$T(0) = 0$$ and</ins>
