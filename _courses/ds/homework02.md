@@ -18,7 +18,7 @@ __(b)__ One of the primary goals guiding the design of Dynamo is high-availabili
 
 __(c)__ In what way are vector clocks used to help achieve high-availability?  
 
-__(d)__ Using notation similar to that given in Figure 3, describe an example in which the use of a truncation scheme leads to produces two versions of the data having an ancestor-descendant relationship, but whose version clocks do not reflect this relationship.
+__(d)__ Using notation similar to that given in Figure 3, describe an example in which the use of a truncation scheme produces two versions of the data having an ancestor-descendant relationship, but whose version clocks do not reflect this relationship.
 
 ### Problem 2
 
@@ -28,6 +28,6 @@ __(a)__ What is a DHT?
 
 __(b)__ What is the point of having a majority vote?
 
-__(c)__ Explain why it requires at least $$2m - n$$ failing coordinators for the correctness of the voting mechanism to be violated?
+__(c)__ Explain why it requires at least $$2m - n$$ failing coordinators for the correctness of the voting mechanism to be violated.
 
 __(d)__ What are two challenges with properly implementing this scheme?
