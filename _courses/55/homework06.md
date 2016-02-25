@@ -31,19 +31,14 @@ Find all the numbers $$n \in \mathbf{Z}$$ between 100 and 120 such that $$n \equ
 
 Show that if $$a \mid b$$ and $$a \mid b-c$$, then $$a \mid c$$.
 
-
 ### Problem 4
-
-Show that if $$x \nmid a$$ and $$a \mid b$$ then $$x \nmid b$$.
-
-### Problem 5
 
 Show that if $$a \equiv b \pmod n$$ and $$b \equiv c \pmod n$$ then $$a \equiv c \pmod n$$.
 
-### Problem 6
+### Problem 5
 
 Show that if $$a \equiv b \pmod n$$ and $$c \equiv d \pmod n$$, then $$a + b \equiv c + d \pmod n$$ and $$ab \equiv cd \pmod n$$.
 
-### Problem 7
+### Problem 6
 
-For any $$n$$, find a sequence of $$n$$ integers, none of which are prime.
+Given $$n \in \mathbf{N}$$, find a sequence of $$n$$ integers, none of which are prime.
