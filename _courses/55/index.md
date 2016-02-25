@@ -17,7 +17,7 @@ W 2/10 | Asymptotics | 1.8 | [Homework 4](homework04.html)
 M 2/15 | Induction | 3.2 <!-- Week 4 -->
 W 2/17 | Recursion | 3.3 | [Homework 5](homework05.html)
 M 2/22 | Number theory | 2.3<!-- Week 5 -->
-W 2/24 | Number theory<br/>Review | 2.5
+W 2/24 | Number theory<br/>Review | 2.5 | [Homework 6](homework06.html)
 M 2/29 | __Exam 1__ | <!-- Week 6 -->
 W 3/2  | Number theory applications | 2.5 | <!-- Send out low grade notifications -->
 M 3/7  | Counting | 4.1<!-- Week 7 -->
