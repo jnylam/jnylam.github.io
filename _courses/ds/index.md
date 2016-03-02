@@ -23,10 +23,10 @@ M 2/8   |  Communication: [Remote procedure calls](#remote-procedure-calls)  |  
 W 2/10  |  No class |
 M 2/15  |  Coordination: [Time](#time) | 6.1, 6.2 | [Project 1](https://github.com/jnylam/cs189a/tree/master/project1) due 2/26 at 11:59pm on [Sakai](https://sakai.claremont.edu)
 W 2/17  |  Coordination: [Mutual exclusion](#mutual-exclusion)<br/>Coordination: [Leader election](#leader-election)  | 6.3, 6.5 | [Homework 2](homework02.html) due 2/29 at 11:59pm on [Sakai](https://sakai.claremont.edu)
-M 2/22  | |
-W 2/24  | |
-M 2/29  | |
-W 3/2   | |
+M 2/22  | Coordination: Distributed hash tables ||
+W 2/24  | Fault tolerance: error detection and correction ||
+M 2/29  | Fault tolerance: RAID || [Homework 3](homework03.html) due 3/11 at 11:59pm on [Sakai](https://sakai.claremont.edu)
+W 3/2   | Fault tolerance: Byzantine fault tolerance |
 M 3/7   | |  
 W 3/9   | **Exam 1**|
         | _Spring recess_ |
