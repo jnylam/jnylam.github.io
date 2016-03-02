@@ -16,7 +16,7 @@ One solution for achieving a weighted partitioning of the key range, which is ad
 Describe a situation in which weighted consistent hashing would be useful.
 
 ### Problem 2
-Read the introduction and the conclusion of [Weighted distributed hash tables](http://dl.acm.org/citation.cfm?id=1074008).
+Read sections 1, 3, and 7 of [Weighted distributed hash tables](http://dl.acm.org/citation.cfm?id=1074008).
 
 __(a)__ What criticism does this paper have of the naive approach? Illustrate with an example.
 
