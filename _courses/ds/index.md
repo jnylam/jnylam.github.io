@@ -26,8 +26,8 @@ W 2/17  |  Coordination: [Mutual exclusion](#mutual-exclusion)<br/>Coordination:
 M 2/22  | Coordination: Distributed hash tables ||
 W 2/24  | Fault tolerance: error detection and correction ||
 M 2/29  | Fault tolerance: RAID || [Homework 3](homework03.html) due 3/11 at 11:59pm on [Sakai](https://sakai.claremont.edu)
-W 3/2   | |
-M 3/7   | |  
+W 3/2   | Concurrency control | 8.5
+M 3/7   | Fault-tolerance: logging and crash recovery | 8.6  
 W 3/9   | **Exam 1**|
         | _Spring recess_ |
 M 3/21  |  |
