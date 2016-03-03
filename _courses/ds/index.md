@@ -26,7 +26,7 @@ W 2/17  |  Coordination: [Mutual exclusion](#mutual-exclusion)<br/>Coordination:
 M 2/22  | Coordination: [Distributed hash tables](#distributed-hash-tables) ||
 W 2/24  | Fault tolerance: [Error detection and correction](#error-detection-and-correction) ||
 M 2/29  | Fault tolerance: [RAID](#raid) || [Homework 3](homework03.html) due 3/11 at 11:59pm on [Sakai](https://sakai.claremont.edu)
-W 3/2   | [Concurrency control](#concurrency-control) | 8.5
+W 3/2   | [Concurrency control](#concurrency-control) | 8.5 |  [Project 2](https://github.com/jnylam/cs189a/tree/master/project2)
 M 3/7   | Fault-tolerance: logging and crash recovery | 8.6  
 W 3/9   | **Exam 1**|
         | _Spring recess_ |
@@ -777,3 +777,21 @@ Solutions on a single server
 3. acquire both locks, implement transfer as usual, release locks: can deadlock
 
 Coping with deadlocks
+1. timeouts: but these can lead to livelocks
+2. build wait-for graph (nodes are processes) and break the cycles
+3. order the nodes of the graph
+
+The 2 phases of a 2-phase lock:
+1. acquire the locks
+2. release the locks
+
+Solution viewed as a 2-phase commit:
+1. preparation: acquire locks, decide on list of update operations
+2. action: commit or abort
+
+Solution in a distributed system
+- 2-phase commit, but with messages
+- client/coordinator sends out canCommit? messages
+- servers respond with voteCommit or voteAbort
+- client publishes result of election
+- deadlocks can still occur, use timeouts
