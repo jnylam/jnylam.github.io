@@ -23,10 +23,10 @@ M 2/8   |  Communication: [Remote procedure calls](#remote-procedure-calls)  |  
 W 2/10  |  No class |
 M 2/15  |  Coordination: [Time](#time) | 6.1, 6.2 | [Project 1](https://github.com/jnylam/cs189a/tree/master/project1) due 2/26 at 11:59pm on [Sakai](https://sakai.claremont.edu)
 W 2/17  |  Coordination: [Mutual exclusion](#mutual-exclusion)<br/>Coordination: [Leader election](#leader-election)  | 6.3, 6.5 | [Homework 2](homework02.html) due 2/29 at 11:59pm on [Sakai](https://sakai.claremont.edu)
-M 2/22  | Coordination: Distributed hash tables ||
-W 2/24  | Fault tolerance: error detection and correction ||
-M 2/29  | Fault tolerance: RAID || [Homework 3](homework03.html) due 3/11 at 11:59pm on [Sakai](https://sakai.claremont.edu)
-W 3/2   | Concurrency control | 8.5
+M 2/22  | Coordination: [Distributed hash tables](#distributed-hash-tables) ||
+W 2/24  | Fault tolerance: [Error detection and correction](#error-detection-and-correction) ||
+M 2/29  | Fault tolerance: [RAID](#raid) || [Homework 3](homework03.html) due 3/11 at 11:59pm on [Sakai](https://sakai.claremont.edu)
+W 3/2   | [Concurrency control](#concurrency-control) | 8.5
 M 3/7   | Fault-tolerance: logging and crash recovery | 8.6  
 W 3/9   | **Exam 1**|
         | _Spring recess_ |
@@ -723,3 +723,57 @@ Summary
 
 <!-- - solutions treat failures as a reality, need to be fault-tolerant
 - next time: minimize fault-tolerance -->
+
+
+
+[&uarr; back to the top](#schedule)
+
+---
+
+# Distributed hash tables
+
+[&uarr; back to the top](#schedule)
+
+---
+
+# Error detection and correction
+
+[&uarr; back to the top](#schedule)
+
+---
+
+# RAID
+
+[&uarr; back to the top](#schedule)
+
+---
+
+# Concurrency control
+
+Problem: how to implement concurrent bank transfers in a distributed fashion?
+
+```
+transfer(val, i, j):
+  if withdraw(val, i):
+    deposit(val, j)
+
+withdraw(val, i):
+  if bal[i] >= val
+    bal[i] -= val
+    return true
+  return false
+
+deposit(val, j):
+  bal[j] += val
+```
+
+- database concepts
+  - transaction
+  - ACID transaction
+
+Solutions on a single server
+1. global lock: causes bottleneck
+2. one lock per account, wrapping lock around each operation separately: not isolated
+3. acquire both locks, implement transfer as usual, release locks: can deadlock
+
+Coping with deadlocks
