@@ -21,7 +21,7 @@ W 2/24 | Number theory<br/>Review | 2.5 | [Homework 6](homework06.html)
 M 2/29 | __Exam 1__ | <!-- Week 6 -->
 W 3/2  | Number theory applications | 2.5 | <!-- Send out low grade notifications -->
 M 3/7  | Counting | 4.1<!-- Week 7 -->
-W 3/9  | Counting | 4.2<!-- Mar 10: last day to drop -->
+W 3/9  | Counting | 4.2 | [Homework 7](homework07.html)<!-- Mar 10: last day to drop -->
 M 3/14 | _Spring recess_ |
 W 3/16 | _Spring recess_ |
 M 3/21 | Counting | 4.3<!-- Week 8 -->
