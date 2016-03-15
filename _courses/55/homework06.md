@@ -37,8 +37,8 @@ Show that if $$a \equiv b \pmod n$$ and $$b \equiv c \pmod n$$ then $$a \equiv c
 
 ### Problem 5
 
-Show that if $$a \equiv b \pmod n$$ and $$c \equiv d \pmod n$$, then $$a + b \equiv c + d \pmod n$$ and $$ab \equiv cd \pmod n$$.
+Show that if $$a \equiv b \pmod n$$ and $$c \equiv d \pmod n$$, then $$\color{red}{\xcancel{a + b \equiv c + d \pmod n}}$$ $$\color{blue}{a + c \equiv b + d \pmod n}$$ and $$\color{red}{\xcancel{ab \equiv cd \pmod n}}$$ $$\color{blue}{ac \equiv bd \pmod n}$$.
 
 ### Problem 6
 
-Given $$n \in \mathbf{N}$$, find a sequence of $$n$$ integers, none of which are prime.
+Given $$n \in \mathbf{N}$$, find a sequence of $$n$$ <ins>consecutive</ins> integers, none of which are prime.
