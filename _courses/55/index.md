@@ -25,7 +25,7 @@ W 3/9  | Counting | 4.2 | [Homework 7](homework07.html)<!-- Mar 10: last day to 
 M 3/14 | _Spring recess_ |
 W 3/16 | _Spring recess_ |
 M 3/21 | Counting | 4.3<!-- Week 8 -->
-W 3/23 | Probability | 4.4
+W 3/23 | Probability | 4.4 | [Homework 8](homework08.html)
 M 3/28 | Probability | 4.5<!-- Week 9 -->
 W 3/30 | Advanced counting |
 M 4/4  | Advanced counting | <!-- Week 10 -->
