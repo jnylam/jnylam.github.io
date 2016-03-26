@@ -81,4 +81,4 @@ Consider a 3 by 9 grid of red and blue dots. Show that __any__ such a grid alway
 ![](color_grid.svg)
 
 ### Problem 13
-Construct a sequence of 16 positive integers that has no strictly increasing or strictly decreasing subsequence with 5 terms. How many positive integers are needed to guarantee the existence of an increasing or decreasing subsequence with 5 terms?
+Construct a sequence of 16 <ins>different</ins> positive integers that has no strictly increasing or strictly decreasing subsequence with 5 terms. How many positive integers are needed to guarantee the existence of an increasing or decreasing subsequence with 5 terms?
