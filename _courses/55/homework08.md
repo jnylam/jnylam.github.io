@@ -34,7 +34,7 @@ Leave your answer unsimplified. Justify with a combinatorial argument.
 How many numbers between 100 and 1000 (inclusive) are divisible by 2 or 5? Leave your answer unsimplified. Justify with a combinatorial argument.
 
 ### Problem 4
-How many bit strings of length 8 have three or more consecutive 0's? Leave your answer unsimplified. Justify with a combinatorial argument.
+How many bit strings of length 8 have <del>three</del> <ins>five</ins> or more consecutive 0's? Leave your answer unsimplified. Justify with a combinatorial argument.
 
 ### Problem 5
 Show that if $$n$$ is a positive integer, then $$\binom{2n}{2} = 2 \binom{n}{2} + n^2$$
