@@ -30,9 +30,9 @@ W 3/2   | [Concurrency control](#concurrency-control) | 8.5 |  [Project 2](https
 M 3/7   | Fault-tolerance: [logging and crash recovery](#logging-and-crash-recovery) | 8.6  |
 W 3/9   | **Exam 1** |
         | _Spring recess_ |
-M 3/21  |  |
-W 3/23  |  |
-M 3/28  |  |
+M 3/21  |  Case study: distributed file systems |
+W 3/23  |  Replication: sequential consistency |
+M 3/28  |  Replication: causal, eventual consistency |
 W 3/30  |  |
 M 4/4   |  |
 W 4/6   |  | | [Project 2 part A](https://github.com/jnylam/cs189a/tree/master/project2) due 3/30 at 11:59pm on [Sakai](https://sakai.claremont.edu)
@@ -1008,3 +1008,8 @@ Solution 2: write-ahead logging
     - other type of log entry: CLR LSN, TID, PrevLSN, pageID, offset, newval, UndoNextLSN
 - checkpoints
 - 2PC integration
+
+
+[&uarr; back to the top](#schedule)
+
+---
