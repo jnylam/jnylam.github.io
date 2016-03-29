@@ -33,11 +33,11 @@ W 3/9   | **Exam 1** |
 M 3/21  |  |
 W 3/23  |  |
 M 3/28  |  |
-W 3/30  |  | | [Project 2 part A](https://github.com/jnylam/cs189a/tree/master/project2) due 3/30 at 11:59pm on [Sakai](https://sakai.claremont.edu)
+W 3/30  |  |
 M 4/4   |  |
-W 4/6   |  | | [Project 2 part B](https://github.com/jnylam/cs189a/tree/master/project2) due 4/6 at 11:59pm on [Sakai](https://sakai.claremont.edu)
+W 4/6   |  | | [Project 2 part A](https://github.com/jnylam/cs189a/tree/master/project2) due 3/30 at 11:59pm on [Sakai](https://sakai.claremont.edu)
 M 4/11  |  |
-W 4/13  |  |
+W 4/13  |  | | [Project 2 part B](https://github.com/jnylam/cs189a/tree/master/project2) due 4/13 at 11:59pm on [Sakai](https://sakai.claremont.edu)
 M 4/18  |  |
 W 4/20  |  |
 M 4/25  |  |
