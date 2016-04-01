@@ -129,10 +129,7 @@ __b)__ Find the expectation of $$X$$.
 
 ### Problem 15
 
-A fair coin is tossed until a tail occurs or five heads occur. Let $$X$$ denote the number of tosses.
-
-__a)__ Find the probability distribution of $$X$$.  
-__b)__ Find the expectation of $$X$$.
+A fair coin is tossed until a tail occurs or five heads occur. Let $$X$$ denote the number of tosses. Find the probability distribution of $$X$$.
 
 ### Problem 16
 
