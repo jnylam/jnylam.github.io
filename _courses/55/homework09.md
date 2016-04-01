@@ -141,7 +141,7 @@ A biased coin is weighted so that $$P(H) = p$$ and $$P(T) = 1-p$$. The coin is t
 __a)__ Find the probability distribution of $$X$$.  
 __b)__ Find the expectation of $$X$$.
 
-Hint: for __b)__, use the fact that expectation is linear: for any random variable $$Y$$ and fixed number $$k$$, we have $$E[kY] = k E[Y]$$.
+Hint: for __b)__, use the fact that expectation is linear: for any random variables $$X$$ and $$Y$$, we have $$E[X+Y] = E[X] + E[Y]$$.
 
 ### Problem 17
 
