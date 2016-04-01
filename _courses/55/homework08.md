@@ -2,7 +2,7 @@
 layout: course
 title: "Homework 8"
 courseid: 55
-navorder: 3
+navorder: 0
 mathjax: true
 ---
 
