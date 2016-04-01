@@ -129,7 +129,10 @@ __b)__ Find the expectation of $$X$$.
 
 ### Problem 15
 
-A fair coin is tossed until a tail occurs or five heads occur. Let $$X$$ denote the number of tosses. Find the probability distribution of $$X$$.
+A fair coin is tossed until a tail occurs or five heads occur. Let $$X$$ denote the number of tosses.
+
+__a)__ Find the probability distribution of $$X$$.  
+__b)__ Find the expectation of $$X$$.
 
 ### Problem 16
 
@@ -137,6 +140,8 @@ A biased coin is weighted so that $$P(H) = p$$ and $$P(T) = 1-p$$. The coin is t
 
 __a)__ Find the probability distribution of $$X$$.  
 __b)__ Find the expectation of $$X$$.
+
+Hint: for __b)__, use the fact that expectation is linear: for any random variables $$X$$ and $$Y$$, we have $$E[X+Y] = E[X] + E[Y]$$.
 
 ### Problem 17
 
