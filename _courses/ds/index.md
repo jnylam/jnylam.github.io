@@ -43,7 +43,7 @@ W 4/20  |  |
 M 4/25  |  |
 W 4/27  |  | [Project 2 part B](https://github.com/jnylam/cs189a/tree/master/project2) due 4/27 at 11:59pm on [Sakai](https://sakai.claremont.edu)  
 M 5/2   | **Exam 2** |
-W 5/4   | **Project presentations** |
+W 5/4   | **Presentations** |
         | _Finals week: no meeting_ |
 
 <!--
