@@ -33,7 +33,7 @@ Define $$(a,b) \sim (c,d)$$ where $$a,b,c,d \in \mathbf{Z}$$, if $$ad = bc$$.
 
 __(a)__ Show that $$\sim$$ is an equivalence relation.  
 __(b)__ Describe the equivalence class of $$(4, 6)$$ using set notation.  
-__(c)__ Find a system of representatives for the equivalence classes defined by this relation.
+__(c)__ Find a system of representatives for the equivalence classes defined by this relation. (Hint: Does the equation $$ad = bc$$ remind you of something from high school algebra?)
 
 ### Problem 4
 
@@ -51,7 +51,7 @@ __(c)__ Find a system of representatives for the equivalence classes defined by 
 
 ### Problem 6
 
-If a set $$S$$ has size $$n$$ and all its equivalence classes have size $$k$$, where $$k \mid n$$, how many equivalence classes does $$S$$ have?
+If a set $$S$$ with an equivalence relation $$\sim$$ has size $$n$$ and all its equivalence classes have size $$k$$, why must $$k$$ divide $$n$$ evenly? How many equivalence classes does $$S$$ have?
 
 ### Problem 7
 
