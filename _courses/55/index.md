@@ -31,7 +31,7 @@ W 3/30 | Probability | 4.5 | [Homework 9](homework09.html)
 M 4/4  | Advanced counting | <!-- Week 10 -->
 W 4/6  | Flex day |
 M 4/11 | __Exam 2__ | <!-- Week 11 -->
-W 4/13 | Equivalence relations | | <!--[Homework 10](homework10.html)-->
+W 4/13 | Equivalence relations | | [Homework 10](homework10.html)
 M 4/18 | Graphs | <!-- Week 12 -->
 W 4/20 | Graphs |
 M 4/25 | Graphs | <!-- Week 13 -->
