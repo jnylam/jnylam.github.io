@@ -21,15 +21,15 @@ Required textbook: Distributed Systems Principles and Paradigms, 2nd ed. Andrew 
 
 The final course grade in the class will be computed as a weighted average of the following assignments and then converted to a letter grade based on a scale that will be determined at the end of the semester.
 
+<ins>Updated 4/11/2016</ins>
+
 * 50% projects
-  * 5% project 1
-  * 15% project 2
-  * 15% project 3
-  * 15% project 4
+  * 16.67% project 1
+  * 16.67% project 2A
+  * 16.67% project 2B
 * 30% exams
-  * 10% exam 1 (Monday 2/22/2016)
-  * 10% exam 2 (Wednesday 3/30/2016)
-  * 10% exam 3 (Monday 5/2/2016)
+  * 15% exam 1
+  * 15% exam 2
 * 20% homework
   * roughly one assignment every week, all equally weighted
   * lowest two scores will be dropped

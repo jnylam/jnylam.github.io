@@ -33,32 +33,27 @@ W 3/9   | **Exam 1** |
 M 3/21  |  Case study: distributed file systems |
 W 3/23  |  Replication: sequential consistency |
 M 3/28  |  Replication: causal, eventual consistency |
-W 3/30  |  |
-M 4/4   |  |
-W 4/6   |  | | [Project 2 part A](https://github.com/jnylam/cs189a/tree/master/project2) due 3/30 at 11:59pm on [Sakai](https://sakai.claremont.edu)
-M 4/11  |  |
-W 4/13  |  | | [Project 2 part B](https://github.com/jnylam/cs189a/tree/master/project2) due 4/13 at 11:59pm on [Sakai](https://sakai.claremont.edu)
-M 4/18  |  |
-W 4/20  |  |
+W 3/30  |  Replication: strong eventual consistency, CRDTs | | [Homework 4](homework04.html) due 4/8 at 11:59pm on [Sakai](https://sakai.claremont.edu)
+M 4/4   |  Consensus: 2PC and 3PC | 8.5
+W 4/6   |  Consensus: Paxos | [Paxos made simple](http://www.cs.utexas.edu/users/lorenzo/corsi/cs380d/past/03F/notes/paxos-simple.pdf) | [Project 2 part A](https://github.com/jnylam/cs189a/tree/master/project2) due 4/6 at 11:59pm on [Sakai](https://sakai.claremont.edu)
+M 4/11  |  Case study: Chubby lock service | [The Chubby Lock Service for Loosely-Coupled Distributed Systems](http://research.google.com/archive/chubby.html) |
+W 4/13  |  Security | |
+M 4/18  |  | |
+W 4/20  |  | | [Homework 5](homework05.html) due 4/20 at 11:59pm on [Sakai](https://sakai.claremont.edu)
 M 4/25  |  |
-W 4/27  |  |
+W 4/27  |  | | [Project 2 part B](https://github.com/jnylam/cs189a/tree/master/project2) due 4/27 at 11:59pm on [Sakai](https://sakai.claremont.edu)  
 M 5/2   | **Exam 2** |
-W 5/4   | **Project presentations** |
+W 5/4   | **Presentations** |
         | _Finals week: no meeting_ |
 
 <!--
-skipped
-distributed file systems
 
-M 2/29  |  Fault tolerance   |  8.5
-W 3/2   |  Concurrency control  |  8.5
-M 3/7   |  RAID  |  [RAID chapter](http://pages.cs.wisc.edu/~remzi/OSTEP/file-raid.pdf)<br/> (from the online textbook [Operating Systems: Three Easy Pieces](http://pages.cs.wisc.edu/~remzi/OSTEP/))
-W 3/9   |  Logging and crash recovery  | 8.6
-        | _Spring recess_ |
-M 3/21  |  Consistent hashing  |  
-W 3/23  |  Replication 1  |
-M 3/28  |  Replication 2  |
-W 3/30  |**Exam 2** |
+MapReduce: Data intensive computation, Distributed filesystems for MapReduce / HDFS
+Byzantine Fault tolerance
+Security
+TOR, P2P
+Gossip protocols
+
 M 4/4   |  Data intensive computation  |
 W 4/6   |  Distributed filesystems for MapReduce / HDFS  | [Google filesystem](http://research.google.com/archive/gfs-sosp2003.pdf). Optional: [GFS follow-up interview](http://queue.acm.org/detail.cfm?id=1594206)
 M 4/11  |  DNS and CDNs  |  5.3.3-5.3.4
