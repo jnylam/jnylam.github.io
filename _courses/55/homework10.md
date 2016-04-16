@@ -66,7 +66,7 @@ __(c)__ How many different ways are there to seat these 13 people, if rotations 
 Consider 12 distinguishable boxes, 3 of which are red, 4 of which are blue, and the rest are green.
 
 __(a)__ How many ways are there to label the 12 boxes from 1 to 12, not taking color into account.  
-__(b)__ Given a particular labeling of the boxes, how many ways are there to label the 15 boxes from 1 to 12, so that the same numbers appear on boxes of the same color as in this particular labeling?  
+__(b)__ Given a particular labeling of the boxes, how many ways are there to label the <del>15</del> <ins>12</ins> boxes from 1 to 12, so that the same numbers appear on boxes of the same color as in this particular labeling?  
 __(c)__ How many ways are there to label these 12 boxes from 1 to 12, if the boxes can only be distinguished by color?
 
 ### Problem 9
