@@ -28,11 +28,11 @@ M 3/21 | Counting | 4.3<!-- Week 8 -->
 W 3/23 | Counting | 4.3 | [Homework 8](homework08.html)
 M 3/28 | Probability | 4.4 <!-- Week 9 -->
 W 3/30 | Probability | 4.5 | [Homework 9](homework09.html)
-M 4/4  | Advanced counting | <!-- Week 10 -->
+M 4/4  | Applications of probability | <!-- Week 10 -->
 W 4/6  | Flex day |
 M 4/11 | __Exam 2__ | <!-- Week 11 -->
 W 4/13 | Equivalence relations | | [Homework 10](homework10.html)
-M 4/18 | Graphs | <!-- Week 12 -->
+M 4/18 | [Graphs](graphs.pdf) | <!-- Week 12 -->
 W 4/20 | Graphs |
 M 4/25 | Graphs | <!-- Week 13 -->
 W 4/27 | Graphs |
