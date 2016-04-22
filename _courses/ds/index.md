@@ -38,10 +38,10 @@ M 4/4   |  Consensus: 2PC and 3PC | 8.5
 W 4/6   |  Consensus: Paxos | [Paxos made simple](http://www.cs.utexas.edu/users/lorenzo/corsi/cs380d/past/03F/notes/paxos-simple.pdf) | [Project 2 part A](https://github.com/jnylam/cs189a/tree/master/project2) due 4/6 at 11:59pm on [Sakai](https://sakai.claremont.edu)
 M 4/11  |  Case study: Chubby lock service | [The Chubby Lock Service for Loosely-Coupled Distributed Systems](http://research.google.com/archive/chubby.html) |
 W 4/13  |  Security | |
-M 4/18  |  | |
-W 4/20  |  | | [Homework 5](homework05.html) due 4/20 at 11:59pm on [Sakai](https://sakai.claremont.edu)
+M 4/18  |  MapReduce, Pregel | |
+W 4/20  |  Case study: Bitcoin | [Michael Nielsen's blog post](http://www.michaelnielsen.org/ddi/how-the-bitcoin-protocol-actually-works/)| [Homework 5](homework05.html) due 4/20 at 11:59pm on [Sakai](https://sakai.claremont.edu)
 M 4/25  |  |
-W 4/27  |  | | [Project 2 part B](https://github.com/jnylam/cs189a/tree/master/project2) due 4/27 at 11:59pm on [Sakai](https://sakai.claremont.edu)  
+W 4/27  |  | | [Project 2 part B](https://github.com/jnylam/cs189a/tree/master/project2) due 4/27 at 11:59pm on [Sakai](https://sakai.claremont.edu)<br />[Homework 6](homework06.html) due 4/29 at 11:59pm on [Sakai](https://sakai.claremont.edu)
 M 5/2   | **Exam 2** |
 W 5/4   | **Presentations** |
         | _Finals week: no meeting_ |
