@@ -91,7 +91,9 @@ etc.
 Of course, this only works if the number of columns of the left matrix matches the number of rows in the right matrix. But other than that requirement, you can multiply matrices of any dimensions. The operation we just described is the __matrix product__.
 
 __a)__ Find the square of the adjacency matrix.  
-__b)__ What does the number $$ij$$-th entry of the square of the adjacency matrix represent in the original graph?
+__b)__ What does the number in the $$ij$$-th entry of the square of the adjacency matrix represent in the original graph?
+
+Hint: (select the text to uncover) <hint>in a graph with three vertices a, b, and c, and two edges a&rarr;b and b&rarr;c, what is the result of multiplying the corresponding entries in the adjacency matrix? where in the resulting matrix is this number located? in other words, which two vertices is this number associated with? What happens if we add another vertex d and two more edges a&rarr;d and d&rarr;c to the graph?</hint>
 
 ### Problem 8
 
