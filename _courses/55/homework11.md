@@ -53,6 +53,8 @@ Find the strongly connected components of the following graph.
 
 ![a digraph](digraph.svg){: style="width: 4in;"}
 
+## Part 2
+
 ### Problem 5
 
 An adjacency matrix is a way to represent a digraph on a computer. It is a 2-dimensional array of 1's and 0's. Specifically, let us number the vertices from $$1$$ to $$n$$. Then, there is a 1 in the $$ij$$-th entry (row $$i$$, column $$j$$) of the matrix if and only if there is an edge from vertex $$j$$ to vertex $$i$$.
