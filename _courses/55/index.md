@@ -33,7 +33,7 @@ W 4/6  | Flex day |
 M 4/11 | __Exam 2__ | <!-- Week 11 -->
 W 4/13 | [Equivalence relations](equivalence.html) | | [Homework 10](homework10.html)
 M 4/18 | [Graphs](graphs.pdf) | <!-- Week 12 -->
-W 4/20 | Graphs | <!--[Homework 11](homework11.html)-->
+W 4/20 | Graphs | [Homework 11](homework11.html)
 M 4/25 | Graphs | <!-- Week 13 -->
 W 4/27 | Graphs |
 M 5/2  | Graphs | <!-- Week 14 -->

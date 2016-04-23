@@ -2,7 +2,7 @@
 layout: course
 title: "Homework 11"
 courseid: 55
-navorder: 0
+navorder: 3
 mathjax: true
 ---
 
@@ -20,8 +20,9 @@ Please do not use paper torn off of a notebook.
 
 ## Part 1
 
-
 ### Problem 1
+
+Recall that a __path__ in an undirected graph is a sequence of adjacent vertices, potentially consisting of just one vertex.
 
 Let $$G = (V, E)$$ be an undirected graph. Define the relation $$\leftrightarrow$$ on $$G$$ as follows: for any $$v, w \in V$$, let $$v \leftrightarrow w$$ if and only there exists a path in $$G$$ from $$v$$ to $$w$$ and a path in $$G$$ from $$w$$ to $$v$$.
 
@@ -31,9 +32,14 @@ Remark: the equivalence classes defined by $$\leftrightarrow$$ are called the  _
 
 ### Problem 2
 
-A simple graph is an undirected graph with no self-loops or multi-edges. How many connected components can a simple graph on $$n$$ vertices and $$m$$ edges have?
+Recall that a graph has no self-loops or parallel edges.
+
+__a)__ What is the fewest number of connected components that an undirected graph on $$n$$ vertices and $$m$$ edges can have?  
+__b)__ What is the most number of connected components that an undirected graph on $$n$$ vertices and $$m$$ edges can have?  
 
 ### Problem 3
+
+Recall that a __path__ in a directed graph is like a path in an undirected graph, but needs to follow the direction of the edges.
 
 Let $$G = (V, E)$$ be a directed graph. Define the relation $$\leftrightarrows$$ on $$G$$ as follows: for any $$v, w \in V$$, let $$v \leftrightarrows w$$ if and only there exists a path in $$G$$ from $$v$$ to $$w$$ and a path in $$G$$ from $$w$$ to $$v$$.
 
@@ -43,9 +49,9 @@ Remark: the equivalence classes defined by $$\leftrightarrows$$ are called the _
 
 ### Problem 4
 
-Find the strongly connected components of this graph.
+Find the strongly connected components of the following graph.
 
-![](digraph.svg)
+![a digraph](digraph.svg){: style="width: 4in;"}
 
 ### Problem 5
 
@@ -57,10 +63,34 @@ $$ \begin{pmatrix} 0 & 1 & 1 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 1 \\ 1 & 0 & 1 
 
 Use circles for vertices and arrows for edges.
 
-__b)__ How would you use an adjacency matrix to represent an undirected graph? Illustrate with an example.
+__b)__ Recall that an undirected edge can be thought of as two directed edges, one in each direction. Find the adjacency matrix of $$Q_4$$ (for a definition, see example 7, page 448, of the textbook).
+
+__c)__ Describe a method for constructing the adjacency matrix of $$Q_n$$ from copies of the adjacency matrix of $$Q_{n-1}$$.
 
 
 ### Problem 6
+
+Let $$G$$ be a graph with $$n$$ vertices.
+
+__a)__ What is the maximum number of edges that an undirected graph can have, if self-loops and parallel edges are not allowed?  
+__b)__ What is the O-notation as of your answer to part __a)__?  
+__c)__ What is maximum number of edges that a directed graph can have, if self-loops and parallel edges are not allowed?  
+__d)__ What is the O-notation as of your answer to part __c)__?
+
+### Problem 7
+
+The __complement of a graph__ $$G$$, denoted $$\overline{G}$$, has the same vertices as $$G$$, where two vertices are adjacent in $$\overline{G}$$ if and only if they are not adjacent in $$G$$.
+
+__a)__ Find the complement of the square graph $$Q_2$$. Express your answer as a drawing.   
+__b)__ Find a graph with four vertices that is isomorphic to its complement. Express your answer as a drawing.
+
+### Problem 8
+
+Let $$k$$ be a fixed positive integer. Show that a graph on $$n$$ vertices and $$m = n + k$$ edges can have at most $$2k + a$$ vertices of degree 3 or greater, where $$a$$ is the number of vertices of degree 1.
+
+Hint: <hint>use the handshake/double-counting theorem.</hint>
+
+<!-- ### Problem 6
 
 In the low-attention-span web surfer model used to define the pagerank algorithm, suppose that the probability of getting bored and going to a uniformly random page is 0.1 and the probability of following a random link from the current page is 0.9. Given the graph represented by the same matrix as in the previous problem, starting from a state in which each vertex is equally likely, what would be the probability of being on each of the four vertices after a single time step?
 
@@ -94,16 +124,10 @@ __a)__ Find the square of the adjacency matrix.
 __b)__ What does the number in the $$ij$$-th entry of the square of the adjacency matrix represent in the original graph?
 
 Hint: (select the text to uncover) <hint>in a graph with three vertices a, b, and c, and two edges a&rarr;b and b&rarr;c, what is the result of multiplying the corresponding entries in the adjacency matrix? where in the resulting matrix is this number located? in other words, which two vertices is this number associated with? What happens if we add another vertex d and two more edges a&rarr;d and d&rarr;c to the graph?</hint>
+-->
 
-### Problem 8
 
-Let $$G$$ be a graph with $$n$$ vertices.
-
-__a)__ What is the maximum number of edges that an undirected graph can have, if self-loops are not allowed?  
-__b)__ What is the O-notation as of your answer to part __a)__?  
-__c)__ What is maximum number of edges that a directed graph can have, if self-loops are not allowed?  
-__d)__ What is the O-notation as of your answer to part __c)__?
-
+<!--
 ### Problem 9
 
 A graph with $$n$$ vertices is said to be __sparse__ if the number of edges is $$O(n)$$, and __dense__ otherwise.
@@ -116,3 +140,4 @@ __c)__ How big is the adjacency list of a dense graph? Express your answer in O-
 __d)__ How big is the adjacency matrix of a sparse graph? How about a dense graph?  
 __e)__ Is there any advantage to storing a sparse graph as either an adjacency matrix or an adjacency list?  
 __f)__ Given a graph stored on a computer, a basic and useful question about the graph is the __neighbor query__: given two vertices, determine whether there is an edge from the first vertex to the second vertex. In light of this fact, is there any advantage to storing a dense graph as either an adjacency matrix or an adjacency list?
+-->
