@@ -35,7 +35,7 @@ W 4/13 | [Equivalence relations](equivalence.html) | | [Homework 10](homework10.
 M 4/18 | [Graphs](graphs.pdf) | <!-- Week 12 -->
 W 4/20 | Graphs | [Homework 11](homework11.html)
 M 4/25 | Graphs | <!-- Week 13 -->
-W 4/27 | Graphs |
+W 4/27 | [Planarity](Graphs_4.pdf) | 7.7
 M 5/2  | Graphs | <!-- Week 14 -->
 W 5/4  | Flex day |
 Th 5/12 | __Final Exam__ 2:00pm--5:00pm |
