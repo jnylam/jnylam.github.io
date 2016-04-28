@@ -30,17 +30,17 @@ W 3/2   | [Concurrency control](#concurrency-control) | 8.5 |  [Project 2](https
 M 3/7   | Fault-tolerance: [logging and crash recovery](#logging-and-crash-recovery) | 8.6  |
 W 3/9   | **Exam 1** |
         | _Spring recess_ |
-M 3/21  |  Case study: distributed file systems |
-W 3/23  |  Replication: sequential consistency |
-M 3/28  |  Replication: causal, eventual consistency |
-W 3/30  |  Replication: strong eventual consistency, CRDTs | | [Homework 4](homework04.html) due 4/8 at 11:59pm on [Sakai](https://sakai.claremont.edu)
-M 4/4   |  Consensus: 2PC and 3PC | 8.5
-W 4/6   |  Consensus: Paxos | [Paxos made simple](http://www.cs.utexas.edu/users/lorenzo/corsi/cs380d/past/03F/notes/paxos-simple.pdf) | [Project 2 part A](https://github.com/jnylam/cs189a/tree/master/project2) due 4/6 at 11:59pm on [Sakai](https://sakai.claremont.edu)
-M 4/11  |  Case study: Chubby lock service | [The Chubby Lock Service for Loosely-Coupled Distributed Systems](http://research.google.com/archive/chubby.html) |
-W 4/13  |  Security | |
-M 4/18  |  MapReduce, Pregel | |
-W 4/20  |  Case study: Bitcoin | [Michael Nielsen's blog post](http://www.michaelnielsen.org/ddi/how-the-bitcoin-protocol-actually-works/)| [Homework 5](homework05.html) due 4/20 at 11:59pm on [Sakai](https://sakai.claremont.edu)
-M 4/25  |  |
+M 3/21  |  Case study: [distributed file systems](#distributed-file-systems) |
+W 3/23  |  Replication: [sequential consistency](#sequential-consistency) |
+M 3/28  |  Replication: [causal, eventual consistency](#causal-and-eventual consistency) |
+W 3/30  |  Replication: [strong eventual consistency, CRDTs](#strong-eventual-consistency-and-crdts) | | [Homework 4](homework04.html) due 4/8 at 11:59pm on [Sakai](https://sakai.claremont.edu)
+M 4/4   |  Consensus: [2PC and 3PC](#2pc-and-3pc) | 8.5
+W 4/6   |  Consensus: [Paxos](#paxos) | [Paxos made simple](http://www.cs.utexas.edu/users/lorenzo/corsi/cs380d/past/03F/notes/paxos-simple.pdf) | [Project 2 part A](https://github.com/jnylam/cs189a/tree/master/project2) due 4/6 at 11:59pm on [Sakai](https://sakai.claremont.edu)
+M 4/11  |  Case study: [Chubby lock service](#the-chubby-lock-service) | [The Chubby Lock Service for Loosely-Coupled Distributed Systems](http://research.google.com/archive/chubby.html) |
+W 4/13  |  [Security](#security) | |
+M 4/18  |  [MapReduce, Pregel](#mapreduce-and-pregel) | |
+W 4/20  |  Case study: [Bitcoin](#bitcoin) | [Michael Nielsen's blog post](http://www.michaelnielsen.org/ddi/how-the-bitcoin-protocol-actually-works/)| [Homework 5](homework05.html) due 4/20 at 11:59pm on [Sakai](https://sakai.claremont.edu)
+M 4/25  |  [Multicast and membership](#multicast-and-membership) |
 W 4/27  |  | | [Project 2 part B](https://github.com/jnylam/cs189a/tree/master/project2) due 4/27 at 11:59pm on [Sakai](https://sakai.claremont.edu)<br />[Homework 6](homework06.html) due 4/29 at 11:59pm on [Sakai](https://sakai.claremont.edu)
 M 5/2   | **Exam 2** |
 W 5/4   | **Presentations** |
@@ -1004,6 +1004,328 @@ Solution 2: write-ahead logging
 - checkpoints
 - 2PC integration
 
+
+[&uarr; back to the top](#schedule)
+
+---
+
+# Distributed file systems
+
+[&uarr; back to the top](#schedule)
+
+---
+
+# Sequential consistency
+
+[&uarr; back to the top](#schedule)
+
+---
+
+# Causal and eventual consistency
+
+[&uarr; back to the top](#schedule)
+
+---
+
+# Strong eventual consistency and CRDTs
+
+[&uarr; back to the top](#schedule)
+
+---
+
+# 2PC and 3PC
+
+[&uarr; back to the top](#schedule)
+
+---
+
+# Paxos
+
+[&uarr; back to the top](#schedule)
+
+---
+
+# The Chubby lock service
+
+[&uarr; back to the top](#schedule)
+
+---
+
+# Security
+
+Internet security weaknesses
+
+Sources of the problem
+
+Focus
+
+Secure channel
+
+Symmetric-key encryption
+
+Public-key encryption
+
+KDC
+
+PKI
+
+TLS
+
+[&uarr; back to the top](#schedule)
+
+---
+
+# MapReduce and Pregel
+
+### Map-Reduce
+
+Etymology: from functional programming
+
+* map: (function f, list (a, b, c, ...)) -> (f(a), f(b), f(c), ...)
+* reduce: (binary function *, list (a, b, c, ...)) -> (((a * b) * c)....
+
+Map-Reduce functions in Hadoop
+
+* map: (key, value) -> (key, value)
+* reduce: (key, values) -> merged value
+
+Need to be able to group values of the same key, use of consistent hashinng
+
+Example: word counter
+
+Example: reverse weblink graph
+
+Example: word frequency
+
+Example: sort by value
+
+Implementation details
+
+* input/output data stored in persistent storage like GFS or HDFS
+* barrier synchronization
+* managing resources (example from YARN scheduler)
+  * container = unit of computation resource = CPU core + some memory
+  * 3 roles: resource manager, node manager, application manager
+
+Fault-toleranceje
+
+* detecting worker node failures
+  * node manager reports heartbeats to resource manager
+  * node manager keeps track of jobs running at node
+  * app manager regularly saves work
+
+* detecting master node failures
+
+### Graph processing
+
+Examples of graphs: Internet, WWW, social, biology
+
+Graph algorithms
+
+* expressed in terms of vertices and adjacent vertices and incident edges
+* shortest path
+* is there a path between two given nodes?
+* find clusters of connected vertices (friends)
+* PageRank
+* matching (ads, romantic partner)
+
+Processing steps (outline)
+
+Example: PageRank
+
+Example: Shortest Path
+
+Why not use MapReduce?
+
+Pregel
+
+* distributed graph processing
+* why? speed, fault-tolerance
+* assigning keys to nodes: consistent hashing, and locality based
+* implementation: master and worker nodes
+
+Pregel execution
+
+1. master sends workers workload
+2. workers fetch input data from persistent storage (eg GFS)
+3. (repeat the following)
+4. master signals to workers beginning of iteration
+5. worker receives messsages, updates local value, sends messages    
+
+Pregel API
+
+* edges can have values too
+* topology may change
+* aggregators
+* fault tolerance: servers save work locally, ping (checkpoint), master can reassign work
+
+Bulk synchronization programming model (Valiant 1980s)
+
+[&uarr; back to the top](#schedule)
+
+---
+
+# Bitcoin
+
+Bitcoin is a peer-to-peer digital currency.
+
+Problem: how to prevent forging?
+
+Solution: use digital signature to sign letter of intent, eg "I, Alice, give Bob one bitcoin," signed by Alice.
+
+Problem: this solves the problem of forging the letter, but not replay attacks by a 3rd party or Alice double-spending.
+
+Solution: use a central bank to keep track of everyone's balance, issuing serialization numbers for transactions or the bitcoins themselves and keep track of all transactions in a public ledger. (Example scenario)
+
+Problem: must trust a central authority.
+
+Solution: make everyone using the currency take on the bank's responsibilities. The public ledger is a complete record of all transactions, called the block chain. Everyone has a copy of it. (Example scenario)
+
+Problem: if everyone only checks against their own copy of the block chain in order to accept money from Alice, Alice can still double-spend. What should be the protocol for validating a transaction now the bank is decentralized, ie., now that the block-chain is replicated? And what kind of consistency should we use?
+
+Solution: to validate a transaction, maybe validate against a certain number of other people's block chains?
+
+Problem: to double-spend, Alice could create multiple accounts in order to validate an invalid transaction.
+
+Solution: ok, then make the process of validating a transaction computationally expensive by requiring the solution of to a puzzle (called proof of work) with the validation. Finding the solution must be computationally expensive, but verifying must not so others can validate your work. (example scenario). See project 2 Part B for details of puzzle. The difficulty of a computation can be controlled.
+
+Problem: why would anybody want to do this work?
+
+Solution: reward those who validate transactions by giving newly created currency or via transactions fees. Currently, 25 newly minted bitcoins awarded for every validated block of transactions. Reward is halved every 210,000 validated blocks. Eventually, will no longer be paid in new bitcoins, but in transaction fees. Those who validate transactions are called miners.
+
+Problem: still did not address consistency. How is order determined?
+
+Solution: New blocks of validated transactions have a pointer to last validated block on the block chain, creating a DAG of alternative histories of validated transactions (Forks can happen if different miners successfully create a new block at around the same time). The rule is for all miners to work on the longest fork where length is determined by total difficulty for producing that chain. A transaction is considered confirmed if it is part of the longest fork and at least 5 blocks follow it in the longest fork.
+
+Security: Alice tries to get Bob and Charlie to accept the same bitcoin
+
+* even if Alice successfully creates a block with both transactions in it, and announces it, others will reject the block as invalid.
+* if Alice broadcasts one transaction to one group of miners and the other to another group of miners, either both transactions successfully end up in different blocks, but in different forks, or one ends up in a block that is broadcast to the other miners, and the other transaction becomes invalid. Either way, there is only one possible valid transaction.
+* Alice tries to pay herself by creating a new history, needs to have 50% of the total computational power, and to be very lucky (prob 10^{12} of getting ahead.)
+
+Problem: who serializes the bitcoins?
+
+Solution: don't need to. Each transaction consists of an input and multiple outputs. Inputs point to an output of a previous transaction (source of fund) and outputs point to one or more recipient (specifically a hash of the recipient's public key), and the paying party (mechanism for making change). This, together with the ledger, allows for all funds to be tracked.
+
+Open questions
+
+* anonymity
+* security
+* getting rich
+
+[&uarr; back to the top](#schedule)
+
+---
+
+# Multicast and membership
+
+### The multicast problem
+
+- node wants to communicate a piece of info to everyone in a group of nodes (vs other
+- want reliability, scalable (overhead per node small)
+- eg IP multicast, in switches and routers, but may not be turned on
+- prefer app level multicast
+
+Solution 1: centralized approach
+
+- centralized: use tcp/udp to each
+- central pt of failure, overhead
+
+Solution 2: Tree-based approach
+
+- spanning tree for dissemination
+- eg IPmulticast, SRM, RMTP, TRAM, TMTP
+- if tree balanced, latency is order log n
+- node failure? use acks/ naks to repair multicasts not received
+- pb: msg implosion, overwhelm initial broadcaster if major failure
+- SRM (scalable reliable multicast), send NAKs at rand delays + exponential backoff
+- RMTP: aks to designated receivers for retransmission
+- still not very efficient, linear nb of ack/nak messages
+
+Solution 3: Gossip protocol
+
+- periodically transmit to b (fanout) rand targets w/ repl
+- target is said to be infected, does the same
+- requires more msgs than tree-based
+- no sync needed
+- push-pull variant: pull, but also include recent msgs with it
+- variants: priority based, send rand subset of msgs
+
+Variant 1: push style
+- after log(n) rounds, about (n+1) - 1/ n^{cb-2} infected nodes
+- with 50% packet loss, replace b by b/2 → to achieve same reliability as 0% packet loss, take 2x as many rounds
+- with 50% node failure: replace n by n/2, b by b/2
+- prob of epidemic dying: possible but unlikely esp with a few nodes infected.
+
+Variant 2: pull style
+- poll rand nodes periodically
+- assuming n nodes already infected, takes O(log log n) rounds of pull-style to infect everyone
+
+Variant 3: push-then-pull
+- push for log (n) rounds + pull for log log n rounds
+
+Variant: Topology-aware gossip
+
+- pb: load of O(n) to go across router
+- sol: w/ prob 1/ni (ni = size of subnet) choose node outside subnet
+- time to infect everyone: O(logn) + O(1) + O(log n)
+
+### Membership
+
+Problem solved by a membership protocol
+
+- gossip, overlay, DHT's
+- maintain join, leave, dissemination and failure detection
+
+Desirable properties of failure detectors
+
+- completeness: each failure is detected by a non-faulty process, eventually, no time bound
+- accuracy: no false positives detected
+  - impossible over faulty network (Chandra and Toueg) equivalent to consensus
+  - real failure detectors: compl guaranteed, partial guarantee
+  - why? if mistaken, ask to leave and rejoin
+- speed:  time from failure to detection to be small
+- scale: equal load, low message load, no bottlenecks
+- all this in spite of arbitrary simultaneous failures
+
+Centralized heartbeating
+
+- heartbeat: mesg with seq nb incremented locally
+
+Ring heartbeating
+
+- undetected failures when a guy’s 2 neighbors are
+
+All-to-all hearbeating
+
+- even load
+- more false positives for a node with high-latency
+
+Gossip-style heartbeating
+
+- maintain membership lists: local tables w/ 3 cols: addr, heatbeat counter, local time
+- gossip by sending membership list
+- pb: member not going away. Sol: delete only after timeout time
+- analysis
+  - t(gossip), t(fail), t(cleanup), bandwidth
+  - t(gossip) dec → bandwidth inc
+  - 1 hearbeat takes O(log n) to propagate
+  - N simultaneous heartbeats take O(log n) to propagate if unlimited bandwidth, O(n log n) if 1 allowed at a time
+  - if T(fail), t(cleanup) inc, false positives go down
+  - tradeoff btw false positives and detection rate
+
+SWIM failure detector
+
+- the protocol
+- Time to first detection is constant
+  - prob(being pinged in T(ping)) = 1 - (1 - 1/n)^{n-1} about 1 - e^{-1}
+  - E[T] =  T(ping) / that prob
+  - can bound deterministically: go through list, permute, go through list: worst case is 2n - 1, O(log(n)) whp
+- process load is constant
+- false positive rate:
+  - tunable via k,
+  - falls exponentially as load inc
+- to use SWIM as part of a membership protocol, piggyback ping messages with membership list information
 
 [&uarr; back to the top](#schedule)
 
