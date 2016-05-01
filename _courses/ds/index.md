@@ -32,18 +32,18 @@ W 3/9   | **Exam 1** |
         | _Spring recess_ |
 M 3/21  |  Case study: [distributed file systems](#distributed-file-systems) |
 W 3/23  |  Replication: [sequential consistency](#sequential-consistency) |
-M 3/28  |  Replication: [causal, eventual consistency](#causal-and-eventual consistency) |
+M 3/28  |  Replication: [causal, eventual consistency](#causal-and-eventual-consistency) |
 W 3/30  |  Replication: [strong eventual consistency, CRDTs](#strong-eventual-consistency-and-crdts) | | [Homework 4](homework04.html) due 4/8 at 11:59pm on [Sakai](https://sakai.claremont.edu)
-M 4/4   |  Consensus: [2PC and 3PC](#2pc-and-3pc) | 8.5
+M 4/4   |  Consensus: [2PC and 3PC](#pc-and-3pc) | 8.5
 W 4/6   |  Consensus: [Paxos](#paxos) | [Paxos made simple](http://www.cs.utexas.edu/users/lorenzo/corsi/cs380d/past/03F/notes/paxos-simple.pdf) | [Project 2 part A](https://github.com/jnylam/cs189a/tree/master/project2) due 4/6 at 11:59pm on [Sakai](https://sakai.claremont.edu)
 M 4/11  |  Case study: [Chubby lock service](#the-chubby-lock-service) | [The Chubby Lock Service for Loosely-Coupled Distributed Systems](http://research.google.com/archive/chubby.html) |
-W 4/13  |  [Security](#security) | |
+W 4/13  |  [Security and cryptography](#security-and-cryptography) |  9.1, 9.2, 9.4.1 |
 M 4/18  |  [MapReduce, Pregel](#mapreduce-and-pregel) | |
 W 4/20  |  Case study: [Bitcoin](#bitcoin) | [Michael Nielsen's blog post](http://www.michaelnielsen.org/ddi/how-the-bitcoin-protocol-actually-works/)| [Homework 5](homework05.html) due 4/20 at 11:59pm on [Sakai](https://sakai.claremont.edu)
-M 4/25  |  [Multicast and membership](#multicast-and-membership) |
-W 4/27  |  | | [Project 2 part B](https://github.com/jnylam/cs189a/tree/master/project2) due 4/27 at 11:59pm on [Sakai](https://sakai.claremont.edu)<br />[Homework 6](homework06.html) due 4/29 at 11:59pm on [Sakai](https://sakai.claremont.edu)
-M 5/2   | **Exam 2** |
-W 5/4   | **Presentations** |
+M 4/25  |  [Multicast and membership](#multicast-and-membership) | 4.5.2., 8.2.4
+W 4/27  |  [Distributed snapshots](#distributed-snapshots)| [An introduction to snapshot algorithms in distributed computing](http://iopscience.iop.org/article/10.1088/0967-1846/2/4/005/pdf)| [Project 2 part B](https://github.com/jnylam/cs189a/tree/master/project2) due 4/27 at 11:59pm on [Sakai](https://sakai.claremont.edu)<br />[Homework 6](homework06.html) due 4/29 at 11:59pm on [Sakai](https://sakai.claremont.edu)
+M 5/2   | **Presentations** | |
+W 5/4   | **Presentations** | | **Exam 2** due 5/5 at 11:59pm on Sakai
         | _Finals week: no meeting_ |
 
 <!--
@@ -778,7 +778,6 @@ Stable hashing
 
 # Error detection and correction
 
-
 - last time: used hash functions to design load balancers
 - today: other use for hash functions: fault tolerance
 
@@ -1011,11 +1010,116 @@ Solution 2: write-ahead logging
 
 # Distributed file systems
 
+Goal: have a consistent namespace for files across computer and let authorized users access files on any computer
+
+Interface
+
+- file operations: open, read, write, close
+- directory operations: create/rename/delete file, make/rename/delete directory
+
+Other goals: interface, fault tolerance, scalability, concurrency, security
+
+Design approach
+
+- prioritized list of goals
+- workload-oriented
+- NFS/GFS: user-oriented workload
+  - privately owned files
+  - low concurrency
+  - sequential access is common
+  - more reads than writes
+- GFS: big programs, big data
+
+Naive design
+
+- use RPC for every operation to server
+- same behavior as if program was running on the same machine
+- but client latency, server overload
+- solution: caching data and level of indirection
+- what to cache? how to handle consistency?
+
+Sun NFS
+
+- cache file block, directory metadata in RAM on clients and servers
+- advantage: no network traffic if open/read/write/close done locally
+- failures: server crashes, lost messages, client crashes
+- flush on close: close does not return until bytes safely stored
+- weak consistency: flush on close + periodically check updates
+- system can be inconsistent for a few seconds
+- design choices: client can choose close-to-open consistency
+- guarantee that when a file is closed, subsequent opens will see the change
+- client flushes all cached changes to server when it closes the file, as opposed to time-bounded consistency
+- requires hefty server resources to scale, sensitive to network latency
+
+AFS
+
+- more agressive caching, caching to disk
+- prefetching, ie whole file, faster for subsequent operations
+- close-to-open consistency
+- cache invalidation callbacks: clients register with server
+
+GFS
+
+- big data workload: huge files, mostly append, high concurrency, huge bandwidth, design for failures (failure is the norm rather the exception)
+- applications: search, ads, web analytics, Map-Reduce
+- interface: non-POSIX, append (atomicity matters, order does not)
+- architecture: master (metadata, monitoring of servers), many chunk (data) servers (store chunks and serve), chunks (large, ~64MB as opposed to NFS, decrease server load)
+- master stores file namespace persistently, chunk and location of chunk replicas non-persistently for scalability, can be recovered by polling chunk servers on startup, monitors chunk servers with heartbeats
+- consistency: designing for throughput, not semantics. Use primary replica to define update order. An any time, need exactly 1 primary per chunk. Use leases to select primary. Leases can be granted by master, refreshed, and given to another replica. => at least once atomically.
+- read process
+- write process
+
 [&uarr; back to the top](#schedule)
 
 ---
 
 # Sequential consistency
+
+Recall
+
+- NFS: close-to-open semantics to notify
+- AFS: close-to-open semantics with periodic refresh
+- GFS: atomic at-least-once record append
+
+Tradeoff
+
+- concurrency/performance/scalability
+- semantics/programming friendliness
+
+Consistency
+
+- informally: meaning of concurrent read/write operations on shared, possibly replicated, state
+- formally: set of allowed histories of oeprations = runtime order
+- if program goes through the set of allowed operations, execution said to be consistent
+- real systems should satisfy "intuitively correct" a consistency model to have predictable programs.
+
+Strict consistency
+
+- example (we expect the behavior to be predictable)
+- timestamps with global clock
+- rule: a read to a particular location always returns the value of the last write to that location
+- captures the notion of a register
+- in a distributed system, may be realized via distributed mutual exclusion, but is a serious bottleneck
+
+Sequential consistency
+
+- rule: there exists a total ordering of operations such that
+  - each machine's operations appear in order
+  - all machines see the results according to the total ordering
+- in other words, the history can be explained by a sequential ordering of the operations
+- example
+- comes up when an update is only seen after an arbitrary delay, but order of operations is observered to be the same at all replicas
+- example: Facebook updates migh be received at different times by different people, depending on their location, as updates must make it through several layers of caches
+- forgoing of the notion of real time
+- one way to to achieve sequential consistency in a distributed system: each processor sends update requests in order of specified by the program and blocks until update takes effect. A centralized service manages the shared location, applying update requests in FIFO order.
+
+The CAP theorem
+
+- statement: "given consistency, availability, partition tolerance, any given system may guarantee at most two of the properties"
+- consistency: linearizable register: each operation appears to take effect atomically at some point between its invocation and return
+- availability: every request to a non-failing node must complete successfully, nodes cannot defer response until after network heals
+- partition tolerance: network partitions can happen, the system must keep working under these conditions
+
 
 [&uarr; back to the top](#schedule)
 
@@ -1023,11 +1127,139 @@ Solution 2: write-ahead logging
 
 # Causal and eventual consistency
 
+Strong/strict consistency: after update completes, any subsequent access returns updated value. Achieved through mutual exclusion.
+
+Weak consistency: system not guaranteed to return updated value after update is complete. A number of conditions must be satisfied.
+
+Eventual consistency: specific form of weak consistency. Guarantee that if no new updates made to object, eventually all accesses will return last updated value. If no failure occurs, max size of inconsistency window is a function of communication delays, load on system and number of replicas.
+
+DNS
+
+* classic example of eventual consistency.
+* single naming authority per domain
+* only on e allowed to update (no write-write conflict)
+* update according to a configured pattern
+* time-controlled caches
+
+Causal consistency: operations from the same process with independent causal chains can execute in relative order. Example: comments from a blog post.
+
+Read-your-writes: after a process has updated a value always sees the new value, not any older ones.
+
+Session consistency: process accesses storage system in context of a session.
+
+Monotonic write: serialized writes by the same process, otherwise hard to program
+
+Monotonic read: if a process sees a particular value for an object subsequent access will not return a previous value.
+
+Sequential vs eventual
+
+* sequential: pessimistic concurrency handling. Decides on update order as they are executed.
+* eventual: optimistic concurrency handling. Updates happen, worry about order later. May raise conflict. Example: Git, file synchronization acroos devices.
+
 [&uarr; back to the top](#schedule)
 
 ---
 
 # Strong eventual consistency and CRDTs
+
+What are CRDTs?
+
+- update operations are commutative, associatives and idempotent
+- consequence: trivial to handle duplicate and dropped messages
+
+CRDT types
+
+- flags ie booleans
+- counters: G-, PN-
+- sets: G-, 2P-, OR
+- registers: single value, last-write wins
+- maps: key with CRDT value, CRDT maps can be nested
+- graphs: directed, monotone DAG, edit graphs
+- documents: eg treedoc, for collaborative editing, large storage requirement (10x)
+
+### G-counter
+
+Example
+
+Details
+
+- G-counter is an increment-only counter
+- PN-counter: use two G-counters to implement general counter
+- implement as map
+- merge operation takes the "max"
+
+### G-set
+
+Example
+
+Limitations
+
+- G-set can only add, not remove
+- 2P-set, analog of PN-counter, can only add and remove once, cannot be added again later
+- alternative: use "tombstones" to add/remove/readd to a set multiple times.
+
+### Strong eventual consistency
+
+Strong consistency
+
+- determine order as updates occur (linearizable, sequential consistency)
+- thus avoids conflict
+- consensus (next time) is a synchronization bottleneck and does not scale up very well as need a majority of nodes to be up
+
+Eventual consistency
+
+- locally update and propagate changes
+- conflicts occur: reconciliation/arbitration can be complicated
+- consensus moved to background, so can still make progress if network is partitioned
+
+Strong eventual consistency
+
+- locally update and propagte changes
+- no conflicts: unique/deterministic outcome of concurrent updates
+- no consensus
+- can withstand arbitrary number of failures (need at least one node up)
+- solves CAP theorem for a restricted class of applications
+
+Formal definition of eventual consistency
+
+- eventual delivery: any operation executed at a correct node is eventually executed  at all replicas
+- termination: all update executions will eventually terminate
+- convergence: all replicas will eventually reach the same state
+- note: def does not preclude the state of replicas from diverging, rolling back, reconciling, diverginging again, and son on.
+
+Formal definition of strong eventual consistency
+
+- redefine convergence: as soon as all updates are received at a node, reaches the same state as others
+
+Result
+
+- if updates are state-based:
+  - send state to 1 replica
+  - update is local to the source node (do some computation)
+  - need to specify how to do updates and merges
+- the data type forms a semi-lattice (structure in which the notion of maximum of 2 elements makes sense),
+- updates are always increasing, and
+- merges are resolved by taking the maximum
+- then replicas converge to the maximum of the last two values
+
+(An analogous result exists for operation-based updates.)
+
+### Observed-remove set
+
+- set semantics: add and remove
+- multiple valid ways of resolving conflicts (depending on what makes sense for a particular appliation)
+  - user decides (error state)
+  - timestamp (last write wins)
+  - add wins (most intuitive semantics, eg cart)
+  - remove wins
+
+Example of observed-remove set with add-wins rule (Idea is to internally keep track of multiple copies of a element added at different nodes)
+
+### Summary
+
+- need to read research literature to use the libraries
+- heavily test implementation: 100% code coverage does not mean you've tested all possible interleavings
+- restricted set of operations, may need to make the application or problem fit the tool
 
 [&uarr; back to the top](#schedule)
 
@@ -1035,11 +1267,93 @@ Solution 2: write-ahead logging
 
 # 2PC and 3PC
 
+Consensus problem
+
+- safety, ie correctness
+- liveness, ie must eventually reach a decision, even in the presence of failures
+- failure models
+
+Applications
+
+- strong consistency
+- atomicity
+- synchronization
+- leader election
+- distributed mutual exclusion
+
+Timeline
+
+- 1979: 2PC, Gray
+- 1981: 3PC, Stonebraker
+- 1985: Impossibility result, Fischer, Lynch, and Paterson
+- 1998: Paxos, Lamport
+
+### 2PC
+
+The protocol (recall from previous discussion) and recovery mechanism
+
+2PC is a blocking protocol
+
+- example with 2-node failure
+- example with single node failure
+
+2PC is safe but not live
+
+### 3PC
+
+Idea: 2PC's problem stems from allowing commits without all parties knowing of the decision. Separate these into two phases.
+
+The protocol and recovery mechanism
+
+3PC solves the blocking problem
+
+- go over 2PC blocking example
+
+3PC is not safe
+
+- example handling time outs and network partitions
+
+### FTL impossibility result
+
+- statement: "It is impossible for a set of processors in a asynchronous system to agree on a binary value, even if only a single processor is subject to an unannounced failure."
+- 2PC and 3PC in relation to impossibility result
+
 [&uarr; back to the top](#schedule)
 
 ---
 
 # Paxos
+
+Problem of consensus
+
+- safety: only one of the proposed values may be chosen, only a single value may be chosen
+- liveness
+
+Failure model
+
+- communication: messages
+- nodes: arbitrary speed, fail-stop or fail-recover
+- network: asynchronous, messages may be duplicated or lost but not corrupted
+
+Idea of Paxos
+
+- agreement by majority
+- why this is a good idea
+
+Algorithm
+
+Details
+
+- set of proposed acceptors and those who accept dont have to be the same
+- protocol requires unique ID to be issued for each proposal in the system (not just per node)
+- optimization: when decision reached, send round of notification messages
+- scenario when a node comes back up after decision reached
+
+Discussion
+
+- protocol may fail if the majority of nodes have crashed
+- problem: algorithm may go on indefinitely with 2 proposer nodes one-upping each other and alternating the 2 phases, solution is to only allow one proposer at a time (using a leader election algorithm)
+- Paxos in relation to FTL impossibility result
 
 [&uarr; back to the top](#schedule)
 
@@ -1047,29 +1361,134 @@ Solution 2: write-ahead logging
 
 # The Chubby lock service
 
+Responsibilities of a distributed lock manager
+
+- file locking
+- coordination of disk access
+
+Chubby
+
+- coarse-grained synchronization of activities within Google's distributed systems (lock held for hours/days rather than seconds)
+- primary internal naming service
+- common rendez-vous mechanism for systems such as Map-Reduce
+- GFS, BigTable use it to select a primary from redundant replicas
+- standard repository for files that require high availability, eg accees control lists
+
+Architecture diagram
+
+Chubby cell
+
+- 5 replicas on different racks to reduce likelihood of correlated failures
+
+Electing a master
+
+- by majority
+- promise won't vote for another master
+- takes about 4-6s, 30s max
+
+Locating the master
+
+- Chubby client queries DNS for a Chubby cell
+- DNS refer client to one of the replicas
+- client queries replicas
+- replica refers client to master
+
+File system interface:
+
+- naming structure: ls/chubby-cell-name/local-chubby-cell-namespace
+- files, directories, handles
+- access control lists
+- meta data, sequence numbers
+
+Differences from UNIX file systems:
+
+- no moving to different directory (ie function not exposed)
+- no notion of directory modification time
+- no path dependent permissions semantics
+
+Files as locks
+
+- reader-writer
+- advisory rather than mandatory
+  - mandatory is more work to implement in a meaningful way: how to enforce locking a remote application resource in addition to file?
+  - advisory useful for debugging and administrative purposes
+- problem with advisory lock: race condition on the locked resource
+- solution: lock delay before reassigning lock from unresponsive nodes
+
+Events
+
+- clients can subscribe to events
+- file content changed
+- child node add/modified/deleted: useful for mirroring
+- chubby master failed over: use to notify clients to rescan data because events may be lost
+- handle becomes invalid
+
+API
+
+- open(node-name): returns a handle (all other ops use the handle)
+- close
+- get/set content
+- delete node
+- aquire/try-acquire/release lock
+- get/set/check sequence number
+- read/write/change ACL
+- events
+- lock-delay
+
+Example: electing a primary
+
+Cache (server-side)
+
+- strict consistency
+- lease-based with invalation on write
+- write-through
+
+Scaling mechanisms
+
+- more Chubby cells
+- increase Keep Alive lease time from 12s to 60s
+- client side caching
+- proxies to handle dominant (93%) traffic of Keep Alive
+- partition namespace
+
+Study of use as DNS
+
+Abusive uses
+
 [&uarr; back to the top](#schedule)
 
 ---
 
-# Security
+# Security and cryptography
 
 Internet security weaknesses
 
-Sources of the problem
-
-Focus
+- denial of service attacks
+- DNS poisoning
+- ...
 
 Secure channel
 
+- authentication
+- integrity
+- confidentiality
+- availability (won't focus on that today)
+
 Symmetric-key encryption
+
+- one-time pad
+- stream algorithms
+- block ciphers
+- achieving authentication, integrity and confidentiality using symmetric key encryption
 
 Public-key encryption
 
-KDC
+- achieving authentication, integrity and confidentiality using public key encryption
 
-PKI
+Key distribution
 
-TLS
+- key distribution centers
+- Diffie-Hellman
 
 [&uarr; back to the top](#schedule)
 
@@ -1107,7 +1526,7 @@ Implementation details
   * container = unit of computation resource = CPU core + some memory
   * 3 roles: resource manager, node manager, application manager
 
-Fault-toleranceje
+Fault-tolerance
 
 * detecting worker node failures
   * node manager reports heartbeats to resource manager
@@ -1127,7 +1546,7 @@ Graph algorithms
 * is there a path between two given nodes?
 * find clusters of connected vertices (friends)
 * PageRank
-* matching (ads, romantic partner)
+* matching (ads, online dating)
 
 Processing steps (outline)
 
@@ -1330,3 +1749,46 @@ SWIM failure detector
 [&uarr; back to the top](#schedule)
 
 ---
+
+# Distributed snapshots
+
+Applications
+
+- deadlock detection
+- failure recovery using periodic checkpoints to restore last consistent global state
+- debugging by restoring a system to a consistent global state
+
+Running example
+
+Model
+
+- no global physical clock
+- messages delivered reliably but with arbitrary delays
+- 2 events associated with every message: send and receive
+- state of sender changes on send, and state of receiver changes on receive
+
+Formal definition
+
+- nodes/processes and channels have states
+- global state: assignment of states to nodes and channels
+- global consistent state: for any message m that node i sends to node j:
+    1. if i's snapshot reflects i having sent m, then either m should be in channel i->j's snapshot or j's snapshot should reflect having received m.
+    2. if i's snapshot does not reflect i having sent m, then m must not be in i->j's snapshot nor should j's snapshot reflect having received m.
+
+Question: how can a channel's state be recorded?
+
+Chandy-Lamport algorithm for FIFO channels
+
+Example
+
+Proof of correctness of the algorithm
+
+Implementation detail: collecting a global snapshot
+
+- each node sends snapshot to initiator, or
+- snapshot information is passed downstream, piggybacking markers
+
+Lai-Yang algorithm for non-FIFO channels
+
+
+[&uarr; back to the top](#schedule)
