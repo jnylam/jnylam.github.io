@@ -36,6 +36,6 @@ M 4/18 | [Graphs](graphs.pdf) | 7.1 | <!-- Week 12 -->
 W 4/20 | Graphs | 7.2 | [Homework 11](homework11.html)
 M 4/25 | Graphs | 7.3, 7.4 <!-- Week 13 -->
 W 4/27 | [Planarity](Graphs_4.pdf) | 7.5, 7.7 | [Homework 12](homework12.html)
-M 5/2  | Graphs | 7.8 <!-- Week 14 -->
+M 5/2  | [Coloring](Graphs_5.pdf) | 7.8 <!-- Week 14 -->
 W 5/4  | Flex day |
 Th 5/12 | __Final Exam__ 2:00pm--5:00pm |
