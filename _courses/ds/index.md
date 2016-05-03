@@ -1313,7 +1313,7 @@ The protocol and recovery mechanism
 
 - example handling time outs and network partitions
 
-### FTL impossibility result
+### FLP impossibility result
 
 - statement: "It is impossible for a set of processors in a asynchronous system to agree on a binary value, even if only a single processor is subject to an unannounced failure."
 - 2PC and 3PC in relation to impossibility result
@@ -1353,7 +1353,7 @@ Discussion
 
 - protocol may fail if the majority of nodes have crashed
 - problem: algorithm may go on indefinitely with 2 proposer nodes one-upping each other and alternating the 2 phases, solution is to only allow one proposer at a time (using a leader election algorithm)
-- Paxos in relation to FTL impossibility result
+- Paxos in relation to FLP impossibility result
 
 [&uarr; back to the top](#schedule)
 
