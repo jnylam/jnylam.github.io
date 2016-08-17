@@ -54,7 +54,7 @@
             {% if node.title != null and node.courseid == page.courseid and node.navorder != 0 %}
               {% assign label = node.title %}
               {% if node.url == page.url %}
-                <li>{{ label }}</li>
+                <li><a href="{{node.url}}">{{ label }}</a></li>
               {% else %}
                 <li><a href="{{node.url}}">{{ label }}</a></li>
               {% endif %}
@@ -67,9 +67,17 @@
     {% endif %}
   </header>
 
-{% unless page.title == homepage.coursetitle %}
-  <h1 class="page-title">{{ page.title }}</h1>
-{% endunless %}
+  {% unless page.title == homepage.coursetitle or page.title == "Syllabus" %}
+    <h1 class="page-title">{{ page.title }}</h1>
+  {% endunless %}
+
+  {% if page.title == "Syllabus" %}
+  <div class="syllabus-header">
+    <h1 class="page-title">San José State University</h1>
+    <h1 class="page-title">Department of Computer Science</h1>
+    <h1 class="page-title">{{ page.coursetitleandsubtitle }}</h1>
+  </div>
+  {% endif %}
 
   {{ content }}
 </body>

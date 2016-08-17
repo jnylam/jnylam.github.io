@@ -1,6 +1,6 @@
 # Site settings
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://www.jennylam.org" # the base hostname & protocol for your site
+url: "http://www.jennylam.cc" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
