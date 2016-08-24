@@ -57,13 +57,29 @@ Upon successful completion of this course, students will be able to:
 
 ### Textbook
 
-![textbook cover](textbook.jpg){: style="width: 10rem;"}
+<!-- ![textbook cover](textbook.jpg){: style="width: 10rem;"}-->
 
-Operating Systems: Principles and Practice, 2nd Edition, Thomas Anderson, Michael Dahlin, Recursive Books, ISBN-13: 978-0985673529
+<del>Operating Systems: Principles and Practice, 2nd Edition, Thomas Anderson, Michael Dahlin, Recursive Books, ISBN-13: 978-0985673529</del>
 
-### Other technology requirements / equipment / material
+We are switching the textbook to one that is available for free.
+
+[Operating Systems: Three Easy Piecess](http://pages.cs.wisc.edu/~remzi/OSTEP/), Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau, Arpaci-Dusseau Books.
+
+### Laptop
 
 Students should bring a laptop to every lecture, with sufficient charge to last the entire lecture. The classroom has limited electrical outlets, to which access cannot be guaranteed.
+
+### iClicker/REEF polling
+
+To setup the iClicker/REEF polling software on the portable device of your choice:
+
+1. Request: on [REEF Polling by iClicker](http://www.sjsu.edu/at/ec/reef/), fill out a "Student REEF Polling Request Form".
+2. Installation: when you receive an email from an SJSU staff member regarding this request, follow the instructions to install the program.
+3. Set : the course name is "FA16-CS149-section3".
+
+## Sign up for Piazza
+
+You should have received an email to enroll, but if you haven't, you can do it [with this link](piazza.com/sjsu/fall2016/cs14903).
 
 ## Course Requirements and Assignments
 
