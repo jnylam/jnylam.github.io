@@ -61,7 +61,7 @@ To setup the iClicker/REEF polling software on the portable device of your choic
 
 ## Sign up for Piazza
 
-You should have received an email to enroll, but if you haven't, you can do it [with this link](piazza.com/sjsu/fall2016/cs146).
+[Use this link](piazza.com/sjsu/fall2016/cs146) to enroll.
 
 ## Course Requirements and Assignments
 
