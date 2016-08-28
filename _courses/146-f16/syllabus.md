@@ -47,9 +47,21 @@ ISBN-13: 978-0262033848
 MIT Press, 2009  
 [Errata (bug reports)](http://www.cs.dartmouth.edu/~thc/clrs-bugs/bugs-3e.php) at http://www.cs.dartmouth.edu/~thc/clrs-bugs/bugs-3e.php
 
-### Other technology requirements / equipment / material
+### Programming environment
 
 Java compiler (version 8)
+
+### iClicker/REEF polling
+
+To setup the iClicker/REEF polling software on the portable device of your choice:
+
+1. Request: on [REEF Polling by iClicker](http://www.sjsu.edu/at/ec/reef/), fill out a "Student REEF Polling Request Form".
+2. Installation: when you receive an email from an SJSU staff member regarding this request, follow the instructions to install the program.
+3. Setup: the course name is __FA16-CS146-section7__ or __FA16-CS146-section8__, depending on your section.
+
+## Sign up for Piazza
+
+You should have received an email to enroll, but if you haven't, you can do it [with this link](piazza.com/sjsu/fall2016/cs146).
 
 ## Course Requirements and Assignments
 

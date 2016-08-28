@@ -63,7 +63,7 @@ Upon successful completion of this course, students will be able to:
 
 We are switching the textbook to one that is available for free.
 
-[Operating Systems: Three Easy Piecess](http://pages.cs.wisc.edu/~remzi/OSTEP/), Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau, Arpaci-Dusseau Books.
+[Operating Systems: Three Easy Pieces](http://pages.cs.wisc.edu/~remzi/OSTEP/), Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau, Arpaci-Dusseau Books.
 
 ### Laptop
 
@@ -75,7 +75,7 @@ To setup the iClicker/REEF polling software on the portable device of your choic
 
 1. Request: on [REEF Polling by iClicker](http://www.sjsu.edu/at/ec/reef/), fill out a "Student REEF Polling Request Form".
 2. Installation: when you receive an email from an SJSU staff member regarding this request, follow the instructions to install the program.
-3. Set : the course name is "FA16-CS149-section3".
+3. Setup: the course name is __FA16-CS149-section3__.
 
 ## Sign up for Piazza
 
