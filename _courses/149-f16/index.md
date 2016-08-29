@@ -12,8 +12,8 @@ This schedule is tentative and subject to change during the semester. Changes wi
 Week|Date|Topic|Reading
 ----|-------|-------|---
 1 | W 8/24 | [Introduction](#introduction) | [Chapter 2](http://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf)
-2 | M 8/29 | Kernel abstraction
-2 | W 8/31 | Implementing system calls
+2 | M 8/29 | [OS structure and services](structure and services.pdf) | . [Interface stability](http://www.cs.pomona.edu/classes/cs121/supp/stability.html)<br> . [Tanenbaum-Torvalds debate](https://en.wikipedia.org/wiki/Tanenbaum%E2%80%93Torvalds_debate)<br> . [Wobbly windows!](https://www.youtube.com/watch?v=nbCg9_YgKgM)
+2 | W 8/31 | Processes | . [Chapter 3](http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Book/dialogue-virtualization.pdf)<br> . [Chapter 4](http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Book/cpu-intro.pdf)<br> . [Chapter 5](http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Book/cpu-api.pdf)<br> . [Chapter 6](http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Book/cpu-mechanisms.pdf)<br>
 3 | M 9/5 | _Labor day_
 3 | W 9/7 | Concurrency and threads
 4 | M 9/12 | Locks
