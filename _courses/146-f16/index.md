@@ -12,9 +12,9 @@ This schedule is tentative and subject to change during the semester. Changes wi
 Lecture|Date|Topic|Reading
 -------|----|-----|-------
 1 | W 8/24 | [Introduction](introduction.html) | 1.1, 1.2 (skim) <br> 3.1 (O and &Theta;)
-2 | M 8/29 | Recursion: divide-and conquer | Ch 2
+2 | M 8/29 | [Recursion: simplify-and-delegate](simplify.html) | Ch 2
 3 | W 8/31 | Recursion: divide-and-conquer
- | M 9/5 | _Labor day_
+ | M 9/5 | _Labor day_ | [Homework 1](homework01.html) due Tuesday 9/6 at 11:59 pm
 4 | W 9/7 | Recursion: backtracking
 5 | M 9/12 | Recursion: dynamic programming
 6 | W 9/14 | Recursion: dynamic programming
