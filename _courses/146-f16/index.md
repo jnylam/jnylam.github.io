@@ -9,11 +9,11 @@ navorder: 2
 
 This schedule is tentative and subject to change during the semester. Changes will be reflected on this page as well as announced during lecture. Students should consult this schedule regularly for the most up-to-date information.
 
-Lecture|Date|Topic|Reading
+Lecture|Date|Topic|Reading/homework
 -------|----|-----|-------
 1 | W 8/24 | [Introduction](introduction.html)<br>[Profile and assessment quiz](quiz.pdf) | 1.1, 1.2 (skim) <br> 3.1 (O and &Theta;)
 2 | M 8/29 | [Recursion: simplify-and-delegate](simplify.html) | Ch 2
-3 | W 8/31 | Recursion: divide-and-conquer
+3 | W 8/31 | Recursion: divide-and-conquer | 4.1
  | M 9/5 | _Labor day_ | [Homework 1](homework01.html) due Tuesday 9/6 at 11:59 pm
 4 | W 9/7 | Recursion: backtracking
 5 | M 9/12 | Recursion: dynamic programming
