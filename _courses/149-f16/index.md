@@ -13,26 +13,26 @@ Week|Date|Topic|Reading
 ----|-------|-------|---
 1 | W 8/24 | [Introduction](#introduction) | [Chapter 2](http://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf)
 2 | M 8/29 | [OS structure and services](structure and services.pdf) | . [Interface stability](http://www.cs.pomona.edu/classes/cs121/supp/stability.html)<br> . [Tanenbaum-Torvalds debate](https://en.wikipedia.org/wiki/Tanenbaum%E2%80%93Torvalds_debate)<br> . [Wobbly windows!](https://www.youtube.com/watch?v=nbCg9_YgKgM)
-2 | W 8/31 | Processes | . [Chapter 3](http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Book/dialogue-virtualization.pdf)<br> . [Chapter 4](http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Book/cpu-intro.pdf)<br> . [Chapter 5](http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Book/cpu-api.pdf)<br> . [Chapter 6](http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Book/cpu-mechanisms.pdf)<br>
-3 | M 9/5 | _Labor day_
-3 | W 9/7 | Concurrency and threads
-4 | M 9/12 | Locks
-4 | W 9/14 | Conditional variables
-5 | M 9/19 | Semaphores
-5 | W 9/21 | Deadlocks
-6 | M 9/26 | CPU scheduling
-6 | W 9/28 | Queuing theory
-7 | M 10/3 | flex
+2 | W 8/31 | [Processes](processes.pdf) | . [Chapter 3](http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Book/dialogue-virtualization.pdf)<br> . [Chapter 4](http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Book/cpu-intro.pdf)<br> . [Chapter 5](http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Book/cpu-api.pdf)<br> . [Chapter 6](http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Book/cpu-mechanisms.pdf)<br>
+3 | M 9/5 | _Labor day_ | 
+3 | W 9/7 | Scheduling
+4 | M 9/12 | Memory management
+4 | W 9/14 | Paging
+5 | M 9/19 | Paging
+5 | W 9/21 | Analysis of paging
+6 | M 9/26 | Threads
+6 | W 9/28 | Locks
+7 | M 10/3 | Locks
 7 | W 10/5 | __Exam 1__
-8 | M 10/10 | Memory protection/translation
-8 | W 10/12 | Memory protection/translation
-9 | M 10/17 | Cache replacement
-9 | W 10/19 | Introduction to I/O
-10 | M 10/24 | File layout
+8 | M 10/10 | Deadlocks
+8 | W 10/12 | Condition variables
+9 | M 10/17 | Performance metrics
+9 | W 10/19 | Deadlocks
+10 | M 10/24 | I/O
 10 | W 10/26 | File systems
-11 | M 10/31 | Transactions
-11 | W 11/2 | LFS
-12 | M 11/7 | RAID
+11 | M 10/31 | File systems
+11 | W 11/2 | RAID, SSDs
+12 | M 11/7 | Logging and journaling
 12 | W 11/9 | flex
 13 | M 11/14 | __Exam 2__
 13 | W 11/16 | Communication protocols
