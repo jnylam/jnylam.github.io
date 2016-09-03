@@ -2,7 +2,7 @@
 layout: course
 courseid: 149-f16
 title: Schedule
-navorder: 2
+navorder: 1
 ---
 
 <a name="schedule"></a>
@@ -14,8 +14,8 @@ Week|Date|Topic|Reading
 1 | W 8/24 | [Introduction](#introduction) | [Chapter 2](http://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf)
 2 | M 8/29 | [OS structure and services](structure and services.pdf) | . [Interface stability](http://www.cs.pomona.edu/classes/cs121/supp/stability.html)<br> . [Tanenbaum-Torvalds debate](https://en.wikipedia.org/wiki/Tanenbaum%E2%80%93Torvalds_debate)<br> . [Wobbly windows!](https://www.youtube.com/watch?v=nbCg9_YgKgM)
 2 | W 8/31 | [Processes](processes.pdf) | . [Chapter 3](http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Book/dialogue-virtualization.pdf)<br> . [Chapter 4](http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Book/cpu-intro.pdf)<br> . [Chapter 5](http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Book/cpu-api.pdf)<br> . [Chapter 6](http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Book/cpu-mechanisms.pdf)<br>
-3 | M 9/5 | _Labor day_ | 
-3 | W 9/7 | Scheduling
+3 | M 9/5 | _Labor day_ |
+3 | W 9/7 | Scheduling | [Homework 1](homework01.html) due Su 9/11 at 11:59p
 4 | M 9/12 | Memory management
 4 | W 9/14 | Paging
 5 | M 9/19 | Paging

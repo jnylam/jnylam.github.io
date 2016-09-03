@@ -5,7 +5,7 @@ coursesubtitle: San José State University &mdash; Computer Science Department 
 coursetitleandsubtitle:  CS 149, Operating systems, section 3, Fall 2016
 courseid: 149-f16
 title: Syllabus
-navorder: 1
+navorder: 2
 ---
 
 ## Course and Contact Information
