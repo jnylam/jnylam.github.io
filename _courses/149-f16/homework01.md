@@ -82,7 +82,7 @@ View the file on your terminal
 cat forktest.out
 ```
 
-__Question 2.__ What was the output of the file? Which line was run by which PID? If the output is different from the one given for `p1.c` in [Chapter 5](http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-api.pdf), can you explaining what is happening?
+__Question 2.__ What was the output of the file? Which line was run by which PID? With the help of the discussion on `p1.c` in [Chapter 5](http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-api.pdf), and even if your output is different, give an explanation of what happened which produced each line of the output.
 
 ## Part 3: processes on Linux
 
@@ -119,7 +119,8 @@ __Question 3.__ How many child processes were created by the current one? (Hint:
 
 ### Step 5
 
-Kill your terminal
+In the terminal, type
+
 ```
 kill PID
 ```
@@ -145,7 +146,7 @@ In the terminal, type `whoami`. Take a screenshot of your entire screen, capturi
 
 ## Deliverables
 
-Use a word processor to include your answers to these 8 questions and your screenshot. Include your name and the words "Homework 1" at the beginning. Export your document to a single PDF file and submit it on Canvas. The due date is listed in the schedule.
+Use a word processor to include your answers to these 8 questions and your screenshot. Include your name, the class and section, and the name of this assignment at the beginning of your document. Export your document to a single PDF file and submit it on Canvas. The due date is listed in the schedule.
 
 ## Rubric
 
