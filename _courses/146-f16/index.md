@@ -15,8 +15,8 @@ Lecture|Date|Topic|Reading/homework
 2 | M 8/29 | Recursion: simplify-and-delegate | Ch 2
 3 | W 8/31 | Recursion: divide-and-conquer | 4.1
  | M 9/5 | _Labor day_ | [Homework 1](homework01.html) due Tuesday 9/6 at 11:59 pm
-4 | W 9/7 | Recursion: backtracking
-5 | M 9/12 | Recursion: dynamic programming
+4 | W 9/7 | Recursion: divide-and-conquer | 4.3, 33.4
+5 | M 9/12 | Recursion: backtracking
 6 | W 9/14 | Recursion: dynamic programming
 7 | M 9/19 | Data structures: stacks and finding the convex hull
 8 | W 9/21 | Data structures: priority queues, heaps, selection and heapsort
