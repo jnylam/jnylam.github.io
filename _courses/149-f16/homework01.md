@@ -29,7 +29,7 @@ In Linux, fire up a terminal.
 ### Step 2
 Go to your home directory, create a directory called `forktest` and go in that new directory.
 
-```ruby?line_numbers=false
+```
 cd ~
 mkdir forktest
 cd forktest
@@ -63,9 +63,10 @@ Note: `gcc` is the Gnu Compiler Collection. By typing `./forktest`, the user ind
 Run it again, and this time, save the output of the run to a file.
 
 ```
-./fortest.c > forktest.out
+./forktest > forktest.out
 ```
 
+(edit: the command above used to have a typo and is now fixed.)
 How many lines are in the file?
 
 ```
