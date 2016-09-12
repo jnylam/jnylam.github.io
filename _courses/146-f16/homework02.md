@@ -96,6 +96,26 @@ __g)__ $$T(n) = T(n-1) + n^c$$, where $$c\geq 1$$ is a constant
 
 __h)__ $$T(n) = T(n-1) + c^n$$, where $$c > 1$$ is a constant
 
+__Example:__ the recurrence relation for [Karatsuba's multiplication algorithm](https://en.wikipedia.org/wiki/Karatsuba_algorithm) is $$T(n) = 3 T(n/2) + cn$$, where $$c$$ is a constant (around 5).
+
+To solve it, we argue the following:
+
+* there are $$\log n$$ (base 2) levels of recursion because the input size is halved every level down.
+* at level $$i$$: each recursive call (or tree node) has an input of size $$n/2^i$$, which means $$cn/2^i$$ work per node. There are $$3^i$$ nodes at this level because each node branches 3-ways and we're at level $$i$$. So the total work at this level is $$cn(3/2)^i$$.
+* if we sum up the work done at levels 0 to $$\log n$$, we get
+
+$$\displaystyle T(n) = \sum_{i = 0}^{\log n} cn\left(\frac{3}{2}\right)^i$$.
+
+This is a geometric sum with base $$a = 3/2$$, so applying the formula for it, we see that it's  equal to
+
+$$\displaystyle cn \frac{(3/2)^{\log_2 n + 1} - 1}{3/2 - 1}$$
+
+which is $$\Theta(n (3/2)^{\log_2 n})$$. We can further simplify that since
+
+$$\displaystyle n (3/2)^{\log_2 n} = n \frac{3^{\log_2 n}}{2^{\log_2 n}} = n \frac{n^{\log_2 3}}{n}$$.
+
+(Note: we used the same identity as in problem 3.) So $$T(n)$$ is $$\Theta(n^{\log_2 3})$$.
+
 ### Problem 11
 
 Suppose we change the definition of the maximum-subarray problem to allow the result to be an empty subarray, where the sum of the values of an empty subarray is 0. How would you change any of the algorithms that do not allow empty subarrays to permit an empty subarray to be the result?
@@ -135,4 +155,4 @@ This assignment is worth 20 points:
 * 8 points for correctness on 4 problems, randomly chosen by the grader.
 * 2 points for presentation and legibility.
 
-Bonus: 1 point for the extra credit problem (must be turned in with the rest of this assignment).
+Bonus: 0.5 point for all 3 extra credit parts of problem 8, 1 point for problem 14 and 1 point for problem 15 (must be correct and turned in with the rest of this assignment).
