@@ -16,7 +16,7 @@ Week|Date|Topic|Reading
 2 | W 8/31 | [Processes](processes.pdf) | . [Chapter 3](http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Book/dialogue-virtualization.pdf)<br> . [Chapter 4](http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Book/cpu-intro.pdf)<br> . [Chapter 5](http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Book/cpu-api.pdf)<br> . [Chapter 6](http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Book/cpu-mechanisms.pdf)<br>
 3 | M 9/5 | _Labor day_ |
 3 | W 9/7 | [Scheduling](scheduling.pdf) | . [Chapter 7](http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf)<br> . [Chapter 8](http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-mlfq.pdf)<br>[Homework 1](homework01.html) due Su 9/11 at 11:59p
-4 | M 9/12 | [Scheduling 2](sheduling2.pdf)
+4 | M 9/12 | [Scheduling 2](scheduling2.pdf)
 4 | W 9/14 | Memory management
 5 | M 9/19 | Paging
 5 | W 9/21 | Paging
