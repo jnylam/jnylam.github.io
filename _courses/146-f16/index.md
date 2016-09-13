@@ -13,17 +13,17 @@ Lecture|Date|Topic|Reading/homework
 -------|----|-----|-------
 1 | W 8/24 | [Introduction](introduction.html)<br>[Profile and assessment quiz](quiz.pdf) | 1.1, 1.2 (skim) <br> 3.1 (O and &Theta;)
 2 | M 8/29 | Recursion: simplify-and-delegate | Ch 2
-3 | W 8/31 | Recursion: mergesort, Towers of Hanoi<br> Review: induction | 4.1
+3 | W 8/31 | Recursion:  Towers of Hanoi, mergesort<br> Review: summation notation, induction | 4.1
  | M 9/5 | _Labor day_ | [Homework 1](homework01.html) due <del>Tuesday 9/6</del><br> <ins>Friday 9/9</ins> at 11:59 pm
 4 | W 9/7 | Recursion: recurrence equations<br> Review: logarithms, O-notation | 4.3
-5 | M 9/12 | Recursion: divide-and-conquer<br> Review: worse case analysis | 33.4
-6 | W 9/14 | Recursion: dynamic programming | [Homework 2](homework02.html) due Friday 9/16 at 11:59 pm
-7 | M 9/19 | Data structures: stacks and finding the convex hull
-8 | W 9/21 | Data structures: priority queues, heaps, selection and heapsort
-9 | M 9/26 | Data structures: dictionaries, BSTs
-10 | W 9/28 | Data structures: red-black trees
+5 | M 9/12 | Recursion: divide-and-conquer<br> Review: worse case time complexity | 33.4
+6 | W 9/14 | Recursion: backtracking | [Erickson notes](http://jeffe.cs.illinois.edu/teaching/algorithms/notes/03-backtracking.pdf) (just 3.1, 3.3, 3.6)<br>[Homework 2](homework02.html) due Fri 9/16 11:59pm
+7 | M 9/19 | Recursion: dynamic programming | 15.1
+8 | W 9/21 | Data structures: stacks and finding the convex hull
+9 | M 9/26 | Data structures: priority queues, heaps, selection and heapsort
+10 | W 9/28 | Data structures: dictionaries, BSTs
 11 | M 10/3 | __Exam 1__
-12 | W 10/5 | Randomization: hashing
+12 | W 10/5 | Data structures: red-black trees
 13 | M 10/10 | Randomization: hashing
 14 | W 10/12 | Randomization: randomized quicksort
 15 | M 10/17 | Randomization: treaps, skiplists
