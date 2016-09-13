@@ -8,6 +8,22 @@ navorder: 0
 
 __Note:__ This assignment is entirely written. There are two parts to this assignment, which you can work on both parts in parallel. Some of the problems in part 2 can be challenging, so you should start thinking about them even before you are done solving part 1.
 
+## Submission
+
+The instructions are the same as for the written portion of the last assignment.
+
+Solutions should be turned in on Canvas as a __single PDF file__. Here are some options for how to do this:
+
+You have the option of handwriting your solutions on paper, scanning them, and converting them to PDF. Please do not send the images.
+
+You also have the option of typing your solutions up in your favorite word processor. Export or print your document as a PDF file and submit that. Please do not a submit .docx file.
+
+Finally, you have the option of preparing a professional-looking document using LaTeX. This is what authors use to write textbooks and research papers. If you choose this option, here are some pointers to get you started.
+
+* [Getting LaTeX](https://www.latex-project.org/get/)
+* [LaTeX homework template](http://www.jennylam.cc/assets/template.zip): this is a good place to start learning LaTeX. Feel free to modify this document as you need.
+* [Any of the many good LaTeX tutorials/cheatsheets/beginner's guides online](https://lmddgtfy.net/?q=Latex%20quickstart).
+
 ## Part 1: math review
 
 ### Problem 1
@@ -133,7 +149,7 @@ def f(n):
         f(n/2)
 ```
 
-#### Problem 13
+### Problem 13
 
 You are given an array of $$n$$ elements, and you notice that some of the elements are duplicates; that is, they appear more than once in the array. Show how to remove all duplicates from the array in time $$O(n \log n)$$.
 

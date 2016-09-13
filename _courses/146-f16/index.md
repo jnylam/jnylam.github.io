@@ -13,10 +13,10 @@ Lecture|Date|Topic|Reading/homework
 -------|----|-----|-------
 1 | W 8/24 | [Introduction](introduction.html)<br>[Profile and assessment quiz](quiz.pdf) | 1.1, 1.2 (skim) <br> 3.1 (O and &Theta;)
 2 | M 8/29 | Recursion: simplify-and-delegate | Ch 2
-3 | W 8/31 | Recursion: divide-and-conquer<br> Review: induction | 4.1
+3 | W 8/31 | Recursion: mergesort, Towers of Hanoi<br> Review: induction | 4.1
  | M 9/5 | _Labor day_ | [Homework 1](homework01.html) due <del>Tuesday 9/6</del><br> <ins>Friday 9/9</ins> at 11:59 pm
 4 | W 9/7 | Recursion: recurrence equations<br> Review: logarithms, O-notation | 4.3
-5 | M 9/12 | Recursion: divide-and-conquer | 33.4
+5 | M 9/12 | Recursion: divide-and-conquer<br> Review: worse case analysis | 33.4
 6 | W 9/14 | Recursion: dynamic programming | [Homework 2](homework02.html) due Friday 9/16 at 11:59 pm
 7 | M 9/19 | Data structures: stacks and finding the convex hull
 8 | W 9/21 | Data structures: priority queues, heaps, selection and heapsort
