@@ -15,25 +15,25 @@ Week|Date|Topic|Reading
 2 | M 8/29 | [OS structure and services](structure and services.pdf) | . [Interface stability](http://www.cs.pomona.edu/classes/cs121/supp/stability.html)<br> . [Tanenbaum-Torvalds debate](https://en.wikipedia.org/wiki/Tanenbaum%E2%80%93Torvalds_debate)<br> . [Wobbly windows!](https://www.youtube.com/watch?v=nbCg9_YgKgM)
 2 | W 8/31 | [Processes](processes.pdf) | . [Chapter 3](http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Book/dialogue-virtualization.pdf)<br> . [Chapter 4](http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Book/cpu-intro.pdf)<br> . [Chapter 5](http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Book/cpu-api.pdf)<br> . [Chapter 6](http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Book/cpu-mechanisms.pdf)<br>
 3 | M 9/5 | _Labor day_ |
-3 | W 9/7 | [Scheduling](scheduling.pdf) | . [Chapter 7](http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf)<br> . [Chapter 8](http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-mlfq.pdf)<br>[Homework 1](homework01.html) due Su 9/11 at 11:59p
-4 | M 9/12 | [Scheduling 2](scheduling2.pdf)
-4 | W 9/14 | Memory management
-5 | M 9/19 | Paging
+3 | W 9/7 | [Scheduling: basics](scheduling.pdf) | . [Chapter 7](http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf)<br> . [Chapter 8](http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-mlfq.pdf)<br>[Homework 1](homework01.html) due Su 9/11 at 11:59p
+4 | M 9/12 | [Scheduling: queuing theory](scheduling2.pdf)
+4 | W 9/14 | [Scheduling: trending topics](scheduling3.pdf) [[keynote](scheduling3.key)]
+5 | M 9/19 | Memory management
 5 | W 9/21 | Paging
-6 | M 9/26 | Analysis of paging
-6 | W 9/28 | Threads
-7 | M 10/3 | Locks
+6 | M 9/26 | Paging
+6 | W 9/28 | Analysis of paging
+7 | M 10/3 | Threads
 7 | W 10/5 | __Exam 1__
 8 | M 10/10 | Locks
-8 | W 10/12 | Deadlocks
-9 | M 10/17 | Condition variables
-9 | W 10/19 | Performance metrics
-10 | M 10/24 | I/O
-10 | W 10/26 | File systems
+8 | W 10/12 | Locks
+9 | M 10/17 | Deadlocks
+9 | W 10/19 | Condition variables
+10 | M 10/24 | Performance metrics
+10 | W 10/26 | I/O
 11 | M 10/31 | File systems
-11 | W 11/2 | RAID, SSDs
-12 | M 11/7 | Logging and journaling
-12 | W 11/9 | flex
+11 | W 11/2 | File systems
+12 | M 11/7 | RAID, SSDs
+12 | W 11/9 | Logging and journaling
 13 | M 11/14 | __Exam 2__
 13 | W 11/16 | Communication protocols
 14 | M 11/21 | Distributed systems
