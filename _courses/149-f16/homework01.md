@@ -2,7 +2,7 @@
 layout: course
 courseid: 149-f16
 title: Homework 1
-navorder: 3
+navorder: 0
 ---
 
 ## Part 1: install Linux

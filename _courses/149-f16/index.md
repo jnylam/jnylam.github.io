@@ -17,10 +17,10 @@ Week|Date|Topic|Reading
 3 | M 9/5 | _Labor day_ |
 3 | W 9/7 | [Scheduling: basics](scheduling.pdf) | . [Chapter 7](http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf)<br> . [Chapter 8](http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-mlfq.pdf)<br>[Homework 1](homework01.html) due Su 9/11 at 11:59p
 4 | M 9/12 | [Scheduling: queuing theory](scheduling2.pdf)
-4 | W 9/14 | [Scheduling: trending topics](scheduling3.pdf) [[keynote](scheduling3.key)]
-5 | M 9/19 | Memory management
-5 | W 9/21 | Paging
-6 | M 9/26 | Paging
+4 | W 9/14 | Scheduling: trending topics [[pdf](scheduling3.pdf)]  [[keynote](scheduling3.key)]
+5 | M 9/19 | Memory: address translation [[pdf](memory1.pdf)] [[keynote](memory1.key)] | . [Chapter 13](http://pages.cs.wisc.edu/~remzi/OSTEP/vm-intro.pdf)<br> . [Chapter 15](http://pages.cs.wisc.edu/~remzi/OSTEP/vm-mechanism.pdf)<br> . [Chapter 16](http://pages.cs.wisc.edu/~remzi/OSTEP/vm-segmentation.pdf)
+5 | W 9/21 | Memory: free memory management | . [Chapter 17](http://pages.cs.wisc.edu/~remzi/OSTEP/vm-freespace.pdf)<br> . [Chapter 18](http://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf)<br> . [Chapter 19](http://pages.cs.wisc.edu/~remzi/OSTEP/vm-tlbs.pdf)<br> . [Chapter 20](http://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf)<br> [Homework 2](homework02.html) due Su 9/25 11:59p
+6 | M 9/26 | Memory: the caching problem
 6 | W 9/28 | Analysis of paging
 7 | M 10/3 | Threads
 7 | W 10/5 | __Exam 1__

@@ -3,7 +3,7 @@ layout: course
 courseid: 149-f16
 title: Homework 2
 mathjax: true
-navorder: 0
+navorder: 3
 ---
 
 The goal of this assignment is to gain a better understanding of CPU schedulers through three different types of exercises, which correspond to the three parts of this assignment.
@@ -25,7 +25,7 @@ This is the activity we started in class on 9/7. As explained in class, you will
 
 ```
 wget http://pages.cs.wisc.edu/~remzi/OSTEP/Homework/HW-CPU-Intro.tgz
-tar -xzvf HW-CPU-Intro.tgz
+tar xzvf HW-CPU-Intro.tgz
 ```
 
 * option introduced in class: on [glot.io](//glot.io), select Python, and copy-paste the code of `process-run.py`. To run the program with flag options (for example `-l 4:100,1:0`), click the little Python icon (left of the tab `main.py`) to get to the Python tab, check the box next to "Run Command" and append the flags after `python main.py`. Go back to the `main.py` tab and click "Run".
@@ -40,6 +40,7 @@ __Note:__ questions 1 through 7 are warmup to get you familiar with the various 
 
 Next run the inputs suggested by question 8 __without the flags__ `-c -p`, and try to predict the outcome of the trace. Then add `-c -p` to those inputs to check your solution.
 
+<!--
 ## Part 2: programming
 
 The goal of this project is for you to program your own process manager simulator and explore its internals.
@@ -55,9 +56,9 @@ The goal of this project is for you to program your own process manager simulato
 * Sample input
 
 ### Control flow/organization
+-->
 
-
-## Part 3: written problems
+## Part 2: written problems
 
 ### Problem 1
 
@@ -104,22 +105,55 @@ Find out by conducting a small online research. Evaluate your sources and be sur
 
 __Recommended starting point__: [Google Scholar](//scholar.google.com) -->
 
+
+### Problem 3
+
+If a queuing system with one server has a workload of 1000 tasks arriving per second, and the average number of asks waiting or getting service is 5, what is the average response time per task?
+
+### Problem 4
+
+Is it possible for a system in equilibrium to have both bounded average response time and 100% utilization? Why or why not?
+
+### Problem 5
+
+For a queuing system with random arrivals and service times, how does the variance in the service time affect the system response time. Briefly explain.
+
+### Problem 6
+
+Which provides the best average response time when there are multiple servers (e.g., supermarket cash registers): a single FIFO queue or a FIFO queue per server? Why? Assume that you cannot predict how long any customer is going to take at the server, and that once you picked a queue to wait in, you are stuck and cannot change queues.
+
+### Problem 7
+
+Devise a workload where FIFO is pessimal&mdash;it does the worst possible choices&mdash;for average response time.
+
+### Problem 8
+
+Suppose you do your homework assignments in SJF-order. After all, you feel like you are making a lot of progress! What might go wrong?
+
+### Problem 9
+
+Suppose your company is considering using one of two candidate scheduling algorithms. One is RR, with an overhead of 1% of the processing power of the system. The second is a new system that predicts the future and so it can closely approximate SJF, but it takes an overhead of 10% of the processing power of the system.
+
+Assume randomized arrival and random task lengths. Under what conditions will the simpler algorithm outperform the more complex one, and vice versa?
+
 ## Deliverables
 
-__Due date__: consult Canvas.
+__Due date__: see Canvas.
 
 __Part 1.__ you do not need to turn in anything for part 1 since you can check your own answers.
 
-__Part 2.__ a `.zip` file containing all `.java` files.
-
-__Part 3.__ a single `.pdf` file containing your solutions. As in the last assignment: use a word processor (and export as PDF) or LaTeX to write up your answers. Include your name (or both partner names if working as a group), the class and section, and the name of this assignment at the beginning of your document.
-
-If you are working with a partner, only one of you should turn in the files.
+__Part 2.__ Submit a single `.pdf` file containing your solutions. As in the last assignment: use a word processor (and export as PDF) or LaTeX to write up your answers. Include your name, the class and section, and the name of this assignment at the beginning of your document.
 
 ## Rubric
+
+This assignment is out of 10 points.
+
+* 2 points per problem for correctness on 4 randomly chosen problems.
+
+* 2 points for a professional presentation: correctly following the submission guidelines, presentation, writing in complete sentences.
 
 ## Acknowledgements
 
 Part 1 is homework from the free online textbook [Operating Systems: Three Easy Pieces](http://pages.cs.wisc.edu/~remzi/OSTEP/), Arpaci-Dusseau and Arpaci-Dusseau.
 
-Part 2 and 3 are based on a project and exercises proposed in Operating System Principles, Bic and Shaw.
+Part2 is based on exercises in Operating System Principles, Bic and Shaw and Operating Systems Principles & Practice, Anderson and Dahlin.
