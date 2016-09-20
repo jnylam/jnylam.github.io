@@ -25,31 +25,61 @@ Tip #2: it's tempting, especially when you can get immediate feedback on whether
 
 ### The actual assignment
 
-Solve all __Recursion-2__ problems.
+Solve five __Recursion-2__ problems.
 
-## Part 2 (written): review proof by induction
+## Part 2 (written): dynamic programming
 
-### Problem
+In each of the following problems, define a subproblem in such a way that the original problem can be defined in terms of the subproblem.
 
-master theorem
+__You do not need to write code or pseudocode.__ You will be asked to do that on the next assignment.
 
-divide-and-conquer: closest pairs
+### Problem 1: making change
 
-divide-and-conquer: Karatsuba
-write out the pseudcode for Karatsuba (3 multiplications) and with 4 multiplications
+You have a 20 dollar bill and want to buy &#36;17.52 worth of groceries. What is the fewest number of coins and bills the cashier can hand back to you?
 
-backtracking problems
+More generally,
 
-making change
+* the input consists of a `value`, which is the amount that needs to be made change for, and a list of `denominations = [d0, d1, d2, ..., dn]`;
+* the output is the minimum number of coins and/or bills needed to make change.
 
+In the example above, `value` is 248 cents and `denominations` is the sequence 1, 5, 10, 25, 100, 500, 1000, 2000, 10000.
 
-### Problem
+### Problem 2: longest increasing subsequence
+
+In the sequence 1, -2, 5, 3, 4, 8, 2, what is the longest increasing subsequence? (values are skippable)
+
+More generally,
+
+* the input is `sequence = [x0, x1, x2, ..., xn]`;
+* the output is the length of the longest increasing subsequence.
+
+### Problem 3: longest common subsequence
+
+What is the longest "subword" common to the words EXPONENTIAL and POLYNOMIAL?
+
+More generally,
+
+* the input is two sequences `seq1 = [x0, x1, ..., xn]` and `seq2 = [y0, y1, ..., yn]`;
+* the output is the length of the longest common subsequence.
+
+### Problem 4: maximum subarray sum (bonus)
+
+What is the contiguous subarray of [13, -3, -25, 20, 3, -16, -23, 18, 20, -7, 12, -5, -22, 15, -4, 7] that has a maximum sum?
+
+This is one of the problems for which we provided a divide-and-conquer algorithm. Try to express this problem in terms of subproblems.
+
+More generally,
+
+* the input is `seq = [x0, x1, ..., xn]`;
+* the output is the value of the largest sum of any contiguous subarray of `seq`.
 
 ### Submission
 
 Solutions should be turned in on Canvas as a __single PDF file__. Here are some options for how to do this:
 
 You have the option of handwriting your solutions on paper, scanning them, and converting them to PDF. Please do not send the images.
+
+__If you use a phone or tablet__ to scan your handwritten solutions, [here are some tips on how to this well](http://www.howtogeek.com/209951/the-best-ways-to-scan-a-document-using-your-phone-or-tablet/).
 
 You also have the option of typing your solutions up in your favorite word processor. Export or print your document as a PDF file and submit that. Please do not a submit .docx file.
 
@@ -64,11 +94,8 @@ Finally, you have the option of preparing a professional-looking document using 
 
 This assignment is worth 20 points:
 
-* 5 points for reasonable attempt on 10 programming problems from Recursion-1.
-* 5 points (0.5 per problem) for correctly solved programming problems.
-* 6 points for reasonable attempt on all 7  written problems. This means all answers must be justified. Getting the "right answer" doesn't count without a reasonable explanation as to how you got it. The solutions must be entirely written by yourself (that is, no copying).
-* 4 points for correctness on 2 of the written problems, randomly chosen by the grader.
-
-Warmup: You can submit the warmup problems for feedback as well, but those won't count towards the grade. Those are meant as easier practice problems if you are having trouble with the main problems.
-
-Bonus: 0.5 point extra credit for each additional Recursion-1 problem towards homework recorded at the end of the semester. So you can keep coming back before each exam and practice some more. The last day to get points for this will be on the day before the final exam.
+* 10 points for reasonable attempt on 5 programming problems from Recursion-2.
+* 2.5 points per written problem for a correct solution.
+* 1.5 points for a correctly submitted assignment, that is, as a single PDF file that is legible (if you choose to take pictures, make sure the text is in focus, please check on a computer screen before submitting), properly oriented, etc.
+* 1 point for presentation and neatness.
+* 1 point for the extra credit problem if solved correctly.

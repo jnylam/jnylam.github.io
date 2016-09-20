@@ -19,7 +19,7 @@ Lecture|Date|Topic|Reading/homework
 5 | M 9/12 | Recursion: divide-and-conquer<br> Review: worse case time complexity | 33.4
 6 | W 9/14 | Recursion: backtracking | [Erickson notes](http://jeffe.cs.illinois.edu/teaching/algorithms/notes/03-backtracking.pdf) (just 3.1, 3.3, 3.6)<br>[Homework 2](homework02.html) due Fri 9/16 11:59pm
 7 | M 9/19 | Recursion: dynamic programming | 15.1
-8 | W 9/21 | Data structures: stacks and finding the convex hull
+8 | W 9/21 | Data structures: stacks and finding the convex hull | <br>[Homework 3](homework03.html) due Fri 9/23 11:59pm
 9 | M 9/26 | Data structures: priority queues, heaps, selection and heapsort
 10 | W 9/28 | Data structures: dictionaries, BSTs
 11 | M 10/3 | __Exam 1__
