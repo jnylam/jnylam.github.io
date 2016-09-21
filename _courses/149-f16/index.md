@@ -12,16 +12,16 @@ This schedule is tentative and subject to change during the semester. Changes wi
 Week|Date|Topic|Reading
 ----|-------|-------|---
 1 | W 8/24 | [Introduction](#introduction) | [Chapter 2](http://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf)
-2 | M 8/29 | [OS structure and services](structure and services.pdf) | . [Interface stability](http://www.cs.pomona.edu/classes/cs121/supp/stability.html)<br> . [Tanenbaum-Torvalds debate](https://en.wikipedia.org/wiki/Tanenbaum%E2%80%93Torvalds_debate)<br> . [Wobbly windows!](https://www.youtube.com/watch?v=nbCg9_YgKgM)
-2 | W 8/31 | [Processes](processes.pdf) | . [Chapter 3](http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Book/dialogue-virtualization.pdf)<br> . [Chapter 4](http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Book/cpu-intro.pdf)<br> . [Chapter 5](http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Book/cpu-api.pdf)<br> . [Chapter 6](http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Book/cpu-mechanisms.pdf)<br>
+2 | M 8/29 | OS structure and services [[pdf](structure and services.pdf)] [[keynote](structure and services.key)] | . [Interface stability](http://www.cs.pomona.edu/classes/cs121/supp/stability.html)<br> . [Tanenbaum-Torvalds debate](https://en.wikipedia.org/wiki/Tanenbaum%E2%80%93Torvalds_debate)<br> . [Wobbly windows!](https://www.youtube.com/watch?v=nbCg9_YgKgM)
+2 | W 8/31 | Processes [[pdf](processes.pdf)] [[keynote](processes.key)] | . [Chapter 3](http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Book/dialogue-virtualization.pdf)<br> . [Chapter 4](http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Book/cpu-intro.pdf)<br> . [Chapter 5](http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Book/cpu-api.pdf)<br> . [Chapter 6](http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2016/Book/cpu-mechanisms.pdf)<br>
 3 | M 9/5 | _Labor day_ |
-3 | W 9/7 | [Scheduling: basics](scheduling.pdf) | . [Chapter 7](http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf)<br> . [Chapter 8](http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-mlfq.pdf)<br>[Homework 1](homework01.html) due Su 9/11 at 11:59p
-4 | M 9/12 | [Scheduling: queuing theory](scheduling2.pdf)
+3 | W 9/7 | Scheduling: basics [[pdf](scheduling.pdf)] [[keynote](scheduling.key)] | . [Chapter 7](http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf)<br> . [Chapter 8](http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-mlfq.pdf)<br>[Homework 1](homework01.html) due Su 9/11 at 11:59p
+4 | M 9/12 | Scheduling: queuing theory [[pdf](scheduling2.pdf)] [[keynote](scheduling.key)]
 4 | W 9/14 | Scheduling: trending topics [[pdf](scheduling3.pdf)]  [[keynote](scheduling3.key)]
 5 | M 9/19 | Memory: address translation [[pdf](memory1.pdf)] [[keynote](memory1.key)] | . [Chapter 13](http://pages.cs.wisc.edu/~remzi/OSTEP/vm-intro.pdf)<br> . [Chapter 15](http://pages.cs.wisc.edu/~remzi/OSTEP/vm-mechanism.pdf)<br> . [Chapter 16](http://pages.cs.wisc.edu/~remzi/OSTEP/vm-segmentation.pdf)
-5 | W 9/21 | Memory: free memory management | . [Chapter 17](http://pages.cs.wisc.edu/~remzi/OSTEP/vm-freespace.pdf)<br> . [Chapter 18](http://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf)<br> . [Chapter 19](http://pages.cs.wisc.edu/~remzi/OSTEP/vm-tlbs.pdf)<br> . [Chapter 20](http://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf)<br> [Homework 2](homework02.html) due Su 9/25 11:59p
-6 | M 9/26 | Memory: the caching problem
-6 | W 9/28 | Analysis of paging
+5 | W 9/21 | Memory: speeding up address translation <br> Memory: free memory management [[pdf](memory2.pdf)] [[keynote](memory2.key)] | . [Chapter 17](http://pages.cs.wisc.edu/~remzi/OSTEP/vm-freespace.pdf)<br> . [Chapter 18](http://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf)<br> . [Chapter 19](http://pages.cs.wisc.edu/~remzi/OSTEP/vm-tlbs.pdf)<br> . [Chapter 20](http://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf)<br> [Homework 2](homework02.html) due Su 9/25 11:59p
+6 | M 9/26 | Memory: caching
+6 | W 9/28 | Memory: intro to online algorithms <br> and competitive analysis of paging
 7 | M 10/3 | Threads
 7 | W 10/5 | __Exam 1__
 8 | M 10/10 | Locks
