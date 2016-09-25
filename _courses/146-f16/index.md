@@ -19,22 +19,22 @@ Lecture|Date|Topic|Reading/homework
 5 | M 9/12 | Recursion: divide-and-conquer<br> Review: worse case time complexity | 33.4
 6 | W 9/14 | Recursion: backtracking | [Erickson notes](http://jeffe.cs.illinois.edu/teaching/algorithms/notes/03-backtracking.pdf) (just 3.1, 3.3, 3.6)<br>[Homework 2](homework02.html) due Fri 9/16 11:59pm
 7 | M 9/19 | Recursion: dynamic programming | 15.1
-8 | W 9/21 | Data structures: stacks and finding the convex hull | <br>[Homework 3](homework03.html) due Fri 9/23 11:59pm
-9 | M 9/26 | Data structures: priority queues, heaps, selection and heapsort
-10 | W 9/28 | Data structures: dictionaries, BSTs
+8 | W 9/21 | Recursion: dynamic programming |
+9 | M 9/26 | Data structures: stacks and finding the convex hull
+10 | W 9/28 | Data structures: priority queues, heaps, selection and heapsort | [Homework 3](homework03.html) due Fri 9/30 11:59pm<br>[Homework 4](homework04.html) due Fri 9/30 11:59pm
 11 | M 10/3 | __Exam 1__
-12 | W 10/5 | Data structures: red-black trees
-13 | M 10/10 | Randomization: hashing
-14 | W 10/12 | Randomization: randomized quicksort
-15 | M 10/17 | Randomization: treaps, skiplists
-16 | W 10/19 | Graphs: DFS, topological sort, strongly connected components
-17 | M 10/24 | Graphs: shortest path problem, Bellman-Ford
-18 | W 10/26 | Graphs: BFS, Dijkstra
-19 | M 10/31 | Graphs: minimum spanning trees
+12 | W 10/5 | Data structures: dictionaries, BSTs
+13 | M 10/10 | Data structures: red-black trees
+14 | W 10/12 | Randomization: hashing
+15 | M 10/17 | Randomization: randomized quicksort
+16 | W 10/19 | Randomization: treaps, skiplists
+17 | M 10/24 | Graphs: DFS, topological sort, strongly connected components
+18 | W 10/26 | Graphs: shortest path problem, Bellman-Ford
+19 | M 10/31 | Graphs: BFS, Dijkstra
 20 | W 11/2 | __Exam 2__
-21 | M 11/7 | Hardness: sorting and search lower bounds
-22 | W 11/9 | Hardness: radix and bucket sort
-23 | M 11/14 | Hardness: NP-completeness
+21 | M 11/7 | Graphs: minimum spanning trees
+22 | W 11/9 | Hardness: sorting and search lower bounds
+23 | M 11/14 | Hardness: radix and bucket sort
 24 | W 11/16 | Hardness: NP-completeness
 25 | M 11/21 | Hardness: approximation algorithms
 26 | W 11/23 | Hardness: approximation algorithms
