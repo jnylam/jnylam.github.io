@@ -56,7 +56,7 @@ __(b)__ What is the time complexity of this algorithm?
 
 __Note:__ this problem requires that you have a coded solution (rather than just pseudocode) for problem 3.
 
-The longest common subsequence problem is used in bioinformatics to do "sequence alignment". By aligning DNA or protein sequences across species, we can gain insight into how closely related two species are.
+The longest common subsequence problem is used in bioinformatics to do "sequence alignment". By aligning DNA or protein sequences across species, we can gain insight into how closely related two species are (see Wikipedia article on  [divergent evolution](https://en.wikipedia.org/wiki/Divergent_evolution)).
 
 One particular gene that is common to all species is hemoglobin, beta subunit, or HBB. Here we show the protein sequence (a string over a 20-character alphabet of amino acids, A-Z, minus BJOUXZ) corresponding to this gene for several species, which are listed in square brackets (for example, the first is Anas puna).
 
@@ -100,7 +100,7 @@ MVHLSADEKSAINAVWSKVNIENDGHDALTRLLVVFPWTQRYFSSFGNLSNVAAISGNAKVRAHGKKVLS
 AVDESIHHLDDIKKKKKKKKKKK
 ```
 
-__(a)__ order species listed above by how closely related you believe they are to humans. You may need to do a web search to find out what animals each of the scientific names in square brackets represents.
+__(a)__ order the species listed above by how closely related you believe they are to humans. You may need to do a web search to find out what animals each of the scientific names in square brackets represents.
 
 __(b)__ order the species above by the length of the longest common subsequence between their HBB protein sequence and human HBB protein sequence. Does this serve to confirm your prior knowledge or to refute it? Any surprises?
 
