@@ -104,8 +104,6 @@ __(a)__ order the species listed above by how closely related you believe they a
 
 __(b)__ order the species above by the length of the longest common subsequence between their HBB protein sequence and human HBB protein sequence. Does this serve to confirm your prior knowledge or to refute it? Any surprises?
 
-__Acknowledgements:__ many thanks to Dr. Phil Heller, for the inspiration, discussions, pointers, suggestions, which made this problem possible.
-
 __Source:__ [National Center for Biotechnology Information](https://www.ncbi.nlm.nih.gov)  
 Here is how you find the data for the human HBB:
 
@@ -118,6 +116,8 @@ The first search result:
 Click on __FASTA__:
 
 ![](ncbi_search3.png)
+
+__Acknowledgements:__ many thanks to Dr. Phil Heller, for the inspiration, discussions, pointers, suggestions, which made this problem possible.
 
 
 ## Submission
