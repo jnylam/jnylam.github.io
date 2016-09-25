@@ -141,8 +141,7 @@ Finally, you have the option of preparing a professional-looking document using 
 
 This assignment is worth 20 points:
 
-* 10 points for reasonable attempt on 5 programming problems from Recursion-2.
-* 2.5 points per written problem for a correct solution.
-* 1.5 points for a correctly submitted assignment, that is, as a single PDF file that is legible (if you choose to take pictures, make sure the text is in focus, please check on a computer screen before submitting), properly oriented, etc.
+* 6 points per problem, 3 for a reasonable attempt on it and 3 for correctness.
+* 1 point for a correctly submitted assignment, that is, as a single PDF file that is legible (if you choose to take pictures, make sure the text is in focus, please check on a computer screen before submitting), properly oriented, etc.
 * 1 point for presentation and neatness.
-* 1 point for the extra credit problem if solved correctly.
+* 1 point for the extra credit (bonus) problem if solved correctly.
