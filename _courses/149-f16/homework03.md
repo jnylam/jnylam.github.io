@@ -32,7 +32,7 @@ Do the homework on malloc at the end of Chapter 17, answering questions 1-4.
 ### Part 3: slab allocator
 
 Read the paper: [The Slab Allocator:
-An Object-Caching Kernel Memory Allocator](), Jeff Bonwick.
+An Object-Caching Kernel Memory Allocator](http://www.cs.dartmouth.edu/~sergey/cs258/2010/bonwick94.pdf), Jeff Bonwick.
 
 Answer the following questions:
 
