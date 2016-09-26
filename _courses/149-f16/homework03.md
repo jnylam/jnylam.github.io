@@ -6,7 +6,7 @@ mathjax: true
 navorder: 0
 ---
 
-The goal of this assignment is to gain a better understanding of CPU schedulers through three different types of exercises, which correspond to the three parts of this assignment.
+The goal of this assignment is to gain a better understanding of memory management. Specifically, you will practice translating virtual addresses into physical ones in Part 1, predict the behavior of a free memory manager in Part 2, and read about the design of a real-world memory allocator from its designer in Part 3.
 
 This assignment can be done alone or in groups of two.
 
@@ -54,7 +54,7 @@ If you are working in a group of two, include both of your names at the beginnin
 
 This assignment is out of 10 points.
 
-* 3 points per Part: half points for reasonable attempt, full points for a correct solution (Part 1 and 2) or a solution with a reasonable justification (Part 3).
+* 3 points per part: half points for reasonable attempt, full points for a correct solution (Part 1 and 2) or a solution with a reasonable justification (Part 3).
 * 1 point for a professional presentation: correctly following the submission guidelines, presentation, writing in complete sentences.
 
 ## Acknowledgements
