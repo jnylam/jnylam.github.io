@@ -3,7 +3,7 @@ layout: course
 courseid: 149-f16
 title: Homework 3
 mathjax: true
-navorder: 0
+navorder: 3
 ---
 
 The goal of this assignment is to gain a better understanding of memory management. Specifically, you will practice translating virtual addresses into physical ones in Part 1, predict the behavior of a free memory manager in Part 2, and read about the design of a real-world memory allocator from its designer in Part 3.
@@ -16,7 +16,7 @@ simulation
 
 ### Part 1: address translation
 
-Do the homework on paging at the end of Chapter 18, answering questions 1-8.
+Do the homework on paging at the end of Chapter 18, answering questions <del>1-8</del> <ins>1-4</ins>.
 
 * [Chapter 18](http://www.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf)
 * [Video](http://youtu.be/AhfSDqud3j4)
@@ -24,7 +24,7 @@ Do the homework on paging at the end of Chapter 18, answering questions 1-8.
 
 ### Part 2: free memory management
 
-Do the homework on malloc at the end of Chapter 17, answering questions 1-4.
+Do the homework on malloc at the end of Chapter 17, answering questions <del>1-4</del> <ins>1-7</ins>.
 
 * [Chapter 17](http://www.cs.wisc.edu/~remzi/OSTEP/vm-freespace.pdf)
 * [Code](http://pages.cs.wisc.edu/~remzi/OSTEP/Homework/HW-Freespace.tgz)

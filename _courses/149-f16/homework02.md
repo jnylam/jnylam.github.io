@@ -3,7 +3,7 @@ layout: course
 courseid: 149-f16
 title: Homework 2
 mathjax: true
-navorder: 3
+navorder: 0
 ---
 
 The goal of this assignment is to gain a better understanding of CPU schedulers through three different types of exercises, which correspond to the three parts of this assignment.
