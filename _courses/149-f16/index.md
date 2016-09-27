@@ -21,7 +21,7 @@ Week|Date|Topic|Reading
 5 | M 9/19 | Memory: address translation [[pdf](memory1.pdf)] [[keynote](memory1.key)] | . [Chapter 13](http://pages.cs.wisc.edu/~remzi/OSTEP/vm-intro.pdf)<br> . [Chapter 15](http://pages.cs.wisc.edu/~remzi/OSTEP/vm-mechanism.pdf)<br> . [Chapter 16](http://pages.cs.wisc.edu/~remzi/OSTEP/vm-segmentation.pdf)
 5 | W 9/21 | Memory: speeding up address translation <br> Memory: free memory management [[pdf](memory2.pdf)] [[keynote](memory2.key)] | . [Chapter 17](http://pages.cs.wisc.edu/~remzi/OSTEP/vm-freespace.pdf)<br> . [Chapter 18](http://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf)<br> . [Chapter 19](http://pages.cs.wisc.edu/~remzi/OSTEP/vm-tlbs.pdf)<br> . [Chapter 20](http://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf)<br> [Homework 2](homework02.html) due Su 9/25 11:59p
 6 | M 9/26 | Memory: caching [[pdf](memory3.pdf)] [[keynote](memory3.key)] | . [Chapter 20](http://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf)<br> . [Chapter 21](http://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys.pdf)
-6 | W 9/28 | Memory: replacement policies <br> | . [Chapter 22](http://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys-policy.pdf)<br> . [Replacement policies](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.641.9013&rep=rep1&type=pdf), Belady<br> [Homework 3](homework03.html) due Su 10/2 11:59p
+6 | W 9/28 | Memory: replacement policies [[pdf](memory4.pdf)] | . [Chapter 22](http://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys-policy.pdf)<br> . [Replacement policies](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.641.9013&rep=rep1&type=pdf), Belady<br> [Homework 3](homework03.html) due Su 10/2 11:59p
 7 | M 10/3 | Threads
 7 | W 10/5 | __Exam 1__
 8 | M 10/10 | Locks
