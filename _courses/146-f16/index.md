@@ -17,16 +17,18 @@ Lecture|Date|Topic|Reading/homework
  | M 9/5 | _Labor day_ | [Homework 1](homework01.html) due <del>Tuesday 9/6</del><br> <ins>Friday 9/9</ins> at 11:59 pm
 4 | W 9/7 | Recursion: recurrence equations<br> Review: logarithms, O-notation | 4.3
 5 | M 9/12 | Recursion: divide-and-conquer<br> Review: worse case time complexity | 33.4
-6 | W 9/14 | Recursion: backtracking | [Erickson notes](http://jeffe.cs.illinois.edu/teaching/algorithms/notes/03-backtracking.pdf) (just 3.1, 3.3, 3.6)<br>[Homework 2](homework02.html) due Fri 9/16 11:59pm
+6 | W 9/14 | Recursion: backtracking | [Erickson notes](http://jeffe.cs.illinois.edu/teaching/algorithms/notes/03-backtracking.pdf) (just 3.1, 3.3, 3.6)
+| F 9/16 | | [Homework 2](homework02.html) due Fri 9/16 11:59pm
 7 | M 9/19 | Recursion: dynamic programming | 15.1
 8 | W 9/21 | Recursion: dynamic programming |
-9 | M 9/26 | [Data structures: roadmap](#data-structures-roadmap)<br> Data structures: stacks, space complexity of recursive algorithms, find the convex hull | 10.1, 10.2 (skim)<br> 33.3 (Graham scan)
-10 | W 9/28 | Data structures: priority queues, heaps, selection and heapsort | Ch 6 and/or <br>[Binary heaps](https://www.youtube.com/playlist?list=PLSVu1-lON6Lwqj5nDqg8YyD7f4tjLMMBN)  (videos 1-4) - Prof Taylor
+9 | M 9/26 | [Data structures: roadmap](#data-structures-roadmap)<br> Data structures: stacks, space complexity of recursive algorithms, <br>find the convex hull | 10.1, 10.2 (skim)<br> 33.3 (Graham scan)
+10 | W 9/28 | Data structures: priority queues, heaps, selection and heapsort<br>[Heapsort code](//glot.io/snippets/eivlf8mhce) | Ch 6 and/or <br>[Binary heaps](https://www.youtube.com/playlist?list=PLSVu1-lON6Lwqj5nDqg8YyD7f4tjLMMBN)  (videos 1-4) - Prof Taylor
 | F 9/30 | | [Homework 3](homework03.html) due Fri 9/30 11:59pm<br>[Homework 4](homework04.html) due Fri 9/30 11:59pm
 11 | M 10/3 | __Exam 1__
-12 | W 10/5 | Data structures: dictionaries, BSTs
-13 | M 10/10 | Data structures: red-black trees
-14 | W 10/12 | Randomization: hashing
+12 | W 10/5 | Data structures: dictionaries, BSTs<br>[BST starter  code](https://glot.io/snippets/ej354dtkn2)| 12
+13 | M 10/10 | Data structures: red-black trees | 13
+14 | W 10/12 | Randomization: hashing |
+| F 10/14 | | [Homework 5](homework05.html) due F 10/12 at 11:59pm
 15 | M 10/17 | Randomization: randomized quicksort
 16 | W 10/19 | Randomization: treaps, skiplists
 17 | M 10/24 | Graphs: DFS, topological sort, strongly connected components
