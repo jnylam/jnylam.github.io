@@ -16,7 +16,11 @@ __(b)__ Suppose that we run Graham's scan on this set of points. Describe the se
 
 ### Problem 2: heap
 
-Is there a (min-)heap $T$ storing seven distinct elements such that a preorder traversal of $T$ yields the elements of $T$ in sorted order?
+__(a)__ Is there a (min-)heap $T$ storing seven distinct elements such that a preorder traversal of $T$ yields the elements of $T$ in sorted order?
+
+__(b)__ How about an inorder traversal?
+
+__(c)__ How about a postorder traversal?
 
 ### Problem 3: median data structure
 
