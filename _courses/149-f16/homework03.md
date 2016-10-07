@@ -3,7 +3,7 @@ layout: course
 courseid: 149-f16
 title: Homework 3
 mathjax: true
-navorder: 3
+navorder: 0
 ---
 
 The goal of this assignment is to gain a better understanding of memory management. Specifically, you will practice translating virtual addresses into physical ones in Part 1, predict the behavior of a free memory manager in Part 2, and read about the design of a real-world memory allocator from its designer in Part 3.
