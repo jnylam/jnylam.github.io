@@ -28,7 +28,7 @@ Lecture|Date|Topic|Reading/homework
 12 | W 10/5 | Data structures: dictionaries, BSTs<br>[BST starter  code](https://glot.io/snippets/ej354dtkn2)| 12
 13 | M 10/10 | Data structures: red-black trees | 13
 14 | W 10/12 | Randomization: hashing |
-| F 10/14 | | [Homework 5](homework05.html) due F 10/12 at 11:59pm
+| F 10/14 | | [Homework 5](homework05.html) due F 10/14 at 11:59pm
 15 | M 10/17 | Randomization: randomized quicksort
 16 | W 10/19 | Randomization: treaps, skiplists
 17 | M 10/24 | Graphs: DFS, topological sort, strongly connected components

@@ -36,16 +36,17 @@ Hint 4: <span class="hint">how can you maintain a roughly equal number of elemen
 
 ## Extra credit: programming a binary search tree
 
-Complete the implementation of the binary search tree started in class.
+Complete the implementation of the binary search tree started in class. You know you are done when the `main` function runs correctly with all commented lines uncommented, and printing shows the expected behavior of a BST.
 
 [BST starter code](https://glot.io/snippets/ej354dtkn2)
 
 
 ## Submission
 
-Solutions to the written problems should be turned in on Canvas as a __single PDF file__.
+Homework should be submitted on Canvas:
 
-The extra credit assignment should be turned in separately. Save the code to a single file named `main.py` and turn that in on Canvas under "Homework 5 extra credit".
+* solutions to the written problems should be submitted as a __single PDF file__.
+* optional: the extra credit assignment should be turned in as a separate file. Save the code to a single file named __`main.py`__.
 
 ---
 Options for making PDFs:
