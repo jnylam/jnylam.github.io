@@ -27,25 +27,25 @@ Lecture|Date|Topic|Reading/homework
 11 | M 10/3 | __Exam 1__
 12 | W 10/5 | Data structures: dictionaries, BSTs<br>[BST starter  code](https://glot.io/snippets/ej354dtkn2)| 12
 13 | M 10/10 | Data structures: red-black trees | 13
-14 | W 10/12 | Randomization: hashing |
+14 | W 10/12 | Randomization: hashing 1 | 11.1-11.3
 | F 10/14 | | [Homework 5](homework05.html) due F 10/14 at 11:59pm
-15 | M 10/17 | Randomization: randomized quicksort
-16 | W 10/19 | Randomization: treaps, skiplists
-17 | M 10/24 | Graphs: DFS, topological sort, strongly connected components
-18 | W 10/26 | Graphs: shortest path problem, Bellman-Ford
-19 | M 10/31 | Graphs: BFS, Dijkstra
+15 | M 10/17 | Randomization: hashing 2 | 11.4
+16 | W 10/19 | Randomization: randomized quicksort
+17 | M 10/24 | Randomization: skiplists, string matching
+18 | W 10/26 | Graphs: DFS, topological sort, strongly connected components
+19 | M 10/31 | Graphs: shortest path problem, Bellman-Ford
 20 | W 11/2 | __Exam 2__
-21 | M 11/7 | Graphs: minimum spanning trees
-22 | W 11/9 | Hardness: sorting and search lower bounds
-23 | M 11/14 | Hardness: radix and bucket sort
+21 | M 11/7 | Graphs: BFS, Dijkstra
+22 | W 11/9 | Graphs: minimum spanning trees
+23 | M 11/14 | Hardness: sorting and search lower bounds, radix and bucket sort
 24 | W 11/16 | Hardness: NP-completeness
 25 | M 11/21 | Hardness: approximation algorithms
-26 | W 11/23 | Hardness: approximation algorithms
-27 | M 11/28 | __Exam 3__
-29 | W 11/30 | Recursion: fast exponential-time algorithms
-30 | M 12/5 | Data structures: segment intersection, dynamic order statistics
-31 | W 12/7 | Randomization: bloom filter, string matching, tries
-32 | M 12/12 | Graphs: all-pairs shortest path
+ | W 11/23 | no class
+26 | M 11/28 | __Exam 3__
+27 | W 11/30 | Recursion: fast exponential-time algorithms
+28 | M 12/5 | Data structures: segment intersection, dynamic order statistics
+29 | W 12/7 | Randomization: bloom filter, string matching, tries
+30 | M 12/12 | Graphs: all-pairs shortest path
 | | __Section 7 final exam__ F 12/16 2:45PM&ndash;5:00PM, MH 422<br />
 | | __Section 8 final exam__ W 12/14 9:45AM&ndash;12:00PM, MH 422
 
