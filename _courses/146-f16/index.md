@@ -31,7 +31,7 @@ Lecture|Date|Topic|Reading/homework
 | F 10/14 | | [Homework 5](homework05.html)
 15 | M 10/17 | Randomization: hashing 2 | 11.4
 16 | W 10/19 | Randomization: randomized quicksort
-| F 10/21 | [Homework 6](homework06.html) due
+| F 10/21 | | [Homework 6](homework06.html) due
 17 | M 10/24 | Randomization: skiplists, string matching
 18 | W 10/26 | Graphs: DFS, topological sort, strongly connected components
 19 | M 10/31 | Graphs: shortest path problem, Bellman-Ford

@@ -91,4 +91,3 @@ This assignment is worth 20 points:
 * 6 points per problem, 3 for a reasonable attempt on it and 3 for correctness.
 * 1 point for a correctly submitted assignment, that is, as a single PDF file that is legible (if you choose to take pictures, make sure the text is in focus, please check on a computer screen before submitting), properly oriented, etc.
 * 1 point for presentation and neatness.
-* 1 point for the extra credit problem if the code in the `main` function passes without errors, and the output is sorted. This code must still be correct when the input lists in `main` changes.
