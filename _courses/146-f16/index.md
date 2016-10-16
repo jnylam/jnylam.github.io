@@ -28,9 +28,10 @@ Lecture|Date|Topic|Reading/homework
 12 | W 10/5 | Data structures: dictionaries, BSTs<br>[BST starter  code](https://glot.io/snippets/ej354dtkn2)| 12
 13 | M 10/10 | Data structures: red-black trees | 13
 14 | W 10/12 | Randomization: hashing 1 | 11.1-11.3
-| F 10/14 | | [Homework 5](homework05.html) due F 10/14 at 11:59pm
+| F 10/14 | | [Homework 5](homework05.html)
 15 | M 10/17 | Randomization: hashing 2 | 11.4
 16 | W 10/19 | Randomization: randomized quicksort
+| F 10/21 | [Homework 6](homework06.html) due
 17 | M 10/24 | Randomization: skiplists, string matching
 18 | W 10/26 | Graphs: DFS, topological sort, strongly connected components
 19 | M 10/31 | Graphs: shortest path problem, Bellman-Ford
@@ -40,7 +41,7 @@ Lecture|Date|Topic|Reading/homework
 23 | M 11/14 | Hardness: sorting and search lower bounds, radix and bucket sort
 24 | W 11/16 | Hardness: NP-completeness
 25 | M 11/21 | Hardness: approximation algorithms
- | W 11/23 | no class
+ | W 11/23 | _Non-instructional day_
 26 | M 11/28 | __Exam 3__
 27 | W 11/30 | Recursion: fast exponential-time algorithms
 28 | M 12/5 | Data structures: segment intersection, dynamic order statistics
