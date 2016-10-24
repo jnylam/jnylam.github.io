@@ -30,10 +30,11 @@ Lecture|Date|Topic|Reading/homework
 14 | W 10/12 | Randomization: hashing 1 | 11.1-11.3
 | F 10/14 | | [Homework 5](homework05.html)
 15 | M 10/17 | Randomization: hashing 2 | 11.4
-16 | W 10/19 | Randomization: randomized quicksort
-| F 10/21 | | [Homework 6](homework06.html) due
-17 | M 10/24 | Randomization: skiplists, string matching
+16 | W 10/19 | Problem solving session
+| F 10/21 | | [Homework 6](homework06.html)
+17 | M 10/24 | Randomization: quicksort
 18 | W 10/26 | Graphs: DFS, topological sort, strongly connected components
+| Su 10/30 | | [Homework 7](homework07.html)
 19 | M 10/31 | Graphs: shortest path problem, Bellman-Ford
 20 | W 11/2 | __Exam 2__
 21 | M 11/7 | Graphs: BFS, Dijkstra
@@ -45,7 +46,7 @@ Lecture|Date|Topic|Reading/homework
 26 | M 11/28 | __Exam 3__
 27 | W 11/30 | Recursion: fast exponential-time algorithms
 28 | M 12/5 | Data structures: segment intersection, dynamic order statistics
-29 | W 12/7 | Randomization: bloom filter, string matching, tries
+29 | W 12/7 | Randomization: skiplists, bloom filter, string matching or tries
 30 | M 12/12 | Graphs: all-pairs shortest path
 | | __Section 7 final exam__ F 12/16 2:45PM&ndash;5:00PM, MH 422<br />
 | | __Section 8 final exam__ W 12/14 9:45AM&ndash;12:00PM, MH 422
