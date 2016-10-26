@@ -27,21 +27,21 @@ Lecture|Date|Topic|Reading/homework
 11 | M 10/3 | __Exam 1__
 12 | W 10/5 | Data structures: dictionaries, BSTs<br>[BST starter  code](https://glot.io/snippets/ej354dtkn2)| 12
 13 | M 10/10 | Data structures: red-black trees | 13
-14 | W 10/12 | Randomization: hashing 1 | 11.1-11.3
+14 | W 10/12 | Randomization: hashing 1: hash tables, hash chaining, hash functions | 11.1-11.3
 | F 10/14 | | [Homework 5](homework05.html)
-15 | M 10/17 | Randomization: hashing 2 | 11.4
+15 | M 10/17 | Randomization: hashing 2: table resizing (section 8 only), open addressing | 11.4
 16 | W 10/19 | Problem solving session
 | F 10/21 | | [Homework 6](homework06.html)
-17 | M 10/24 | Randomization: quicksort | 7.1-7.4
-18 | W 10/26 | Graphs: DFS, topological sort, strongly connected components | 22.1, 22.3-22.5
+17 | M 10/24 | Randomization: deterministic and randomized quicksort | 7.1-7.3
+18 | W 10/26 | Randomization: analysis of randomized quicksort | 7.4
 | Su 10/30 | | [Homework 7](homework07.html)
-19 | M 10/31 | Graphs: shortest path problem, Bellman-Ford | 24.1-24.2
+19 | M 10/31 | Graphs: DFS, topological sort, strongly connected components | 22.1, 22.3-22.5
 20 | W 11/2 | __Exam 2__
-21 | M 11/7 | Graphs: BFS, Dijkstra | 22.2, 24.3
-22 | W 11/9 | Graphs: minimum spanning trees | 23.1-23.2
-23 | M 11/14 | Hardness: sorting and search lower bounds, radix and bucket sort | 8.1-8.4
-24 | W 11/16 | Hardness: NP-completeness
-25 | M 11/21 | Hardness: approximation algorithms
+21 | M 11/7 | Graphs: shortest path problem, Bellman-Ford | 24.1-24.2
+22 | W 11/9 | Graphs: BFS, Dijkstra | 22.2, 24.3
+23 | M 11/14 | Graphs: minimum spanning trees | 23.1-23.2
+24 | W 11/16 | Hardness: sorting and search lower bounds, radix and bucket sort | 8.1-8.4
+25 | M 11/21 | Hardness: NP-completeness, approximation algorithms
  | W 11/23 | _Non-instructional day_
 26 | M 11/28 | __Exam 3__
 27 | W 11/30 | Recursion: fast exponential-time algorithms

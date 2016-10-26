@@ -14,7 +14,7 @@ __(a)__ [11.2-1] Suppose we use a hash function $$h$$ to hash $$n$$ distinct key
 
 __(b)__ [based on 11.2-2] Consider a hash table with 9 slots, in which collisions are resolved by  chaining. Show the contents of the hash table  when the following keys are inserted: 5, 28, 19, 15, 20, 33, 12, 17, 10. Let the hash function be $$h(k) = k \mod 9$$.
 
-__(c)__ [11.4-1] Consider inserting the keys 10, 22, 31, 4, 15, 28, 17, 88, 59 into a hash table of length $$m = 11$$ using open addressing with the auxiliary hash function $$h'(k) = k$$. Illustrate the result of inserting theses keys using linear probing, using the quadratic probing hash function $$h(k) = (h'(k) + c_1i + c_2i^2) \mod m$$ where $$c_1 = 1$$ and $$c_2 = 3$$, and using double hashing with $$h_1(k) = k$$ and $$h_2(k) = 1 + k\mod (m-1))$$.
+__(c)__ [11.4-1] Consider inserting the keys 10, 22, 31, 4, 15, 28, 17, 88, 59 into a hash table of length $$m = 11$$ using open addressing with the auxiliary hash function $$h'(k) = k$$. Illustrate the result of inserting theses keys using linear probing, using the quadratic probing hash function $$h(k,i) = (h'(k) + c_1i + c_2i^2) \mod m$$ where $$c_1 = 1$$ and $$c_2 = 3$$, and using double hashing with $$h_1(k) = k$$ and $$h_2(k) = 1 + (k \mod (m-1))$$.
 
 __(d)__ [based on 11.4-2] Consider a hash table in which collisions are resolved by open addressing, and in which the probing function is $$h(k, i)$$. Write pseudocode for insertion and deletion from the hash table. The deletion method should set the deleted table entry to the special value DELETED, and the insertion method should handle that special value appropriately.
 
