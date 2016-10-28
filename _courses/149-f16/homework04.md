@@ -3,7 +3,7 @@ layout: course
 courseid: 149-f16
 title: Homework 4
 mathjax: true
-navorder: 3
+navorder: 0
 ---
 
 The goal of this assignment is to gain a better understanding of replacement policies and the impact of locality of reference.

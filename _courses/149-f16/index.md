@@ -24,25 +24,25 @@ Week|Date|Topic|Reading
 6 | W 9/28 | Memory: replacement policies [[pdf](memory4.pdf)] | . [Chapter 22](http://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys-policy.pdf)<br> . [Replacement policies](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.641.9013&rep=rep1&type=pdf), Belady<br> [Homework 3](homework03.html) due Su 10/2 11:59p
 7 | M 10/3 | Review
 7 | W 10/5 | __Exam 1__
-8 | M 10/10 | Concurrency: threads, race conditions, interprocess communication | [Chapter 25](http://pages.cs.wisc.edu/~remzi/OSTEP/dialogue-concurrency.pdf)<br>[Chapter 26](http://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf)<br>[Chapter 27](http://pages.cs.wisc.edu/~remzi/OSTEP/threads-api.pdf)
-8 | W 10/12 | Concurrency: mutual exclusion | [Homework 4](homework04.html) due Su 10/16
-9 | M 10/17 | Deadlocks
-9 | W 10/19 | Condition variables
-10 | M 10/24 | Performance metrics
-10 | W 10/26 | I/O
-11 | M 10/31 | File systems
-11 | W 11/2 | File systems
-12 | M 11/7 | RAID, SSDs
-12 | W 11/9 | Logging and journaling
+8 | M 10/10 | Concurrency: threads, race conditions, interprocess communication [[lab](https://paper.dropbox.com/doc/OS-Introduction-to-concurrency-40oVoQLcRkqjmqJDj8Kkw)] | [Chapter 25](http://pages.cs.wisc.edu/~remzi/OSTEP/dialogue-concurrency.pdf)<br>[Chapter 26](http://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf)<br>[Chapter 27](http://pages.cs.wisc.edu/~remzi/OSTEP/threads-api.pdf)
+8 | W 10/12 | Concurrency: synchronization 1 [[notes](https://paper.dropbox.com/doc/Concurrency-synchronization-1-1TmE9pvouzY0CFmGCYo0K)] | [Homework 4](homework04.html) due Su 10/16
+9 | M 10/17 |  Concurrency: synchronization 2 [[notes](https://paper.dropbox.com/doc/Concurrency-synchronization-2-suwthsqihdHnrzDopkWfd)]
+9 | W 10/19 | Concurrency: synchronization 3 [[notes](https://paper.dropbox.com/doc/Concurrency-synchronization-3-ZVonS9jNdBf2Do5U8cFzD)]
+10 | M 10/24 |Concurrency: deadlocks 1 [[notes](https://paper.dropbox.com/doc/Concurrency-deadlocks-YiN1BCCND4dLnL7NEWPGM)]
+10 | W 10/26 | Concurrency: deadlocks 2 [[notes](https://paper.dropbox.com/doc/Concurrency-deadlocks-2-6zONa2rRj5XcUDOc6ZvKu)]
+11 | M 10/31 | Persistence: I/O
+11 | W 11/2 | Persistence: File systems | [Homework 5](homework05.html) due Su 11/6
+12 | M 11/7 | Persistence: RAID, SSDs
+12 | W 11/9 | Persistence: Logging and journaling | [Homework 6](homework06.html) due __Fr 11/11__
 13 | M 11/14 | __Exam 2__
-13 | W 11/16 | Communication protocols
-14 | M 11/21 | Distributed systems
+13 | W 11/16 | flex
+14 | M 11/21 | Communication protocols
 14 | W 11/23 | Distributed systems
 15 | M 11/28 | Distributed systems
-15 | W 11/30 | Security
+15 | W 11/30 | Distributed systems
 16 | M 12/5 | Security
-16 | W 12/7 | flex
-17 | M 12/12 | flex
+16 | W 12/7 | Security
+17 | M 12/12 | Review
 |T 12/20 | __Final exam__ 7:15AM--9:30AM, MH 222
 
 ---
