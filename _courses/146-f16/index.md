@@ -32,8 +32,8 @@ Lecture|Date|Topic|Reading/homework
 15 | M 10/17 | Randomization: hashing 2: table resizing (section 8 only), open addressing | 11.4
 16 | W 10/19 | Problem solving session
 | F 10/21 | | [Homework 6](homework06.html)
-17 | M 10/24 | Randomization: deterministic and randomized quicksort | 7.1-7.3
-18 | W 10/26 | Randomization: analysis of randomized quicksort | 7.4
+17 | M 10/24 | Randomization: deterministic and randomized quicksort<br>Review of basic probability, expectation, indicator variables | 7.1-7.3
+18 | W 10/26 | Randomization: analysis of randomized quicksort<br>[Proof using indicator variables](quicksort.html) | 7.4
 | Su 10/30 | | [Homework 7](homework07.html)
 19 | M 10/31 | Graphs: DFS, topological sort, strongly connected components | 22.1, 22.3-22.5
 20 | W 11/2 | __Exam 2__
