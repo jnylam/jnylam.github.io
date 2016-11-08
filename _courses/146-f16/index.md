@@ -39,6 +39,7 @@ Lecture|Date|Topic|Reading/homework
 20 | W 11/2 | __Exam 2__
 21 | M 11/7 | Graphs: shortest path problem, Bellman-Ford | 24.1-24.2
 22 | W 11/9 | Graphs: BFS, Dijkstra | 22.2, 24.3
+| Su 11/13 | | [Homework 8](homework08.html)
 23 | M 11/14 | Graphs: minimum spanning trees | 23.1-23.2
 24 | W 11/16 | Hardness: sorting and search lower bounds, radix and bucket sort | 8.1-8.4
 25 | M 11/21 | Hardness: NP-completeness, approximation algorithms
