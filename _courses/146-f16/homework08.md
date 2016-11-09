@@ -22,7 +22,7 @@ $$\begin{pmatrix}
 __(b)__ An __adjacency list__ is an array indexed by the vertices. Each array cell points to a linked list of neighbor of that vertex). How many linked list nodes would be needed to represent the graph from part __(a)__?
 
 
-__(c)__ In the __Python representation__ described by van Rossum, a graph is a dictionary whose keys are vertices and whose values are lists of the outgoing neighbors of each vertex (see the link for examples). Write down a Python expression that produces the van Rossum representation for the same graph. In this expression, use the number i to represent the vertex whose adjacencies are given by the i-th row of the matrix.
+__(c)__ In the __Python representation__ described by van Rossum, a graph is a dictionary whose keys are vertices and whose values are lists of the outgoing neighbors of each vertex (see the first 2 or 3 paragraphs of the  [link](https://www.python.org/doc/essays/graphs/) for examples). Write down a Python expression that produces the van Rossum representation for the same graph. In this expression, use the number i to represent the vertex whose adjacencies are given by the i-th row of the matrix.
 
 ### Problem 2
 
