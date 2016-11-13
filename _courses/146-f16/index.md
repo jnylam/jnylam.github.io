@@ -35,18 +35,19 @@ Lecture|Date|Topic|Reading/homework
 17 | M 10/24 | Randomization: deterministic and randomized quicksort<br>Review of basic probability, expectation, indicator variables | 7.1-7.3
 18 | W 10/26 | Randomization: analysis of randomized quicksort<br>[Proof using indicator variables](quicksort.html) | 7.4
 | Su 10/30 | | [Homework 7](homework07.html)
-19 | M 10/31 | Graphs: DFS, topological sort, strongly connected components | 22.1, 22.3-22.5
+19 | M 10/31 | Graphs: representation, DFS, strongly connected components | 22.1, 22.3
 20 | W 11/2 | __Exam 2__
-21 | M 11/7 | Graphs: shortest path problem, Bellman-Ford | 24.1-24.2
-22 | W 11/9 | Graphs: BFS, Dijkstra | 22.2, 24.3
+21 | M 11/7 | Graphs: Tarjan's algorithm for strongly connected components | 22.5
+22 | W 11/9 | Graphs: BFS, single-source shortest path problem, Dijkstra | 22.2, 24.3
 | Su 11/13 | | [Homework 8](homework08.html)
-23 | M 11/14 | Graphs: minimum spanning trees | 23.1-23.2
-24 | W 11/16 | Hardness: sorting and search lower bounds, radix and bucket sort | 8.1-8.4
-25 | M 11/21 | Hardness: NP-completeness, approximation algorithms
+23 | M 11/14 | Graphs: Bellman-Ford algorithm | 24.1-24.2
+24 | W 11/16 |  Graphs: minimum spanning trees | 23.1-23.2
+| Su 11/20 | | [Homework 9](homework09.html)
+25 | M 11/21 | Hardness: sorting and search lower bounds, radix and bucket sort | 8.1-8.4
  | W 11/23 | _Non-instructional day_
-26 | M 11/28 | __Exam 3__
-27 | W 11/30 | Recursion: fast exponential-time algorithms
-28 | M 12/5 | Data structures: segment intersection, dynamic order statistics
+26 | M 11/28 | Hardness: NP-completeness, approximation algorithms
+27 | W 11/30 | __Exam 3__
+28 | M 12/5 | Recursion: fast exponential-time algorithms<br> Data structures: segment intersection, dynamic order statistics
 29 | W 12/7 | Randomization: skiplists, bloom filter, string matching or tries
 30 | M 12/12 | Graphs: all-pairs shortest path
 | | __Section 7 final exam__ F 12/16 2:45PM&ndash;5:00PM, MH 422<br />
