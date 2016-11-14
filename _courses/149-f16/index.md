@@ -35,7 +35,7 @@ Week|Date|Topic|Reading
 12 | M 11/7 | Persistence: file system implementation [[notes](https://paper.dropbox.com/doc/Persistence-file-system-implementation-58jnVbJ0OtzWg6Qtjem2T)] | [Chapter 40](http://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf)<br> [Chapter 41](http://pages.cs.wisc.edu/~remzi/OSTEP/file-ffs.pdf)
 12 | W 11/9 | Review | <!--[Chapter 42](http://pages.cs.wisc.edu/~remzi/OSTEP/file-journaling.pdf)<br> [Chapter 43](http://pages.cs.wisc.edu/~remzi/OSTEP/file-lfs.pdf)<br> [Chapter 44](http://pages.cs.wisc.edu/~remzi/OSTEP/file-integrity.pdf)<br>--> [Homework 6](homework06.html) due __Fr 11/11__
 13 | M 11/14 | __Exam 2__
-13 | W 11/16 | flex
+13 | W 11/16 | How to read a technical document - Anamika Megwalu | [Development of DNS](http://www.dtic.mil/dtic/tr/fulltext/u2/a203901.pdf)
 14 | M 11/21 | Communication protocols
 14 | W 11/23 | _Non-instructional day_
 15 | M 11/28 | Distributed systems
