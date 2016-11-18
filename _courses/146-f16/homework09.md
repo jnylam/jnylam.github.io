@@ -36,6 +36,7 @@ __(b)__ Would this algorithm be a better or worse choice than the more usual for
 
 Write an efficient algorithm for solving the make-change problem  introduced in [homework 3](homework03.html), this time returning a fewest set of coins that makes change for the given amount, using the given set of denominations. What is the running time of your algorithm?
 
+Hint: use the same technique as we did in class to keep track of shortest paths in Dijkstra. The same technique can also be used to find which items to pick to maximize the knapsack. See [knapsack solution](https://glot.io/snippets/ekexm420i8).
 
 ### Problem 3
 
