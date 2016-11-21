@@ -19,7 +19,7 @@ layout: homepage
     </ul>
     <ul id="profiles">
       {% for profile in site.profiles %}
-      <li>{% if profile.link %}<a href="{{ profile.link }}">{{ profile.name }}</a>{% else %}{{ profile.name }}{% endif %}</li>
+      <li>{% if profile.link %}{{ profile.name }}{% endif %}</li>
       {% endfor %}
     </ul>
   </div>
