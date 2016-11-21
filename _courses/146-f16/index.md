@@ -50,7 +50,7 @@ Lecture|Date|Topic|Reading/homework
 28 | M 12/5 | Hardness: NP-completeness, approximation algorithms
 29 | W 12/7 | Recursion: fast exponential-time algorithms<br> Data structures: segment intersection, dynamic order statistics
 30 | M 12/12 | Randomization: skiplists, bloom filter, string matching or tries<br> Graphs: all-pairs shortest path
-| | __Section 7 final examyll __ F 12/16 2:45PM&ndash;5:00PM, MH 422<br />
+| | __Section 7 final exam__ F 12/16 2:45PM&ndash;5:00PM, MH 422<br />
 | | __Section 8 final exam__ W 12/14 9:45AM&ndash;12:00PM, MH 422
 
 ----

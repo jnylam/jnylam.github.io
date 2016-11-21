@@ -11,6 +11,7 @@ layout: homepage
     <h2>{{ site.title}}</h2>
     <h2>{{ site.department }}</h2>
     <h2>{{ site.school }}</h2>
+    <p><li><a href="{{ site.link }}"</ul>{{ site.link }}</a></li></p>
     <ul id="contacts">
       {% for contact in site.contacts %}
       <li>{% if contact.link %}<a href="{{ contact.link }}">{{ contact.name }}</a>{% else %}{{ contact.name }}{% endif %}</li>
