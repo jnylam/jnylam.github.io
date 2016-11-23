@@ -47,6 +47,7 @@ Lecture|Date|Topic|Reading/homework
  | W 11/23 | _Non-instructional day_
 26 | M 11/28 | Hardness: sorting and search lower bounds, radix and bucket sort | 8.1-8.4
 27 | W 11/30 | __Exam 3__
+| Su 12/4 | | [Homework 10](homework10.html)
 28 | M 12/5 | Hardness: NP-completeness, approximation algorithms
 29 | W 12/7 | Recursion: fast exponential-time algorithms<br> Data structures: segment intersection, dynamic order statistics
 30 | M 12/12 | Randomization: skiplists, bloom filter, string matching or tries<br> Graphs: all-pairs shortest path
