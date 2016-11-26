@@ -3,7 +3,7 @@ layout: course
 courseid: 149-f16
 title: Homework 6
 mathjax: true
-navorder: 3
+navorder: 0
 ---
 
 ## Warning: did you do Homework 5? Both homework 5 and 6 were released at the same time.

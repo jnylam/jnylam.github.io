@@ -24,7 +24,7 @@ Week|Date|Topic|Reading
 6 | W 9/28 | Memory: replacement policies [[pdf](memory4.pdf)] | . [Chapter 22](http://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys-policy.pdf)<br> . [Replacement policies](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.641.9013&rep=rep1&type=pdf), Belady<br> [Homework 3](homework03.html) due Su 10/2 11:59p
 7 | M 10/3 | Review
 7 | W 10/5 | __Exam 1__
-8 | M 10/10 | Concurrency: threads, race conditions, interprocess communication [[lab](https://paper.dropbox.com/doc/OS-Introduction-to-concurrency-40oVoQLcRkqjmqJDj8Kkw)] | [Chapter 25](http://pages.cs.wisc.edu/~remzi/OSTEP/dialogue-concurrency.pdf)<br>[Chapter 26](http://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf)<br>[Chapter 27](http://pages.cs.wisc.edu/~remzi/OSTEP/threads-api.pdf)
+8 | M 10/10 | Concurrency: threads, race conditions, <br>interprocess communication [[lab](https://paper.dropbox.com/doc/OS-Introduction-to-concurrency-40oVoQLcRkqjmqJDj8Kkw)] | [Chapter 25](http://pages.cs.wisc.edu/~remzi/OSTEP/dialogue-concurrency.pdf)<br>[Chapter 26](http://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf)<br>[Chapter 27](http://pages.cs.wisc.edu/~remzi/OSTEP/threads-api.pdf)
 8 | W 10/12 | Concurrency: synchronization 1 [[notes](https://paper.dropbox.com/doc/Concurrency-synchronization-1-1TmE9pvouzY0CFmGCYo0K)] | [Chapter 28](http://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf)<br>  [Homework 4](homework04.html) due Su 10/16
 9 | M 10/17 |  Concurrency: synchronization 2 [[notes](https://paper.dropbox.com/doc/Concurrency-synchronization-2-suwthsqihdHnrzDopkWfd)] | [Chapter 29](http://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks-usage.pdf)<br> [Chapter 30](http://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf) (optional)
 9 | W 10/19 | Concurrency: synchronization 3 [[notes](https://paper.dropbox.com/doc/Concurrency-synchronization-3-ZVonS9jNdBf2Do5U8cFzD)] |  [Chapter 31](http://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf)<br>
@@ -35,12 +35,12 @@ Week|Date|Topic|Reading
 12 | M 11/7 | Persistence: file system implementation [[notes](https://paper.dropbox.com/doc/Persistence-file-system-implementation-58jnVbJ0OtzWg6Qtjem2T)] | [Chapter 40](http://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf)<br> [Chapter 41](http://pages.cs.wisc.edu/~remzi/OSTEP/file-ffs.pdf)
 12 | W 11/9 | Review | <!--[Chapter 42](http://pages.cs.wisc.edu/~remzi/OSTEP/file-journaling.pdf)<br> [Chapter 43](http://pages.cs.wisc.edu/~remzi/OSTEP/file-lfs.pdf)<br> [Chapter 44](http://pages.cs.wisc.edu/~remzi/OSTEP/file-integrity.pdf)<br>--> [Homework 6](homework06.html) due __Fr 11/11__
 13 | M 11/14 | __Exam 2__
-13 | W 11/16 | How to read a technical document - Anamika Megwalu | [Development of DNS](http://www.dtic.mil/dtic/tr/fulltext/u2/a203901.pdf)
-14 | M 11/21 | Communication protocols
+13 | W 11/16 | How to read a technical document<br> Guest lecture by Anamika Megwalu | [Development of DNS](http://www.dtic.mil/dtic/tr/fulltext/u2/a203901.pdf)
+14 | M 11/21 | Distributed systems: the Internet [[notes](https://paper.dropbox.com/doc/Distributed-systems-Internet-qsmzNODZonUdv5zD6p4Ev)] | [The design philosophy of the DARPA internet protocols](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.545.2055&rep=rep1&type=pdf)
 14 | W 11/23 | _Non-instructional day_
-15 | M 11/28 | Distributed systems
-15 | W 11/30 | Distributed systems
-16 | M 12/5 | Security
+15 | M 11/28 | Distributed systems: time and consistency | [Time, clocks and ordering of events in a distributed system](http://research.microsoft.com/en-us/um/people/lamport/pubs/time-clocks.pdf)
+15 | W 11/30 | Distributed systems: distributed hash tables | [Chord: A scalable peer-to-peer lookup service for internet applications](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.125.663&rep=rep1&type=pdf) <br>[Homework 7](homework07.html) due Su 12/4
+16 | M 12/5 | Distributed systems: consensus protocols | [Paxos made simple](http://research.microsoft.com/en-us/um/people/lamport/pubs/paxos-simple.pdf)
 16 | W 12/7 | Security
 17 | M 12/12 | Review
 |T 12/20 | __Final exam__ 7:15AM--9:30AM, MH 222
