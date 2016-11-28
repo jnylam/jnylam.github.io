@@ -42,9 +42,11 @@ __(c)__ Draw a comparison tree that uses as few comparisons as possible (in the 
 
 ### Problem 4
 
-(based on 8.4-2)
+<del>(based on 8.4-2)</del>
 
-Explain why the worst-case running time for bucket sort is $$\Theta(n^2)$$. What simple change to the algorithm preserves its linear average-case running time and makes its worst-case running time $$O(n \log n)$$?
+<del>Explain why the worst-case running time for bucket sort is $$\Theta(n^2)$$. What simple change to the algorithm preserves its linear average-case running time and makes its worst-case running time $$O(n \log n)$$?</del>
+
+Draw a decision/comparison tree for quicksort on inputs of length 3.
 
 ## Submission
 
