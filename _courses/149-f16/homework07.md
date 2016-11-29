@@ -9,8 +9,6 @@ navorder: 3
 ### Problem 1
 Suppose I have a 320GB SATA  disk drive with the following hardware specifications.
 
-
-
 Metric | Value
 --|--
 Capacity | 300 GB

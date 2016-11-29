@@ -45,12 +45,13 @@ Lecture|Date|Topic|Reading/homework
 | Su 11/20 | | [Homework 9](homework09.html)
 25 | M 11/21 | Graphs: minimum spanning trees | 23.1-23.2
  | W 11/23 | _Non-instructional day_
-26 | M 11/28 | Hardness: sorting and search lower bounds, radix and bucket sort | 8.1-8.4
+26 | M 11/28 | Hardness: sorting and search lower bounds, bucket sort | 8.1-8.4
 27 | W 11/30 | __Exam 3__
 | Su 12/4 | | [Homework 10](homework10.html)
-28 | M 12/5 | Hardness: NP-completeness, approximation algorithms
-29 | W 12/7 | Recursion: fast exponential-time algorithms<br> Data structures: segment intersection, dynamic order statistics
-30 | M 12/12 | Randomization: skiplists, bloom filter, string matching or tries<br> Graphs: all-pairs shortest path
+28 | M 12/5 | Hardness: radix sort, NP-completeness
+29 | W 12/7 | Hardness: approximation algorithms
+| Su 12/11 | | [Bonus assignment](bonus.html)<br>Homework 11
+30 | M 12/12 | Review |
 | | __Section 7 final exam__ F 12/16 2:45PM&ndash;5:00PM, MH 422<br />
 | | __Section 8 final exam__ W 12/14 9:45AM&ndash;12:00PM, MH 422
 
