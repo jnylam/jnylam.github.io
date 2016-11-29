@@ -9,6 +9,22 @@ navorder: 3
 ### Problem 1
 Suppose I have a 320GB SATA  disk drive with the following hardware specifications.
 
+
+
+Metric | Value
+--|--
+Capacity | 300 GB
+Page size | 4 KB
+Bandwidth (sequential reads)  | 270 MB/s
+Bandwidth (sequential writes) | 210 MB/s
+Read/write latency | 75 &micro;s
+Random reads / s | 38,500
+Random writes / s | 2,000<br>2,400 with 20% space reserve
+Interface | SATA 3 Gb/s
+Endurance | 1.1 PB<br>1.5 PB with 20% space reserve
+Power consumption (active) | 3.7W
+Power consumption (idle) | 0.7W
+
 __(a)__ For a workload consisting of 10,000 reads to sectors __randomly scattered__ across the disk, how long will theses 10,000 requests take in total, assuming the disk services requests in __FIFO order__?
 
 __(b)__ For a workload consisting of 10,000 reads to 10,000 __sequential sectors on the outer-most tracks__ of the disk, how long will theses 10,000 requests take in total, assuming the disk services requests in __FIFO order__?
