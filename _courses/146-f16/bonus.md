@@ -8,6 +8,8 @@ navorder: 0
 
 ## The code
 
+You may do this assignment in any widely used programming language (please ask if unsure).
+
 Write a web crawler program that
 
 1. takes as input into the terminal or command line (System.in in Java) a string that represents a URL
