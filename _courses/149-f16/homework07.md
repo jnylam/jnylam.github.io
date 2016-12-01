@@ -11,17 +11,15 @@ Suppose I have a 320GB SATA  disk drive with the following hardware specificatio
 
 Metric | Value
 --|--
-Capacity | 300 GB
-Page size | 4 KB
-Bandwidth (sequential reads)  | 270 MB/s
-Bandwidth (sequential writes) | 210 MB/s
-Read/write latency | 75 &micro;s
-Random reads / s | 38,500
-Random writes / s | 2,000<br>2,400 with 20% space reserve
-Interface | SATA 3 Gb/s
-Endurance | 1.1 PB<br>1.5 PB with 20% space reserve
-Power consumption (active) | 3.7W
-Power consumption (idle) | 0.7W
+Capacity | 320 GB
+Form factor | 2.3 inch
+Spindle speed | 5400 RPM
+Average seek time | 12.0 ms
+Maximum seek time | 21 ms
+Track-to-track seek time | 2 ms
+Transfer rate (surface to buffer) | 850 Mbit/s (maximum)
+Transfer rate (buffer to host) | 3 Gbit/s
+Buffer memory | 8 MB
 
 __(a)__ For a workload consisting of 10,000 reads to sectors __randomly scattered__ across the disk, how long will theses 10,000 requests take in total, assuming the disk services requests in __FIFO order__?
 
