@@ -54,7 +54,3 @@ If you are working in a group of two, only one of you should submit the assignme
 ## Rubric
 
 This assignment is out of 10 points.
-
-* 1 poin
-
-## Acknowledgements
