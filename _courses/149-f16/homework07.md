@@ -3,7 +3,7 @@ layout: course
 courseid: 149-f16
 title: Homework 7
 mathjax: true
-navorder: 3
+navorder: 0
 ---
 
 ### Problem 1

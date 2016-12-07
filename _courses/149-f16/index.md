@@ -42,7 +42,7 @@ Week|Date|Topic|Reading
 15 | W 11/30 | Distributed systems: distributed hash tables | [Chord: A scalable peer-to-peer lookup service for internet applications](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.125.663&rep=rep1&type=pdf) <br>[Homework 7](homework07.html) due Su 12/4
 16 | M 12/5 | Distributed systems: consensus protocols | [Paxos made simple](http://research.microsoft.com/en-us/um/people/lamport/pubs/paxos-simple.pdf)
 16 | W 12/7 | Security
-17 | M 12/12 | Review
+17 | M 12/12 | Review | [Homework 8](homework08.html) due T 12/13
 |T 12/20 | __Final exam__ 7:15AM--9:30AM, MH 222
 
 ---
