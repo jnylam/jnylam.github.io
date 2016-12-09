@@ -30,7 +30,7 @@ __(h)__ Explain what the authors considered to be a solution to this problem, an
 
 In class, we talked about the 2-phase commit protocol, which allows multiple nodes to agree to perform a distributed commit operation, or to unanimously back out of it. Recall that 2PC is safe but not live. We will now consider 3-phase commit (or 3PC), which is live but not safe.
 
-Review the [notes for 2PC and 3PC](https://paper.dropbox.com/doc/Distributed-systems-consensus-protocols-ErUG5o9i7ZcVU p6LiLILD) and those you took concerning 2PC, and answer the following questions.
+Review the [notes for 2PC and 3PC](https://paper.dropbox.com/doc/Distributed-systems-consensus-protocols-ErUG5o9i7ZcVUp6LiLILD) and those you took concerning 2PC, and answer the following questions.
 
 __(a)__ Given the brief description for 3PC provided in the notes, draw a time diagram for 3PC containing a timeline for the coordinator, a timeline for one of the voters, arrows representing messages sent, labeled with a brief description of the messages, and for each timeline, labels for intervals of time representing the different states each participant goes through. Remember that arrows representing messages through space and _time_ are drawn diagonally rather than horizontally.
 
