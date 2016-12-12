@@ -38,9 +38,9 @@ Week|Date|Topic|Reading
 13 | W 11/16 | How to read a technical document<br> Guest lecture by Anamika Megwalu | [Development of DNS](http://www.dtic.mil/dtic/tr/fulltext/u2/a203901.pdf)
 14 | M 11/21 | Distributed systems: the Internet [[notes](https://paper.dropbox.com/doc/Distributed-systems-Internet-qsmzNODZonUdv5zD6p4Ev)] | [The design philosophy of the DARPA internet protocols](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.545.2055&rep=rep1&type=pdf)
 14 | W 11/23 | _Non-instructional day_
-15 | M 11/28 | Distributed systems: time and consistency | [Time, clocks and ordering of events in a distributed system](http://research.microsoft.com/en-us/um/people/lamport/pubs/time-clocks.pdf)
-15 | W 11/30 | Distributed systems: distributed hash tables | [Chord: A scalable peer-to-peer lookup service for internet applications](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.125.663&rep=rep1&type=pdf) <br>[Homework 7](homework07.html) due Su 12/4
-16 | M 12/5 | Distributed systems: consensus protocols | [Paxos made simple](http://research.microsoft.com/en-us/um/people/lamport/pubs/paxos-simple.pdf)
+15 | M 11/28 | Distributed systems: time and consistency [[notes](https://paper.dropbox.com/doc/Distributed-systems-time-and-consistency-J39TmZjgsv34t37GNDMcs)] | [Time, clocks and ordering of events in a distributed system](http://research.microsoft.com/en-us/um/people/lamport/pubs/time-clocks.pdf)
+15 | W 11/30 | Distributed systems: consensus protocols [[notes](https://paper.dropbox.com/doc/Distributed-systems-consensus-protocols-ErUG5o9i7ZcVUp6LiLILD)] | [Paxos made simple](http://research.microsoft.com/en-us/um/people/lamport/pubs/paxos-simple.pdf) <br>[Homework 7](homework07.html) due Su 12/4
+16 | M 12/5 | Distributed systems: distributed hash tables [[notes](https://paper.dropbox.com/doc/Distributed-systems-consistent-hashing-zwQCFqfcuqBWL2m2bcAN0)] |  [Chord: A scalable peer-to-peer lookup service for internet applications](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.125.663&rep=rep1&type=pdf)
 16 | W 12/7 | Security
 17 | M 12/12 | Review | [Homework 8](homework08.html) due T 12/13
 |T 12/20 | __Final exam__ 7:15AM--9:30AM, MH 222
