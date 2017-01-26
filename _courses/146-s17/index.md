@@ -11,7 +11,7 @@ This schedule is tentative and subject to change during the semester. Changes wi
 
 Date|Topic|Reading/homework
 ----|-----|-------
-Th 1/26 | Introduction | 1.1, 1.2 (skim) <br> 3.1 (O and &Theta;)
+Th 1/26 | Introduction [[slides](intro.pdf)] | 1.1, 1.2 (skim) <br> 3.1 (O and &Theta;)
 T 1/31 | Recursion: simplify-and-delegate | Ch 2
 Th 2/2 | Recursion:  Towers of Hanoi, mergesort<br> Review: summation notation, induction | 4.1
 T 2/7 | _Last day to drop_<br>Recursion: recurrence equations<br> Review: logarithms, O-notation | 4.3
