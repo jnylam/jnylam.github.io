@@ -11,12 +11,12 @@ This schedule is tentative and subject to change during the semester. Changes wi
 
 Date|Topic|Reading/homework
 ----|-----|-------
-Th 1/26 | Introduction [[slides](intro.pdf)] | 1.1, 1.2 (skim) <br> 3.1 (O and &Theta;)
-T 1/31 | Recursion: simplify-and-delegate | Ch 2
-Th 2/2 | Recursion:  Towers of Hanoi, mergesort<br> Review: summation notation, induction | 4.1
-T 2/7 | _Last day to drop_<br>Recursion: recurrence equations<br> Review: logarithms, O-notation | 4.3
-Th 2/9 | Recursion: divide-and-conquer<br> Review: worse case time complexity | 33.4
-T 2/14 | Recursion: backtracking | [Erickson notes](http://jeffe.cs.illinois.edu/teaching/algorithms/notes/03-backtracking.pdf) (just 3.1, 3.3, 3.6)
+Th 1/26 | Introduction [[slides](intro.pdf)] | 1.1, 1.2 (skim)
+T 1/31 | Recursion: simplify-and-delegate [[slides](recursion1.pdf)] | Ch 2
+Th 2/2 | Analyzing run time<br> Review: worse case time complexity | 3.1 (O and &Theta;)
+T 2/7 | _Last day to drop_<br>Recursion: Towers of Hanoi, backtracking | [Erickson notes](http://jeffe.cs.illinois.edu/teaching/algorithms/notes/03-backtracking.pdf) (just 3.1, 3.3, 3.6)
+Th 2/9 | Recursion: mergesort, recurrence equations | 4.3
+T 2/14 | Recursion: divide-and-conquer algorithms | 33.4
 Th 2/16  | _Last day to add_<br>Recursion: dynamic programming | 15.1
 T 2/21 | Recursion: dynamic programming |
 Th 2/23 | [Data structures: roadmap](#data-structures-roadmap)<br> Data structures: stacks, space complexity of recursive algorithms, <br>find the convex hull | 10.1, 10.2 (skim)<br> 33.3 (Graham scan)
