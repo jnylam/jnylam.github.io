@@ -13,7 +13,7 @@ Date|Topic|Reading/homework
 ----|-----|-------
 Th 1/26 | Introduction [[slides](intro.pdf)] | 1.1, 1.2 (skim)
 T 1/31 | Recursion: simplify-and-delegate [[slides](recursion1.pdf)] | Ch 2
-Th 2/2 | Analyzing run time<br> Review: worse case time complexity | 3.1 (O and &Theta;)
+Th 2/2 | O-notation [[slides](o-notation.pdf)] | 3.1 (O and &Theta;)
 T 2/7 | _Last day to drop_<br>Recursion: Towers of Hanoi, backtracking | [Erickson notes](http://jeffe.cs.illinois.edu/teaching/algorithms/notes/03-backtracking.pdf) (just 3.1, 3.3, 3.6)
 Th 2/9 | Recursion: mergesort, recurrence equations | 4.3
 T 2/14 | Recursion: divide-and-conquer algorithms | 33.4
