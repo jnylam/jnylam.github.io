@@ -9,13 +9,14 @@ navorder: 2
 
 This schedule is tentative and subject to change during the semester. Changes will be reflected on this page as well as announced during lecture. Students should consult this schedule regularly for the most up-to-date information.
 
-Date|Topic|Reading/homework
+Date|Topic|Reading
 ----|-----|-------
 Th 1/26 | Introduction [[slides](intro.pdf)] | 1.1, 1.2 (skim)
 T 1/31 | Recursion: simplify-and-delegate [[slides](recursion1.pdf)] | Ch 2
 Th 2/2 | O-notation [[slides](o-notation.pdf)] | 3.1 (O and &Theta;)
 T 2/7 | _Last day to drop_<br>Recursion: Towers of Hanoi, backtracking | [Erickson notes](http://jeffe.cs.illinois.edu/teaching/algorithms/notes/03-backtracking.pdf) (just 3.1, 3.3, 3.6)
 Th 2/9 | Recursion: mergesort, recurrence equations | 4.3
+Sun 2/12 | |  [Homework 1](homework01.html)
 T 2/14 | Recursion: divide-and-conquer algorithms | 33.4
 Th 2/16  | _Last day to add_<br>Recursion: dynamic programming | 15.1
 T 2/21 | Recursion: dynamic programming |
