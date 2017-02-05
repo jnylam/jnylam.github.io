@@ -17,6 +17,20 @@ The goal of this assignment is to master the following skills:
 
 ## Submission
 
+Solutions should be turned in on Canvas as a __single PDF file__. Here are some possible ways to do this.
+
+Option 1: handwrite your solutions, scan, and convert to PDF. [Here are some tips on how to scan with a mobile device](http://www.howtogeek.com/209951/the-best-ways-to-scan-a-document-using-your-phone-or-tablet/). Please do not send files in image format.
+
+
+Option 2: type up your solutions in your favorite word processor. Export or print your document as a PDF file and submit that. Please do not a submit .docx file.
+
+Option 3: use LaTeX. It will help you produce a beautiful, professional-looking document. This is what authors use to write textbooks and research papers. If you plan on going to graduate school and do research, it will be worth your time to learn this awesome tool. If you want to learn LaTeX, here are some pointers to get you started.
+
+* [Getting LaTeX](https://www.latex-project.org/get/)
+* [LaTeX homework template](http://www.jennylam.cc/assets/template.zip): this is meant to be a starting document for learning LaTeX. Have fun with it!
+* [Any of the many good LaTeX tutorials/cheatsheets/beginner's guides online](https://lmddgtfy.net/?q=Latex%20quickstart). :)
+
+
 ## Problems to be submitted
 
 ### Problem 1
@@ -119,7 +133,7 @@ __f)__ $$\displaystyle \sum_{i = 1}^{\log_2 n} n(1/3)^i$$
 
 ### need more practice with recursion?
 
-- finish the practice problems in 
+- finish the practice problems in [Recursion1Practice.java](https://github.com/jnylam/SJSU-cs146-s17/blob/master/01_Recursion1/src/cc/jennylam/cs146/Recursion1Practice.java)
 - at [codingbat.com](//codingbat.com), solve __Recursion-1__ problems
 
 ### challenging asymptotic growth rates
