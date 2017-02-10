@@ -19,7 +19,7 @@ Th 2/9 | Analysis: time and space complexity [[slides](timecomplexity.pdf)]
 S 2/12 | | |  [Hw 1](homework01.html) due
 T 2/14 | Data structures: ordered list API<br>problem solving techniques
 Th 2/16  | _Last day to add_<br>Data structures: ordered list implementations<br>skiplist, binary search tree
-S 2/19 | | | [Hw 2](homework02.html) due
+S 2/19 | | | Hw 2 due
 T 2/21 | Recursion: backtracking | [Erickson notes](http://jeffe.cs.illinois.edu/teaching/algorithms/notes/03-backtracking.pdf) (just 3.1, 3.3, 3.6)
 Th 2/23 | Data structures: abstract data types, dictionary API | 12
 S 2/26 | | | Hw 3 due
