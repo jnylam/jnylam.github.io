@@ -6,6 +6,16 @@ mathjax: true
 navorder: 0
 ---
 
+Coding
+* Towers of Hanoi, solve()
+* TreeNode, find max, postorder(), size()
+* Optional: calculator
+Running time
+* 
+
+Submission
+* a zip file, with .java, a .pdf
+
 __Note:__ This assignment is entirely written. There are two parts to this assignment, which you can work on both parts in parallel. Some of the problems in part 2 can be challenging, so you should start thinking about them even before you are done solving part 1.
 
 ## Submission
