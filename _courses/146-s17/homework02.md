@@ -6,179 +6,213 @@ mathjax: true
 navorder: 0
 ---
 
-Coding
-* Towers of Hanoi, solve()
-* TreeNode, find max, postorder(), size()
-* Optional: calculator
-Running time
-* 
+# Description
 
-Submission
-* a zip file, with .java, a .pdf
+The goal of this assignment is to master the following skills:
 
-__Note:__ This assignment is entirely written. There are two parts to this assignment, which you can work on both parts in parallel. Some of the problems in part 2 can be challenging, so you should start thinking about them even before you are done solving part 1.
+* be able to write recursive algorithms on non-linear data structures such as trees
+* be able to find the time and space complexity of algorithms 
+    * with a nested loop structure (for loops, while loops)
+    * with a tail-recursion
+Note: this may involve recognizing when the expression for the running time contains logarithms
+* be able to simplify the time complexity using $\Theta$- and $O-$ notation.
+* know how O-, $\Theta$, etc are used in relation to time complexity, and the fact that $O$-notation is not synonymous with worst-case time complexity.
 
-## Submission
+# Submission
 
-The instructions are the same as for the written portion of the last assignment.
+You will package your assignment as a __single zip file__ and submit it on Canvas. The zip file should contain the following files:
 
-Solutions should be turned in on Canvas as a __single PDF file__. Here are some options for how to do this:
+* `TowersOfHanoi.java` with your solution to problem 1
+* `TreeNode.java` with your solution to problem 2
+* one **pdf** file containing your solution to all other problems. 
 
-You have the option of handwriting your solutions on paper, scanning them, and converting them to PDF. Please do not send the images.
+For suggestions on how to make a pdf file, please refer to [Homework 1 - Submission](homework01.html#Submission).
 
-You also have the option of typing your solutions up in your favorite word processor. Export or print your document as a PDF file and submit that. Please do not a submit .docx file.
 
-Finally, you have the option of preparing a professional-looking document using LaTeX. This is what authors use to write textbooks and research papers. If you choose this option, here are some pointers to get you started.
-
-* [Getting LaTeX](https://www.latex-project.org/get/)
-* [LaTeX homework template](http://www.jennylam.cc/assets/template.zip): this is a good place to start learning LaTeX. Feel free to modify this document as you need.
-* [Any of the many good LaTeX tutorials/cheatsheets/beginner's guides online](https://lmddgtfy.net/?q=Latex%20quickstart).
-
-## Part 1: math review
+# Problems to be submitted
 
 ### Problem 1
-Show that for any two bases $$a$$ and $$b$$, we have that $$\log_a n$$ is $$O(\log_b n)$$.
 
-__The lesson:__ The base of the logarithm does not affect O-notation.
+Solve the problem Towers of Hanoi by implementing the `solve()` function in [TowersOfHanoi.java](https://github.com/jnylam/SJSU-cs146-s17/blob/master/02_Recursion2/src/cc/jennylam/cs146/TowersOfHanoi.java)
 
 ### Problem 2
 
-Is $$3^n$$ $$O(2^n)$$? Justify your answer.
+Complete the implementation of the methods in [TreeNode.java](https://github.com/jnylam/SJSU-cs146-s17/blob/master/02_Recursion2/src/cc/jennylam/cs146/TreeNode.java). Specifically, complete
+
+* `TreeNode.max()`
+* `TreeNode.postorder()`
+* `TreeNode.size()`
 
 ### Problem 3
 
-Show that $$3^{\log_4n} = n^{\log_43}$$ using log rules.
+For each of the following functions, 
+
+1) find an expression for the number of calls to doSomething().  
+2) Then simplify with O-notation.  
+3) Then find the amount of space used (approximately, using O-notation).
+
+__a)__
+
+```
+void foo(int n) {
+    for (int i = 0; i < 567; i++)
+        for (int j = 0; j < n; j++)
+            for(int k = 0; k < j; k++)
+                doSomething();
+}
+```
+
+__b)__
+
+```
+void fu(int[] a) {
+    for (int i = 0; i < a.length / 2; i++)
+        doSomething(a[i]);
+    int n = a.length;
+    while (n > 1) {
+        doSomething();
+        n /= 2;
+    }
+}
+```
+
+__c)__
+
+```
+void phoo(int n) {
+    if (n == 1) {
+        doSomething();
+        return;
+    }
+    phoo(n/10);
+}
+```
+
+__d)__
+
+```
+void phoo2(int n) {
+    if (n == 1) {
+        doSomething();
+        return;
+    }
+    doSomething();
+    phoo(n/10);
+}
+```
+
+__e)__
+
+```
+void phoo3(int n) {
+    if (n == 1) {
+        doSomething();
+        return;
+    }
+    phoo(n/10);
+    doSomething();
+}
+```
+
+__f)__
+
+```
+void ffwho(int n) {
+    if (n == 2) {
+       doSomething();
+       return;
+    }
+    ffwho(n-3);
+    doSomething();
+}
+```
+
+__g)__
+
+```
+void phew(int n, int m) {
+    if (n > m) {
+       doSomething();
+       return;
+    }
+    doSomething();
+    phew(n+1, m-1);
+}
+```
 
 ### Problem 4
 
-Find a function that is simultaneously $$O(2^n)$$ and $$\Omega(n^2)$$. (Hint: the statement $$f$$ is $$\Omega(g(n))$$ is equivalent to the statement $$g$$ is $$O(f(n))$$)
+__a)__ How many calls to meow() does this function make?
 
-### Problem  5
-
-If $$f(n)$$ is $$O(g(n))$$, is it necessarily true that $$2^{f(n)}$$ is $$O(2^{g(n)})$$? Justify your answer.
-
-### Problem  6
-
-Explain why the statement "The running time of algorithm $$A$$ is at least $$O(n^2)$$" is meaningless.
-
-### Problem 7
-
-Recall the formula for a geometric sum:
-
-$$\displaystyle \sum_{i =0}^n a^i = \frac{1 - a^{n+1}}{1 - a}$$.
-
-Find the values of the following sums
-
-__a)__ $$\displaystyle\sum_{n = 0}^8 (-3)^n$$
-
-__b)__ $$\displaystyle\sum_{t = 0}^8 (2 \cdot 3^t + 3 \cdot 2^t)$$
-
-__c)__ $$\displaystyle\sum_{s = 0}^8 (2^{s+1} - 2^s)$$
-
-__d)__ Based on the formula for a geometric sum, for what range of values of $$a>0$$ does the sum diverge as $$n \rightarrow \infty$$ and for what range does the sum converge? What does it converge to?
-
-### Problem 8
-
-Order by $$\Theta$$-notation, and indicate those have the same asymptotic growth rate (i.e., that are $$\Theta$$ of each other): $$e^n$$, $$n$$, $$2^n$$, $$n \log n$$, $$\log n$$, $$n^2$$, $$n^4$$, $$n \log_{10} n$$, $$\sqrt{n}$$, $$\sqrt[36]{n}$$, $$2^{n^2}$$, $$\log \sqrt{n}$$, $$(\log n)^2$$, $$\log n^2$$.
-
-__Note:__ intuitively, "$$f$$ is $$\Theta(g)$$" roughly means "$$f = g$$", the same way that "$$f$$ is $$O(g)$$" roughly means "$$f \leq g$$".
-
-Formally, "$$f$$ is $$\Theta(g)$$" means "$$f$$ is $$O(g)$$" and "$$g$$ is $$O(f)$$".
-
-__Extra credit:__ also order $$\log \log n$$,  $$n / (\log \log n)$$, [$$\log^* n$$](https://en.wikipedia.org/wiki/Iterated_logarithm) (you can also find an explanation in the textbook)
-
-### Problem 9
-Give a big-$$O$$ estimate for each of the following functions. For the function $$g$$ in your estimate that $$f(n)$$ is $$O(g(n))$$ use as simple of a function $$g$$ as possible, and of the smallest order.
-
-__a)__ $$5n^3 - 7n^2 + 88$$  
-__b)__ $$ (n\log n + n^2)(n^3 + 2)$$  
-__c)__ $$\log(n^3 + 1) + (\log n)^2$$  
-__d)__ $$(n \log n + 1)^2 + (\log n + 1)(n^2 + 1)$$  
-__e)__ $$n^{2n} + n^{n^2}$$  
-__f)__ $$(n! + 2^n)(n^3 + \log(n^2 + 1))$$  
-__g)__ $$n \cdot (5/4)^{\log_4n + 1}$$
-
-__Hint__: you can simplify __g)__ to $$O(n^?)$$ where ? is something for you to determine.
-
-## Part 2: Recursion and divide-and-conquer algorithms
-
-### Problem 10
-
-Solve the following recurrence relations and give a $$\Theta$$-bound for each.
-
-__a)__ $$T(n) = 2 T(n/3) + 1$$
-
-__b)__ $$T(n) = 5 T(n/4) + n$$
-
-__c)__ $$T(n) = 7 T(n/7) + n$$
-
-__d)__ $$T(n) = 9T(n/3) + n^2$$
-
-__e)__ $$T(n) = 8 T(n/2) + n^3$$
-
-__f)__ $$ T(n) = T(n-1) + 2$$
-
-__g)__ $$T(n) = T(n-1) + n^c$$, where $$c\geq 1$$ is a constant
-
-__h)__ $$T(n) = T(n-1) + c^n$$, where $$c > 1$$ is a constant
-
-__Example:__ the recurrence relation for [Karatsuba's multiplication algorithm](https://en.wikipedia.org/wiki/Karatsuba_algorithm) is $$T(n) = 3 T(n/2) + cn$$, where $$c$$ is a constant (around 5).
-
-To solve it, we argue the following:
-
-* there are $$\log n$$ (base 2) levels of recursion because the input size is halved every level down.
-* at level $$i$$: each recursive call (or tree node) has an input of size $$n/2^i$$, which means $$cn/2^i$$ work per node. There are $$3^i$$ nodes at this level because each node branches 3-ways and we're at level $$i$$. So the total work at this level is $$cn(3/2)^i$$.
-* if we sum up the work done at levels 0 to $$\log n$$, we get
-
-$$\displaystyle T(n) = \sum_{i = 0}^{\log n} cn\left(\frac{3}{2}\right)^i$$.
-
-This is a geometric sum with base $$a = 3/2$$, so applying the formula for it, we see that it's  equal to
-
-$$\displaystyle cn \frac{(3/2)^{\log_2 n + 1} - 1}{3/2 - 1}$$
-
-which is $$\Theta(n (3/2)^{\log_2 n})$$. We can further simplify that since
-
-$$\displaystyle n (3/2)^{\log_2 n} = n \frac{3^{\log_2 n}}{2^{\log_2 n}} = n \frac{n^{\log_2 3}}{n}$$.
-
-(Note: we used the same identity as in problem 3.) So $$T(n)$$ is $$\Theta(n^{\log_2 3})$$.
-
-### Problem 11
-
-Suppose we change the definition of the maximum-subarray problem to allow the result to be an empty subarray, where the sum of the values of an empty subarray is 0. How would you change any of the algorithms that do not allow empty subarrays to permit an empty subarray to be the result?
-
-
-### Problem 12
-
-How many lines, as a function of $$n$$ (in $$\Theta(\cdot)$$ form), does the following program print? Write a recurrence and solve it.
-
-```python
-def f(n):  
-    if n > 1:
-        print "still going"
-        f(n/2)
-        f(n/2)
+```
+void makeSomeNoise(int n) {
+    while (n > 1) {
+        meow();
+        n /= 13;
+    }
+}
 ```
 
-### Problem 13
+__b)__ Add as little additional code as possible to this function so that it makes $n$ times as many calls. (No deletions allowed).
 
-You are given an array of $$n$$ elements, and you notice that some of the elements are duplicates; that is, they appear more than once in the array. Show how to remove all duplicates from the array in time $$O(n \log n)$$.
+__c)__ Rewrite the function in part __a)__ using tail-recursion;
 
+### Problem 5
 
-### Problem 14 (extra credit challenge problem)
+__a)__ Write an iterative function to compute $2^n$, given $n \geq 1$. What is the time complexity of this function?
 
-Given a sorted array of distinct integers $$A[1,\dots, n]$$, you want to find out whether there is an index $$i$$ for which $$A[i] = i$$. Give a divide-and-conquer algorithm that runs in $$O(\log n)$$.
+__b)__
+Consider the following function
 
-### Problem 15 (extra credit challenge problem)
+```
+int foo(int n) {
+    if (n == 1)
+        return 2;
+    int a = foo(n / 2);
+    return a * a;
+}
+```
 
-You are given two sorted lists of size $$n$$ and $$n$$. Give an $$O(\log n)$$ time algorithm for computing the $$k$$-th smallest element in the union of the two lists.
+and
 
+```
+int bar(int n) {
+    if (n == 1)
+         return 2;
+    return foo(n/2) * foo(n/2);
+}
+```
 
-## Rubric
+Explain why these functions always return the same result, given the same input.
 
-This assignment is worth 20 points:
+__c)__ Explain why `bar`  is less efficient than `foo`. What is the running time of each of these functions? Hint: use the technique shown in class of tracing the algorithm for small inputs, until you find a pattern. Relate input size to running time.
 
-* 10 points for reasonable attempt on all problems. This means all answers must be justified. Getting the "right answer" doesn't count without a reasonable explanation as to how you got it. The solutions must be entirely written by yourself (that is, no copying).
-* 8 points for correctness on 4 problems, randomly chosen by the grader.
-* 2 points for presentation and legibility.
+__d)__ In class we said that `foo` computes the function $f(n) = 2^n$ correctly for inputs that are powers of 2 ($n = $ 1, 2, 4, 8, ...), but not for the rest because the division by 2 is an integer division. Modify `foo` to correctly compute $f(n)$ for all $n \geq 1$.
 
-Bonus: 0.5 point for all 3 extra credit parts of problem 8, 1 point for problem 14 and 1 point for problem 15 (must be correct and turned in with the rest of this assignment).
+Hint: assume that foo(n/2) and foo(n/2 + 1) correctly compute $2^{n/2}$ and $2^{n/2 + 1}$. Express $2^n$ in terms of foo(n/2) and foo(n/2+1).
+
+# Additional problems (not to be submitted)
+
+### more practice with recursion on a tree
+
+You too can come up with practice problems of your own: simply ask yourself, what kind of questions could one ask about a tree? What variations can I make on this data structure? Can you think of any? Here's a few suggestions to get you started:
+
+1. given a particular element `e`, does the tree contain this element?
+2. what is the height of the tree?
+3. does the tree satisfy the binary search tree property (that you studied in CS 46B)?
+3. instead of two children, how about implementing a tree with arbitrarily many children?
+
+For each of these questions, you now have a practice problem. You can now write a solution and add it as as an implementation method in [TreeNode.java](https://github.com/jnylam/SJSU-cs146-s17/blob/master/02_Recursion2/src/cc/jennylam/cs146/TreeNode.java).
+
+As a bonus, you are practicing an important problem solving technique: how to understand a new idea or problem by asking questions of your own.
+
+### learn to write a basic intepreter
+
+In this little project, you will extend the functionality of a tiny calculator, which takes strings such as `2 * 3 + 12 * (1 + 5)`, interprets the strings as a mathematical expression and evaluates them.
+
+To do the interpretation, a formal language of the "valid strings" that will be recognized must first be defined, and that is done recursively. For example, the most general expression the calculator recognizes is a sum. A sum is made up of terms, each of which is made up of factors. But each factor can itself be a sum if it is surrounded by parentheses. Therefore, the language has a recursive structure, and the code which recognizes this language and mirrors its structure, will in turn also be recursive.
+
+All the code to get you started can be found here:
+[Calculator.java](https://github.com/jnylam/SJSU-cs146-s17/blob/master/02_Recursion2/src/cc/jennylam/cs146/Calculator.java)
+
+If you found this project interesting and would like to learn more on this topic (which can be useful in writing games), check out "Language Implementation Patterns: Create Your Own Domain-Specific and General Programming Languages" by Terence Parr.
