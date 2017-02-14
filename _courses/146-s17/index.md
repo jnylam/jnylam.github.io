@@ -17,7 +17,7 @@ Th 2/2 | Analysis: O-notation [[slides](o-notation.pdf)] | 3.1 (O and &Theta;)
 T 2/7 | _Last day to drop_<br>Recursion: Towers of Hanoi, binary tree [[slides](recursion2.pdf)] [[code](//github.com/jnylam/SJSU-cs146-s17/tree/master/02_Recursion2/src/cc/jennylam/cs146)] | <!-- backtracking  -->
 Th 2/9 | Analysis: time and space complexity [[slides](timecomplexity.pdf)]
 S 2/12 | | | [Hw 1](homework01.html) due<br>[Hw 1 solutions](hw01.pdf)
-T 2/14 | Data structures: ordered list API [[slides](introds.pdf)]<br>problem solving techniques
+T 2/14 | Data structures: abstract data types [[slides](introds.pdf)]<br>Data structures: sorted set ADT <br>Problem solving techniques | [Java interfaces](https://docs.oracle.com/javase/tutorial/collections/interfaces/index.html) and [implementations](https://docs.oracle.com/javase/tutorial/collections/implementations/index.html)<br>[Java SortedSet interface](https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html)<br>[Problem solving techniques](http://www.cs.yale.edu/homes/aspnes/pinewiki/ProblemSolvingTechniques.html)
 Th 2/16  | _Last day to add_<br>Data structures: ordered list implementations<br>skiplist, binary search tree
 S 2/19 | | | [Hw 2](homework02.html) due
 T 2/21 | Recursion: backtracking | [Erickson notes](http://jeffe.cs.illinois.edu/teaching/algorithms/notes/03-backtracking.pdf) (just 3.1, 3.3, 3.6)
