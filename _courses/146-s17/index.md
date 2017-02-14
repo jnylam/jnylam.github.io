@@ -16,8 +16,8 @@ T 1/31 | Recursion: simplify-and-delegate [[slides](recursion1.pdf)] [[code](//g
 Th 2/2 | Analysis: O-notation [[slides](o-notation.pdf)] | 3.1 (O and &Theta;)
 T 2/7 | _Last day to drop_<br>Recursion: Towers of Hanoi, binary tree [[slides](recursion2.pdf)] [[code](//github.com/jnylam/SJSU-cs146-s17/tree/master/02_Recursion2/src/cc/jennylam/cs146)] | <!-- backtracking  -->
 Th 2/9 | Analysis: time and space complexity [[slides](timecomplexity.pdf)]
-S 2/12 | | |  [Hw 1](homework01.html) due
-T 2/14 | Data structures: ordered list API<br>problem solving techniques
+S 2/12 | | | [Hw 1](homework01.html) due<br>[Hw 1 solutions](hw01.pdf)
+T 2/14 | Data structures: ordered list API [[slides](introds.pdf)]<br>problem solving techniques
 Th 2/16  | _Last day to add_<br>Data structures: ordered list implementations<br>skiplist, binary search tree
 S 2/19 | | | [Hw 2](homework02.html) due
 T 2/21 | Recursion: backtracking | [Erickson notes](http://jeffe.cs.illinois.edu/teaching/algorithms/notes/03-backtracking.pdf) (just 3.1, 3.3, 3.6)
@@ -59,6 +59,14 @@ S 5/14 | | | Hw 13 due
 T 5/16 | Review |
 T 5/23 | __Section 5 final exam__ T 5/23  7:15AM&ndash;9:30AM, MH 222<br />
 W 5/24 | __Section 6 final exam__ W 5/24  9:45AM&ndash;12:00PM, MH 225
+
+
+
+### Exams from Fall 2016
+
+Download here: [[zip](exams.zip)]
+
+Note: these will give you an idea of the format of the exams, but these may not necessarily be suitable practice questions as the topics may be different and covered in a different order.
 
 <!-- Recursion: divide-and-conquer algorithms | 33.4
 Dynamic programming: 15.1
