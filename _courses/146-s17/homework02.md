@@ -97,7 +97,7 @@ void phoo2(int n) {
         return;
     }
     doSomething();
-    phoo(n/10);
+    phoo2(n/10);
 }
 ```
 
@@ -109,7 +109,7 @@ void phoo3(int n) {
         doSomething();
         return;
     }
-    phoo(n/10);
+    phoo3(n/10);
     doSomething();
 }
 ```
