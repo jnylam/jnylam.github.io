@@ -18,7 +18,7 @@ T 2/7 | _Last day to drop_<br>Recursion: Towers of Hanoi, binary tree [[slides](
 Th 2/9 | Analysis: time and space complexity [[slides](timecomplexity.pdf)]
 S 2/12 | | | [Hw 1](homework01.html) due<br>[Hw 1 solutions](hw01.pdf)
 T 2/14 | Data structures: abstract data types [[slides](introds.pdf)]<br>Data structures: sorted set ADT <br>Problem solving techniques | [Java interfaces](https://docs.oracle.com/javase/tutorial/collections/interfaces/index.html) and [implementations](https://docs.oracle.com/javase/tutorial/collections/implementations/index.html)<br>[Java SortedSet interface](https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html)<br>[Problem solving techniques](http://www.cs.yale.edu/homes/aspnes/pinewiki/ProblemSolvingTechniques.html)
-Th 2/16  | _Last day to add_<br>Data structures: ordered list implementations<br>skiplist, binary search tree
+Th 2/16  | _Last day to add_<br>Data structures: ordered list implementations<br>skiplist, binary search tree [[slides](skiplist.pdf)] | [Skiplists](https://www.cs.umd.edu/class/spring2008/cmsc420/L12.SkipLists.pdf) - UMD slides
 S 2/19 | | | [Hw 2](homework02.html) due
 T 2/21 | Recursion: backtracking | [Erickson notes](http://jeffe.cs.illinois.edu/teaching/algorithms/notes/03-backtracking.pdf) (just 3.1, 3.3, 3.6)
 Th 2/23 | Data structures: abstract data types, dictionary API | 12
