@@ -179,7 +179,7 @@ and
 int bar(int n) {
     if (n == 1)
          return 2;
-    return foo(n/2) * foo(n/2);
+    return bar(n/2) * bar(n/2);
 }
 ```
 
