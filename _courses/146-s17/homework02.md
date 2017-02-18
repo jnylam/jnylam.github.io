@@ -80,7 +80,7 @@ __c)__
 
 ```
 void phoo(int n) {
-    if (n == 1) {
+    if (n <= 1) {
         doSomething();
         return;
     }
@@ -92,7 +92,7 @@ __d)__
 
 ```
 void phoo2(int n) {
-    if (n == 1) {
+    if (n <= 1) {
         doSomething();
         return;
     }
@@ -105,7 +105,7 @@ __e)__
 
 ```
 void phoo3(int n) {
-    if (n == 1) {
+    if (n <= 1) {
         doSomething();
         return;
     }
@@ -118,7 +118,7 @@ __f)__
 
 ```
 void ffwho(int n) {
-    if (n == 2) {
+    if (n <= 2) {
        doSomething();
        return;
     }
@@ -166,7 +166,7 @@ Consider the following function
 
 ```
 int foo(int n) {
-    if (n == 1)
+    if (n <= 1)
         return 2;
     int a = foo(n / 2);
     return a * a;
@@ -177,7 +177,7 @@ and
 
 ```
 int bar(int n) {
-    if (n == 1)
+    if (n <= 1)
          return 2;
     return bar(n/2) * bar(n/2);
 }
