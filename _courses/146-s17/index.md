@@ -22,7 +22,7 @@ Th 2/16  | _Last day to add_<br>Data structures: sorted set implementations<br>s
 S 2/19 | | | [Hw 2](homework02.html) due
 T 2/21 | Recursion: backtracking | [Erickson notes](http://jeffe.cs.illinois.edu/teaching/algorithms/notes/03-backtracking.pdf) (just 3.1, 3.3, 3.6)
 Th 2/23 | Data structures: dictionary API | 12
-S 2/26 | | | Hw 3 due
+S 2/26 | | | [Hw 3](homework03.html) due
 T 2/28 | Data structures: priority queue API (part 1)<br>breadth-first search, Dijkstra's algorithm | 22.2, 24.3
 Th 3/2 | Data structures: priority queue API (part 2)<br>selection sort and heapsort, MST algorithms | 
 S 3/5 | | | Hw 4 due
