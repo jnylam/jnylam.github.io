@@ -82,7 +82,7 @@ __(d)__ Propose a second solution in which you start with the naive implementati
 
 __(a)__ Recall that __an adjacency matrix__ is a matrix whose rows and columns are indexed by the vertices, with a 1 in row i and column j if there is an edge from vertex i to vertex j.
 
-   Draw the graph whose adjacency matrix is below, using circles for the vertices and arrows for the edges. Label each vertex with the number of its row and column.
+   Draw the graph whose adjacency matrix is below, using circles for the vertices and arrows for the edges. Label each vertex with the number of its row.
 
 $$\begin{pmatrix}
 0 & 1 & 1 & 0 \\
