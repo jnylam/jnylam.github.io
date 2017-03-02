@@ -22,7 +22,7 @@ Th 2/16  | _Last day to add_<br>Data structures: sorted set implementations [[sl
 S 2/19 | | | [Hw 2](homework02.html) due<br>[Hw 2 solutions](hw02.pdf)
 T 2/21 | Recursion: backtracking [[slides](backtracking.pdf)] | [Backtracking](//jeffe.cs.illinois.edu/teaching/algorithms/notes/03-backtracking.pdf) - 3.1, 3.3, 3.6 - Erickson
 Th 2/23 | Data structures: dictionary ADT [[slides](dictionary.pdf)]<br>Graph representation, caching and memoization | Representation of graphs - 22.1 and/or<br>[Adjacency list](//en.wikipedia.org/wiki/Adjacency_list) - Wikipedia<br>[Memoization](//en.wikipedia.org/wiki/Memoization) - Wikipedia
-S 2/26 | | | [Hw 3](homework03.html) due
+S 2/26 | | | [Hw 3](homework03.html) due<br>[Hw 3 solutions](hw03.pdf)
 T 2/28 | Data structures: priority queue ADT (part 1) [[slides](priority1.pdf)]<br>breadth-first search, Dijkstra's algorithm | Priority queues - 6.5 (p 162 only)<br>Breadth-first search - 22.2<br>Dijkstra's algorithm - 24.3
 Th 3/2 | Data structures: priority queue ADT (part 2)<br>selection sort and heapsort, MST algorithms | Minimum spanning trees - Ch 23
 S 3/5 | | | [Hw 4](homework04.html) due
