@@ -6,68 +6,102 @@ mathjax: true
 navorder: 0
 ---
 
-### Problem 1: find the convex hull
+# Description
 
-__(a)__ Draw the convex hull of the following set of points:
+The goal of this assignment is to master the following concepts:
 
-$$\{(2,2), (4,4), (6,4), (8,1), (8,7), (9,3), (1,5), (5,4)\}.$$
+- use the PriorityQueue ADT to design algorithms and data structures
+- Breadth-First search algorithm
+- Dijkstra's algorithm
+- Prim-Dijkstra-Jarnik algorithm
+- Kruskal's algorithm
+- for each of these algorithms
+    - explain and implement the algorithm
+    - explain what problem it solves
+    - explain the running time and its dependence on the data structure implementation (for Dijkstra and PDJ)
 
-__(b)__ Suppose that we run Graham's scan on this set of points. Describe the sequence of pushes and pops that are applied to the stack. Your answer should have the format: push (x1, y1), push (x4, y4), pop, push (x3, y3)...
+# Submission
 
-### Problem 2: heap
+You will package your assignment as a __single PDF file__ and submit it on Canvas.
 
-__(a)__ Is there a (min-)heap $T$ storing seven distinct elements such that a preorder traversal of $T$ yields the elements of $T$ in sorted order?
+For suggestions on how to make a pdf file, please refer to [Homework 1 - Submission](homework01.html#Submission).
 
-__(b)__ How about an inorder traversal?
+# Exercises (not to be submitted)
 
-__(c)__ How about a postorder traversal?
+The following exercises cover required knowledge for this course. They should be solved but solutions to these will not be collected.
 
-### Problem 3: median data structure
+
+![](hw10-0a.png)
+
+__(a)__ Illustrate the execution of breadth-first search on the graph above, treating it as an unweighted graph (all edges have a weight of 1), and with vertex $$e$$ as the source.
+
+__(b)__ Illustrate the execution of Dijkstra's algorithm on the graph above, together with $$e$$ as the source.
+
+__(c)__ Illustrate the execution of the Prim Dijkstra-Jarnik algorithm on the graph above, starting at $$e$$.
+
+__(d)__ Illustrate the execution of Kruskal's algorithm on the graph above.
+
+__(e)__ Implement Dijkstra's algorithm in Java.
+
+# Problems to submitted
+
+### Problem 1: analysis of Dijkstra's algorithm under different implementations of a priority queue
+
+Suppose we wish to compute shortest paths in a complete directed graph (a directed graph in which there exists an edge in each direction between every two vertices), with positive edge weights (so that Dijkstra's algorithm may be used). But rather than using a complicated priority queue data structure, we use an unsorted list $L$ of the vertices that have not yet been processed. That is, the simplified version of Dijkstra's algorithm performs the following steps:
+
+```
+initialize the dist and prev information used in the original Dijkstra's algorithm
+
+initialize L to be a list of all the vertices in the graph
+
+while L is not empty {
+    look at all of the vertices in L to find the vertex v with
+    the minimum value of dist.get(v)
+
+    remove v from L
+
+    for each edge v->w
+        relax(v->w)
+}
+```
+
+You may assume that looking at all vertices in $$L$$ takes time proportional to the number of vertices examined, and that removing v from $$L$$ takes constant time.
+
+__(a)__ What is the running time of this algorithm, using $O$-notation, as a function of the number $$n$$ of vertices in the input graph?
+
+__(b)__ Would this algorithm be a better or worse choice than the more usual form of Dijkstra's algorithm using a binary heap (whose operations are $$O(\log n)$$), for this type of graph? Explain your answer.
+
+
+### Problem 2: correctness of Dijkstra's algorithm
+
+Give an example of an weighted directed graph, $G$, with negative-weight edges but no negative-weight cycle, such that Dijkstra's algorithm incorrectly computes the shortest-path distances from some start vertex $$v$$.
+
+### Problem 3: design a data structure using a priority queue ADT as a building block
 
 Describe a method for maintaining the median of an initially empty set, $S$, subject to an operation, $\mathsf{insert}(x)$, which inserts the value $x$, and an operation, $\mathsf{median}()$, which returns the median in $S$. Each of these methods should run in at most $O(\log n)$ time, where $n$ is the number of values in $S$.
 
-Hint 1: <span class="hint">use one or more known data structures as a black box (this means, use their API, without worrying about how they work internally.)</span>
+### Problem 4: minimum spanning trees are not shortest path trees
 
-Hint 2: <span class="hint">use a min-heap and a max-heap as black boxes</span>
+Give an example of a weighted, connected, undirected graph, $$G$$, such that the minimum spanning tree for $$G$$ is different from every shortest-path tree rooted at a vertex of $$G$$.
 
-Hint 3: <span class="hint">add items smaller than current median to min-heap</span>
+### Problem 5: building a backtracking solution
 
-Hint 4: <span class="hint">how can you maintain a roughly equal number of elements in each?</span>
+Write an algorithm in code or pseudocode for solving the longest common subsequence problem introduced in class (T 2/21: backtracking), but instead of returning the length of the subsequence, return an actual subsequence of that length.
 
-## Extra credit: programming a binary search tree
+# Hints
 
-Complete the implementation of the binary search tree started in class. You know you are done when the `main` function runs correctly with all commented lines uncommented, and printing shows the expected behavior of a BST.
+### Problem 3
 
-[BST starter code](https://glot.io/snippets/ej354dtkn2)
+<span class="hint">use one or more known data structures as a black box (this means, use their API, without worrying about how they work internally.)</span>
 
+<span class="hint">use a min-priority queue and a max-priority queue as building blocks. A min-priority queue has an $$\mathsf{extractMin}()$$ but no $$\mathsf{extractMax}()$$ method and a max-priority queue </span>
 
-## Submission
+<span class="hint">add items smaller than current median to min-heap</span>
 
-Homework should be submitted on Canvas:
-
-* solutions to the written problems should be submitted as a __single PDF file__.
-* optional: the extra credit assignment should be turned in as a separate file. Save the code to a single file named __`main.py`__.
-
----
-Options for making PDFs:
-
-You have the option of handwriting your solutions on paper, scanning them, and converting them to PDF. Please do not send the images.
-__If you use a phone or tablet__ to scan your handwritten solutions, [here are some tips on how to this well](http://www.howtogeek.com/209951/the-best-ways-to-scan-a-document-using-your-phone-or-tablet/).
-
-You also have the option of typing your solutions up in your favorite word processor. Export or print your document as a PDF file and submit that. Please do not a submit .docx file.
-
-Finally, you have the option of preparing a professional-looking document using LaTeX. This is what authors use to write textbooks and research papers. If you choose this option, here are some pointers to get you started.
-
-* [Getting LaTeX](https://www.latex-project.org/get/)
-* [LaTeX homework template](http://www.jennylam.cc/assets/template.zip): this is a good place to start learning LaTeX. Feel free to modify this document as you need.
-* [Any of the many good LaTeX tutorials/cheatsheets/beginner's guides online](https://lmddgtfy.net/?q=Latex%20quickstart).
+<span class="hint">how can you maintain a roughly equal number of elements in each?</span>
 
 
-## Rubric
+### Problem 5
 
-This assignment is worth 20 points:
+<span class="hint">use the same technique as we did in class to keep track of shortest paths in Dijkstra.</span>
 
-* 6 points per problem, 3 for a reasonable attempt on it and 3 for correctness.
-* 1 point for a correctly submitted assignment, that is, as a single PDF file that is legible (if you choose to take pictures, make sure the text is in focus, please check on a computer screen before submitting), properly oriented, etc.
-* 1 point for presentation and neatness.
-* 1 point for the extra credit problem if the code in the `main` function passes without errors, and the output is sorted. This code must still be correct when the input lists in `main` changes.

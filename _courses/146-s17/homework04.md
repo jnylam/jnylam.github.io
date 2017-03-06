@@ -40,11 +40,27 @@ Complete the backtracking problems in [BacktrackingProblems.java](//github.com/j
 - `void add(Entry p)` : add `p.page` to the set of visited pages. It is guaranteed that if `add(q)` is called after `add(p)` then q.timestamp >= p.timestamp
 - `List<String> common(k)`: return a list of the k most common pages
 
-__(a)__ Implement a solution which uses the sorted dictionary ATD. You may give your solution in code or in pseudocode. 
+__(a)__ Implement a solution which uses the sorted dictionary ATD. You may give your solution in code or in pseudocode. Your solution should have the following structure
+
+```
+class KCommon {
+    private SortedMap mapUsedAsBuildingBlock // initialized in constructor
+
+    public void add(Entry p) {
+        // extract relevant information from p and store it in the mapUsedAsBuildingBlock 
+    }
+
+    public int common(int k) {
+        // do whatever is necesssary to retrieve appropriate information from mapUsedAsBuildingBlock
+    }
+
+}
+```
+<ins>Hint: to use the SortedMap, you will probably also need a Map to access the SortedMap quickly</ins>
 
 __(b)__ Assume that the sorted dictionary is implemented with a balanced binary search tree.  At the point in the log file at which r distinct pages have been encountered, how long does it take to make a call to `add()`? How long does it take to make a call to `common()`?
 
-__(c)__ Implement a solution which uses the (non-sorted) dictionary ADT.
+__(c)__ Implement a solution which uses the (non-sorted) dictionary ADT. <ins>Similar structure to (a)</ins>
 
 __(d)__ Assume that the dictionary is implemented with a hash table (a dictionary implementation in which all operations take O(1) time).  At the point in the log file at which r distinct pages have been encountered, how long does it take to make a call to `add()`? How long does it take to make a call to `common()`?
 
@@ -73,7 +89,7 @@ __(a)__ Draw the recursion tree corresponding to a call to $$\text{fib}(5)$$, wh
 
 __(b)__ Possibly with the help of this tree, explain why the naive implementation is not an efficient implementation. In other words, where is there potential savings?
 
-__(c)__ Propose an algorithm in code or pseudocode to compute the $$n$$-th Fibonacci number in $$\Theta(n)$$ time. Draw a recursion tree corresponding to a call to your solution to compute the 5-th Fibonacci number.
+__(c)__ Propose an algorithm in code or pseudocode to compute the $$n$$-th Fibonacci number in $$\Theta(n)$$ time. <ins>Your solution does not have to be recursive.</ins> <del>Draw a recursion tree corresponding to a call to your solution to compute the 5-th Fibonacci number.</del>
 
 __(d)__ Propose a second solution in which you start with the naive implementation above, and add to it memoization code to store previously computed values in a dictionary. (Help: review the lecture notes on memoization.) Draw a recursion tree corresponding to a call to your second solution to compute the 5-th Fibonacci number.
 
