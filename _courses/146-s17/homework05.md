@@ -11,13 +11,14 @@ navorder: 0
 The goal of this assignment is to master the following concepts:
 
 - use the PriorityQueue ADT to design algorithms and data structures
+- explain the single source shortest path problem and the minimum spanning tree problem
 - Breadth-First search algorithm
 - Dijkstra's algorithm
 - Prim-Dijkstra-Jarnik algorithm
 - Kruskal's algorithm
 - for each of these algorithms
     - explain and implement the algorithm
-    - explain what problem it solves
+    - explain what problem the algorithm solves
     - explain the running time and its dependence on the data structure implementation (for Dijkstra and PDJ)
 
 # Submission
