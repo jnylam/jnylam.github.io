@@ -68,7 +68,7 @@ while L is not empty {
 
 You may assume that looking at all vertices in $$L$$ takes time proportional to the number of vertices examined, and that removing v from $$L$$ takes constant time.
 
-__(a)__ What is the running time of this algorithm, using $O$-notation, as a function of the number $$n$$ of vertices in the input graph?
+__(a)__ What is the running time of this algorithm, using $O$-notation, as a function of the number $$n$$ of vertices and the number $$m$$ of edges in the input graph?
 
 __(b)__ Would this algorithm be a better or worse choice than the more usual form of Dijkstra's algorithm using a binary heap (whose operations are $$O(\log n)$$), for this type of graph? Explain your answer.
 
@@ -76,33 +76,3 @@ __(b)__ Would this algorithm be a better or worse choice than the more usual for
 ### Problem 2: correctness of Dijkstra's algorithm
 
 Give an example of an weighted directed graph, $G$, with negative-weight edges but no negative-weight cycle, such that Dijkstra's algorithm incorrectly computes the shortest-path distances from some start vertex $$v$$.
-
-### Problem 3: design a data structure using a priority queue ADT as a building block
-
-Describe a method for maintaining the median of an initially empty set, $S$, subject to an operation, $\mathsf{insert}(x)$, which inserts the value $x$, and an operation, $\mathsf{median}()$, which returns the median in $S$. Each of these methods should run in at most $O(\log n)$ time, where $n$ is the number of values in $S$.
-
-### Problem 4: minimum spanning trees are not shortest path trees
-
-Give an example of a weighted, connected, undirected graph, $$G$$, such that the minimum spanning tree for $$G$$ is different from every shortest-path tree rooted at a vertex of $$G$$.
-
-### Problem 5: building a backtracking solution
-
-Write an algorithm in code or pseudocode for solving the longest common subsequence problem introduced in class (T 2/21: backtracking), but instead of returning the length of the subsequence, return an actual subsequence of that length.
-
-# Hints
-
-### Problem 3
-
-<span class="hint">use one or more known data structures as a black box (this means, use their API, without worrying about how they work internally.)</span>
-
-<span class="hint">use a min-priority queue and a max-priority queue as building blocks. A min-priority queue has an $$\mathsf{extractMin}()$$ but no $$\mathsf{extractMax}()$$ method and a max-priority queue </span>
-
-<span class="hint">add items smaller than current median to min-heap</span>
-
-<span class="hint">how can you maintain a roughly equal number of elements in each?</span>
-
-
-### Problem 5
-
-<span class="hint">use the same technique as we did in class to keep track of shortest paths in Dijkstra.</span>
-
