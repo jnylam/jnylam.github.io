@@ -70,7 +70,7 @@ You may assume that looking at all vertices in $$L$$ takes time proportional to 
 
 __(a)__ What is the running time of this algorithm, using $O$-notation, as a function of the number $$n$$ of vertices and the number $$m$$ of edges in the input graph?
 
-__(b)__ Would this algorithm be a better or worse choice than the more usual form of Dijkstra's algorithm using a binary heap (whose operations are $$O(\log n)$$), for this type of graph? Explain your answer.
+__(b)__ Would this algorithm be a better or worse choice than the more usual form of Dijkstra's algorithm using a binary heap (whose operations are all $$O(\log n)$$, except for makeQueue(), which is $$O(n)$$ to insert n elements), for this type of graph? Explain your answer.
 
 
 ### Problem 2: correctness of Dijkstra's algorithm
