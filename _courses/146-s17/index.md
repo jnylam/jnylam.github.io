@@ -15,7 +15,7 @@ Th 1/26 | Introduction [[slides](intro.pdf)] | 1.1, 1.2 (skim)
 T 1/31 | Recursion: simplify-and-delegate [[slides](recursion1.pdf)] [[code](//github.com/jnylam/SJSU-cs146-s17/tree/master/01_Recursion1/src/cc/jennylam/cs146)] | 
 Th 2/2 | Analysis: O-notation [[slides](o-notation.pdf)] | O and &Theta; - 3.1
 T 2/7 | _Last day to drop_<br>Recursion: Towers of Hanoi, binary tree [[slides](recursion2.pdf)] [[code](//github.com/jnylam/SJSU-cs146-s17/tree/master/02_Recursion2/src/cc/jennylam/cs146)] | Binary trees - 10.4
-Th 2/9 | Analysis: time and space complexity [[slides](timecomplexity.pdf)]
+Th 2/9 | Analysis: time and space complexity [[slides](timecomplexity.pdf)] | [Space complexity](spacecomplexity.html)
 S 2/12 | | | [Hw 1](homework01.html) due<br>[Hw 1 solutions](hw01.pdf)
 T 2/14 | Data structures: abstract data types [[slides](introds.pdf)]<br>Data structures: sorted set ADT <br>Problem solving techniques | [Java interfaces](https://docs.oracle.com/javase/tutorial/collections/interfaces/index.html) and [implementations](https://docs.oracle.com/javase/tutorial/collections/implementations/index.html)<br>[Java SortedSet interface](https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html)<br>[Problem solving techniques](http://www.cs.yale.edu/homes/aspnes/pinewiki/ProblemSolvingTechniques.html)
 Th 2/16  | _Last day to add_<br>Data structures: sorted set implementations [[slides](skiplist.pdf)]<br>skiplist, binary search tree | [Skiplists](https://www.cs.umd.edu/class/spring2008/cmsc420/L12.SkipLists.pdf) - UMD slides<br>Binary search trees - Ch 12
