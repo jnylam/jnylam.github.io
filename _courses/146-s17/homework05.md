@@ -75,4 +75,6 @@ __(b)__ Would this algorithm be a better or worse choice than the more usual for
 
 ### Problem 2: correctness of Dijkstra's algorithm
 
+<ins>A negative (-weight) cycle is a cycle in which the sum of the edges is negative. For example, the cycle A ---(2)--> B ---(-5)---> C ---(2)---> A is a negative cycle, but A ---(-2)---> B ---(3)---> C ---(1)---> A is not a negative cycle.</ins>
+
 Give an example of an weighted directed graph, $G$, with negative-weight edges but no negative-weight cycle, such that Dijkstra's algorithm incorrectly computes the shortest-path distances from some start vertex $$v$$.

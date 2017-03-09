@@ -26,7 +26,7 @@ S 2/26 | | | [Hw 3](homework03.html) due<br>[Hw 3 solutions](hw03.pdf)
 T 2/28 | Data structures: priority queue ADT (part 1) [[slides](priority1.pdf)]<br>breadth-first search, Dijkstra's algorithm | Priority queues - 6.5 (p 162 only)<br>Breadth-first search - 22.2<br>Dijkstra's algorithm - 24.3
 Th 3/2 | Data structures: priority queue ADT (part 2)<br>selection sort and heapsort, MST algorithms | Minimum spanning trees - Ch 23
 S 3/5 | | | [Hw 4](homework04.html) due<br>[Hw 4 solutions](hw04.pdf)
-T 3/7 | Recursion: divide-and-conquer algorithms | Ch 4 intro and 4.1
+T 3/7 | Recursion: divide-and-conquer algorithms [[slides](divide-and-conquer.pdf)] | 2.3 - mergesort<br>Ch 4 intro and 4.1 - max subarray sum <br>[Karatsuba's algorithm](https://en.wikipedia.org/wiki/Karatsuba_algorithm) - Wikipeidia
 Th 3/9 | Analysis: recurrence equations | Recursion tree method - 4.4
 S 3/12 | | | [Hw 5](homework05.html) due
 T 3/14 | __Exam 1__: covers hw 1-4
