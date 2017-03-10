@@ -24,14 +24,14 @@ T 2/21 | Recursion: backtracking [[slides](backtracking.pdf)] | [Backtracking](/
 Th 2/23 | Data structures: dictionary ADT [[slides](dictionary.pdf)]<br>Graph representation, caching and memoization | Representation of graphs - 22.1 and/or<br>[Adjacency list](//en.wikipedia.org/wiki/Adjacency_list) - Wikipedia<br>[Memoization](//en.wikipedia.org/wiki/Memoization) - Wikipedia
 S 2/26 | | | [Hw 3](homework03.html) due<br>[Hw 3 solutions](hw03.pdf)
 T 2/28 | Data structures: priority queue ADT (part 1) [[slides](priority1.pdf)]<br>breadth-first search, Dijkstra's algorithm | Priority queues - 6.5 (p 162 only)<br>Breadth-first search - 22.2<br>Dijkstra's algorithm - 24.3
-Th 3/2 | Data structures: priority queue ADT (part 2)<br>selection sort and heapsort, MST algorithms | Minimum spanning trees - Ch 23
+Th 3/2 | Data structures: priority queue ADT (part 2)<br>MST algorithms | Minimum spanning trees - Ch 23
 S 3/5 | | | [Hw 4](homework04.html) due<br>[Hw 4 solutions](hw04.pdf)
 T 3/7 | Recursion: divide-and-conquer algorithms [[slides](divide-and-conquer.pdf)] | 2.3 - mergesort<br>Ch 4 intro and 4.1 - max subarray sum <br>[Karatsuba's algorithm](https://en.wikipedia.org/wiki/Karatsuba_algorithm) - Wikipeidia
 Th 3/9 | Analysis: recurrence equations | Recursion tree method - 4.4
 S 3/12 | | | [Hw 5](homework05.html) due
 T 3/14 | __Exam 1__: covers hw 1-4
 Th 3/16 | Data structures: red-black trees | Ch 13
-S 3/19 | | | Hw 6 due
+S 3/19 | | | [Hw 6](homework06.html) due
 T 3/21 | Data structures: stacks ADT (part 1)<br>Depth-first search, topological sort, Graham scan | Stacks - 10.1<br> Depth-first search - 22.3<br>Topological sort - 22.4<br> Finding the convex hull - 33.3
 Th 3/23 | Data structures: stacks ADT (part 2)<br>Strongly connected components | Strongly connected components - 22.5
 S 3/26 | | | Hw 7 due?
@@ -48,7 +48,7 @@ T 4/18 | Recursion: dynamic programming (part 2)
 Th 4/20 | Recursion: quicksort
 S 4/ 23 | | | Hw 10 due
 T 4/25 | __Exam 2__: covers hw 5-9
-Th 4/27 | Data structures: priority queue implementation<br>heap, revisiting heapsort | Ch 6
+Th 4/27 | Data structures: priority queue implementation<br>heap, selection sort and heapsort | Ch 6
 S 4/30 | | | Hw 11 due
 T 5/2 | Hardness: sorting lower bounds | 8.1
 Th 5/4 | Hardness: radix sort  | 8.3
