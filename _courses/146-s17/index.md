@@ -28,7 +28,7 @@ Th 3/2 | Data structures: priority queue ADT (part 2) [[slides](priority2.pdf)]<
 S 3/5 | | | [Hw 4](homework04.html) due<br>[Hw 4 solutions](hw04.pdf)
 T 3/7 | Recursion: divide-and-conquer algorithms [[slides](divide-and-conquer.pdf)] | 2.3 - mergesort<br>Ch 4 intro and 4.1 - max subarray sum <br>[Karatsuba's algorithm](https://en.wikipedia.org/wiki/Karatsuba_algorithm) - Wikipeidia
 Th 3/9 | Analysis: recurrence equations [[slides](recurrences.pdf)] | Recursion tree method - 4.4
-S 3/12 | | | [Hw 5](homework05.html) due
+S 3/12 | | | [Hw 5](homework05.html) due<br>[Hw 5 solutions](hw05.pdf)
 T 3/14 | __Exam 1__: covers hw 1-4
 Th 3/16 | Data structures: red-black trees | Ch 13
 S 3/19 | | | [Hw 6](homework06.html) due
