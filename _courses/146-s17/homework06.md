@@ -36,7 +36,7 @@ Give an example of a weighted, connected, undirected graph, $$G$$, such that the
 
 ### Problem 3: building a backtracking solution
 
-__(a)__ Write an algorithm in code or pseudocode for solving the longest <de>common</del> <ins>increasing</ins> subsequence problem introduced in class (T 2/21: backtracking), but instead of returning the length of the subsequence, return an actual subsequence of that length.
+__(a)__ Write an algorithm in code or pseudocode for solving the longest <del>common</del> <ins>increasing</ins> subsequence problem introduced in class (T 2/21: backtracking), but instead of returning the length of the subsequence, return an actual subsequence of that length.
 
 __(b)__ Write an algorithm in code or pseudocode for solving the [maximumSubsetSum problem](https://github.com/jnylam/SJSU-cs146-s17/blob/master/04_Backtracking/src/cc/jennylam/cs146/BacktrackingProblems.java) from Homework 4, but instead of returning the maximum sum, return an actual subset of the input numbers (as a list or other appropriate data structure) that achieves this maximum value.
 
