@@ -31,10 +31,10 @@ Th 3/9 | Analysis: recurrence equations [[slides](recurrences.pdf)] | Recursion 
 S 3/12 | | | [Hw 5](homework05.html) due<br>[Hw 5 solutions](hw05.pdf)
 T 3/14 | __Exam 1__: covers hw 1-4
 Th 3/16 | Data structures: red-black trees [[slides](redblacktrees.pdf)] | Ch 13
-S 3/19 | | | [Hw 6](homework06.html) due
+S 3/19 | | | [Hw 6](homework06.html) due<br>[Hw 6 solutions](hw06.pdf)
 T 3/21 | Data structures: stacks ADT (part 1)<br>Depth-first search, topological sort, Graham scan | Stacks - 10.1<br> Depth-first search - 22.3<br>Topological sort - 22.4<br> Finding the convex hull - 33.3
 Th 3/23 | Data structures: stacks ADT (part 2)<br>Strongly connected components | Strongly connected components - 22.5
-S 3/26 | | | Hw 7 due?
+S 3/26 | | | [Hw 7](homework07.html) due?
 T 3/28 | _Spring recess_ | 
 Th 3/30 | _Spring recess_ |
 S 4/2 | | | Hw 7 due?
