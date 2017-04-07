@@ -38,8 +38,8 @@ S 3/26 | | | Hw 7 not due
 T 3/28 | _Spring recess_ | 
 Th 3/30 | _Spring recess_ |
 S 4/2 | | | [Hw 7](homework07.html) due<br>[Hw 7 solutions](hw07.pdf)
-T 4/4 | Data structures: stacks ADT (part 2)<br>Strongly connected components | Strongly connected components - 22.5
-Th 4/6 | Data structures: hashing | 11.1-11.4
+T 4/4 | Data structures: stacks ADT (part 2)[[slides](tarjan.pdf)]<br>Strongly connected components | Strongly connected components - 22.5
+Th 4/6 | Data structures: hashing [[slides](hashtable.pdf)] | 11.1-11.4
 S 4/9 | | | [Hw 8](homework08.html) due
 T 4/11 | Graphs: single-source shortest paths | 24.1-24.2
 Th 4/13 | Recursion: dynamic programming (part 1) | 15.1
