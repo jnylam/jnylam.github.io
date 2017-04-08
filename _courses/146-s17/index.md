@@ -43,7 +43,7 @@ Th 4/6 | Data structures: hashing [[slides](hashtable.pdf)] | 11.1-11.4
 S 4/9 | | | [Hw 8](homework08.html) due
 T 4/11 | Graphs: single-source shortest paths | 24.1-24.2
 Th 4/13 | Recursion: dynamic programming (part 1) | 15.1
-S 4/16 | | | Hw 9 due
+S 4/16 | | | [Hw 9](homework09.html) due
 T 4/18 | Recursion: dynamic programming (part 2)
 Th 4/20 | Recursion: quicksort
 S 4/ 23 | | | Hw 10 due
