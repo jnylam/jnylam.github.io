@@ -33,16 +33,16 @@ T 3/14 | __Exam 1__: covers hw 1-4
 Th 3/16 | Data structures: red-black trees [[slides](redblacktrees.pdf)] | Ch 13
 S 3/19 | | | [Hw 6](homework06.html) due<br>[Hw 6 solutions](hw06.pdf)
 T 3/21 | Exam 1 solutions, red-black trees wrap-up
-Th 3/23 | Data structures: stacks ADT (part 1)<br>Depth-first search, Graham scan [[slides](convexhull.pdf)] | Stacks - 10.1<br> Depth-first search - 22.3<br> Finding the convex hull - 33.3
+Th 3/23 | Data structures: stacks ADT (part 1) [[slides](convexhull.pdf)]<br>Depth-first search, Graham scan | Stacks - 10.1<br> Depth-first search - 22.3<br> Finding the convex hull - 33.3
 S 3/26 | | | Hw 7 not due
 T 3/28 | _Spring recess_ | 
 Th 3/30 | _Spring recess_ |
 S 4/2 | | | [Hw 7](homework07.html) due<br>[Hw 7 solutions](hw07.pdf)
-T 4/4 | Data structures: stacks ADT (part 2)[[slides](tarjan.pdf)]<br>Strongly connected components | Strongly connected components - 22.5
+T 4/4 | Data structures: stacks ADT (part 2) [[slides](tarjan.pdf)]<br>Strongly connected components | Strongly connected components - 22.5
 Th 4/6 | Data structures: hashing [[slides](hashtable.pdf)] | 11.1-11.4
-S 4/9 | | | [Hw 8](homework08.html) due
-T 4/11 | Graphs: single-source shortest paths | 24.1-24.2
-Th 4/13 | Recursion: dynamic programming (part 1) | 15.1
+S 4/9 | | | [Hw 8](homework08.html) due<br>[Hw 8 solutions](hw08.pdf)
+T 4/11 | Graphs: single-source shortest paths [[slides](shortestpaths.pdf)] | 24.1-24.2
+Th 4/13 | Recursion: dynamic programming (part 1) [[slides](dp1.pdf)] | 15.1
 S 4/16 | | | [Hw 9](homework09.html) due
 T 4/18 | Recursion: dynamic programming (part 2)
 Th 4/20 | Recursion: quicksort
