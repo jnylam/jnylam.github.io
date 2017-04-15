@@ -42,7 +42,7 @@ T 4/4 | Data structures: stacks ADT (part 2) [[slides](tarjan.pdf)]<br>Strongly 
 Th 4/6 | Data structures: hashing [[slides](hashtable.pdf)] | 11.1-11.4
 S 4/9 | | | [Hw 8](homework08.html) due<br>[Hw 8 solutions](hw08.pdf)
 T 4/11 | Graphs: single-source shortest paths [[slides](shortestpaths.pdf)] | 24.1-24.2
-Th 4/13 | Recursion: dynamic programming (part 1) [[slides](dp1.pdf)] | 15.1
+Th 4/13 | Recursion: dynamic programming (part 1) [[slides](dp1.pdf)] | 15.1<br>[Automatic memoization in Java](//dzone.com/articles/java-8-automatic-memoization)<br>[Memoization with decorators in Python](//www.python-course.eu/python3_memoization.php)
 S 4/16 | | | [Hw 9](homework09.html) due
 T 4/18 | Recursion: dynamic programming (part 2)
 Th 4/20 | Recursion: quicksort
