@@ -46,7 +46,7 @@ Th 4/13 | Recursion: dynamic programming (part 1) [[slides](dp1.pdf)] | 15.1<br>
 S 4/16 | | | [Hw 9](homework09.html) due
 T 4/18 | Recursion: dynamic programming (part 2)
 Th 4/20 | Recursion: quicksort
-S 4/ 23 | | | Hw 10 due
+S 4/ 23 | | | [Hw 10](homework10.html) due
 T 4/25 | __Exam 2__: covers hw 5-9
 Th 4/27 | Data structures: priority queue implementation<br>heap, selection sort and heapsort | Ch 6
 S 4/30 | | | Hw 11 due
