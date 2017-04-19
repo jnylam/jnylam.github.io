@@ -12,7 +12,7 @@ The goal of this assignment is to master the following skills and concepts:
 
 - use the PriorityQueue ADT to design algorithms and data structures
 - explain the single source shortest path problem and the minimum spanning tree problem
-- augment a backtracking algorithm with code to build and return a found solution
+- augment a backtracking algorithm with code to build and return a found solution (not covered on Exam 2)
 - analyze divide-and-conquer algorithms
 
 # Submission

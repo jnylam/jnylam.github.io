@@ -70,6 +70,10 @@ Note: these will give you an idea of the format of the exams, but these may not 
 
 ### Exam 2 topics
 
+For a complete list of what you will be expected to know for the exam, please refer to the descriptions at the beginning of homework 5 through 9. This is what the exam questions will be based on.
+
+For your convenience, here is a succinct list of the topics covered on the exam. Please keep in mind that the authorative study guide are the homework descriptions, not the list below.
+
 - priority queue ADT, BFS, Dijkstra, Prim-Dijkstra-Jarnik, Kruskal, single-source shortest path, MST
 - divide-and-conquer algorithms, recursion-tree method for analyzing them
 - red-black trees, hash tables
