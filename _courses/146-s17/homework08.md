@@ -10,7 +10,7 @@ navorder: 0
 
 The goal of this assignment is to master the following skills and concepts:
 
-- reinforce the backtracking and memoization backtracking techniques
+- reinforce the backtracking and memoization backtracking techniques (not covered on exam 2)
 - describe the stack ADT and its methods and cite examples of its use in different algorithms
 - Graham's scan algorithm including
 - depth first search

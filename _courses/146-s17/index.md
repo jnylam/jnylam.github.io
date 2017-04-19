@@ -42,12 +42,12 @@ T 4/4 | Data structures: stacks ADT (part 2) [[slides](tarjan.pdf)]<br>Strongly 
 Th 4/6 | Data structures: hashing [[slides](hashtable.pdf)] | 11.1-11.4
 S 4/9 | | | [Hw 8](homework08.html) due<br>[Hw 8 solutions](hw08.pdf)
 T 4/11 | Graphs: single-source shortest paths [[slides](shortestpaths.pdf)] | 24.1-24.2
-Th 4/13 | Recursion: dynamic programming (part 1) [[slides](dp1.pdf)] | 15.1<br>[Automatic memoization in Java](//dzone.com/articles/java-8-automatic-memoization)<br>[Memoization with decorators in Python](//www.python-course.eu/python3_memoization.php)
+Th 4/13 | Recursion: dynamic programming (part 1) [[slides](dp1.pdf)] | 15.1, 15.3<br>[Automatic memoization in Java](//dzone.com/articles/java-8-automatic-memoization)<br>[Memoization with decorators in Python](//www.python-course.eu/python3_memoization.php)
 S 4/16 | | | [Hw 9](homework09.html) due<br>[Hw 9 solutions](hw09.pdf)
-T 4/18 | Recursion: dynamic programming (part 2)
+T 4/18 | Recursion: dynamic programming (part 2) [[slides](dp2.pdf)] | 15.4, 25.2
 Th 4/20 | Recursion: quicksort
 S 4/ 23 | | | [Hw 10](homework10.html) due
-T 4/25 | __Exam 2__: covers hw 5-9
+T 4/25 | [__Exam 2__: covers hw 5-9](#exam-2-topics)
 Th 4/27 | Data structures: priority queue implementation<br>heap, selection sort and heapsort | Ch 6
 S 4/30 | | | Hw 11 due
 T 5/2 | Hardness: sorting lower bounds | 8.1
@@ -67,3 +67,14 @@ W 5/24 | __Section 6 final exam__ W 5/24  9:45AM&ndash;12:00PM, MH 225
 Download here: [[zip](exams.zip)]
 
 Note: these will give you an idea of the format of the exams, but these may not necessarily be suitable practice questions as the topics may be different and covered in a different order.
+
+### Exam 2 topics
+
+- priority queue ADT, BFS, Dijkstra, Prim-Dijkstra-Jarnik, Kruskal, single-source shortest path, MST
+- divide-and-conquer algorithms, recursion-tree method for analyzing them
+- red-black trees, hash tables
+- stack ADT, Graham's scan, DFS, Tarjan, strongly connected components
+
+What won't be on the exam
+
+- backtracking problems, memoization, dynamic programming
