@@ -45,7 +45,7 @@ T 4/11 | Graphs: single-source shortest paths [[slides](shortestpaths.pdf)] | 24
 Th 4/13 | Recursion: dynamic programming (part 1) [[slides](dp1.pdf)] | 15.1, 15.3<br>[Automatic memoization in Java](//dzone.com/articles/java-8-automatic-memoization)<br>[Memoization with decorators in Python](//www.python-course.eu/python3_memoization.php)
 S 4/16 | | | [Hw 9](homework09.html) due<br>[Hw 9 solutions](hw09.pdf)
 T 4/18 | Recursion: dynamic programming (part 2) [[slides](dp2.pdf)] | 15.4, 25.2
-Th 4/20 | Recursion: quicksort
+Th 4/20 | Recursion: quicksort [[slides](quicksort.pdf)] | Ch 7
 S 4/ 23 | | | [Hw 10](homework10.html) due
 T 4/25 | [__Exam 2__: covers hw 5-9](#exam-2-topics)
 Th 4/27 | Data structures: priority queue implementation<br>heap, selection sort and heapsort | Ch 6
