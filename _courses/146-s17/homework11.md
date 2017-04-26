@@ -39,7 +39,7 @@ __(b)__ In preparation for a dynamic programming solution, describe:
 * the number of dimensions needed by a table which will be used to  record the solutions to the subproblems
 * for each dimension of the table, what the index represents, and what its range of values is
 
-__(c)__ In Java, give a dynamic programming solution to the problem (include the solution as a java file).
+__(c)__ In Java, give a dynamic programming solution to the problem (include the [solution as a java file](//github.com/jnylam/SJSU-cs146-s17/blob/master/08_DynamicProgramming/src/cc/jennylam/cs146/LongestCommonSubsequence.java)).
 
 __(d)__ What is the time complexity and space complexity of this solution? Justify your answer.
 
@@ -52,7 +52,7 @@ __(a)__ In preparation for a dynamic programming solution, describe:
 * the number of dimensions needed by a table which will be used to  record the solutions to the subproblems
 * for each dimension of the table, what the index represents, and what its range of values is
 
-__(b)__ In Java, give a dynamic programming solution to the problem (include the solution as a java file).
+__(b)__ In Java, give a dynamic programming solution to the problem (include the [solution as a java file](//github.com/jnylam/SJSU-cs146-s17/blob/master/08_DynamicProgramming/src/cc/jennylam/cs146/MakeChange.java)).
 
 __(c)__ What is the time complexity and space complexity of this solution? Justify your answer.
 
