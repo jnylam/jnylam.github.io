@@ -6,49 +6,123 @@ mathjax: true
 navorder: 0
 ---
 
-This assignment contains a single homework problem.
+# Description
 
-### Problem 1
-Find a weighted undirected graph for which the MST-doubling heuristic can generate a tour that is longer than optimal by a factor of at least 5/3. Show both the optimal tour and the MST-doubling tour for your example. (You may use the simplest version of MST-doubling, without shortcutting repeated vertices.)
+The goal of this assignment is to master the following skills and concepts:
 
-## Submission
+1. solve problems recursively and implement them using dynamic programming
+2. analyze the time and space complexity of an implementation which uses dynamic programming
 
-Problem 1 should be submitted on Canvas as a __single PDF file__.
+# Submission
 
-At the top of your file, include:
+You will package your assignment as a __single ZIP file__ and submit it on Canvas. The package should include a pdf file for the written portion of your work and .java files for the code.
 
-* your name
-* CS 146
-* the class section
-* Homework [number]
+For suggestions on how to make a pdf file, please refer to [Homework 1 - Submission](homework01.html#Submission).
 
-Give credit to those who have helped you by including
+# Problems to be submitted
+ 
+Preparation: The following problems ask that you solve a problem using dynamic programming. Begin by studying the [solution](//github.com/jnylam/SJSU-cs146-s17/blob/master/08_DynamicProgramming/src/cc/jennylam/cs146/EditDistance.java) to the edit distance problem which we discussed in class. You should also review the lecture on the [dynamic programming solution](dp2.pdf) to the all-pairs shortest path problem.
 
-* the name of any classmates you collaborated with
-* the name of any other person you received help from
-* a reference to any other source you may have used to in order to solve problems on this assignment.
+### Problem 1: longest common subsequence
 
-All solutions must be written by yourself. Plagiarized work will not receive any credit. Repeated occurrences will result in a report to the department.
+Define the longest common subsequence problem:
 
----
-Options for making PDFs:
+* the input is two sequences `seq1 = [x0, x1, ..., xn]` and `seq2 = [y0, y1, ..., yn]`;
+* the output is the length of the longest common subsequence.
 
-You have the option of handwriting your solutions on paper, scanning them, and converting them to PDF. Please do not send the images.
-__If you use a phone or tablet__ to scan your handwritten solutions, [here are some tips on how to this well](http://www.howtogeek.com/209951/the-best-ways-to-scan-a-document-using-your-phone-or-tablet/).
+This is similar to the edit distance problem, except that we are only allowed insertions and deletions, and no substitution.
 
-You also have the option of typing your solutions up in your favorite word processor. Export or print your document as a PDF file and submit that. Please do not a submit .docx file.
+__(a)__ Express the problem in terms of subproblems and include the base case. (An example of how to do this is given in the notes for the recursive solution for the all-pairs shortest paths problem. The solution is also very similar to the edit distance problem. Try to write down some examples as a place to start).
 
-Finally, you have the option of preparing a professional-looking document using LaTeX. This is what authors use to write textbooks and research papers. If you choose this option, here are some pointers to get you started.
+__(b)__ In preparation for a dynamic programming solution, describe:
 
-* [Getting LaTeX](https://www.latex-project.org/get/)
-* [LaTeX homework template](http://www.jennylam.cc/assets/template.zip): this is a good place to start learning LaTeX. Feel free to modify this document as you need.
-* [Any of the many good LaTeX tutorials/cheatsheets/beginner's guides online](https://lmddgtfy.net/?q=Latex%20quickstart).
+* the number of dimensions needed by a table which will be used to  record the solutions to the subproblems
+* for each dimension of the table, what the index represents, and what its range of values is
+
+__(c)__ In Java, give a dynamic programming solution to the problem (include the solution as a java file).
+
+__(d)__ What is the time complexity and space complexity of this solution? Justify your answer.
+
+### Problem 2: make change
+
+Recall that the [problem of making change](homework08.html/#problem-1-more-bactracking-and-memoization).
+
+__(a)__ In preparation for a dynamic programming solution, describe:
+
+* the number of dimensions needed by a table which will be used to  record the solutions to the subproblems
+* for each dimension of the table, what the index represents, and what its range of values is
+
+__(b)__ In Java, give a dynamic programming solution to the problem (include the solution as a java file).
+
+__(c)__ What is the time complexity and space complexity of this solution? Justify your answer.
+
+# Not to be submitted
+
+### Problem: sequence alignment
+
+__Note:__ this problem requires that you have a coded solution (rather than just pseudocode) for problem 1.
+
+The longest common subsequence problem is used in bioinformatics to do "sequence alignment". By aligning DNA or protein sequences across species, we can gain insight into how closely related two species are (see Wikipedia article on  [divergent evolution](https://en.wikipedia.org/wiki/Divergent_evolution)).
+
+One particular gene that is common to all species is hemoglobin, beta subunit, or HBB. Here we show the protein sequence (a string over a 20-character alphabet of amino acids, A-Z, minus BJOUXZ) corresponding to this gene for several species, which are listed in square brackets (for example, the first is Anas puna).
+
+```
+>gi|254770346|gb|ACT81418.1| hemoglobin beta A subunit [Anas puna]
+MVHWTAEEKQLITGLWGKVNVADCGAEALARLLIVYPWTQRFFASFGNLSSATAITGNPMVRAHGKKVLT
+SFGDAVKNLDNIKNTFAQLSELHCEKLHVDPENFRLLGDILIIVLAAHFTKDFTPECQAAWQKLVRVVAH
+ALARKYH
+
+>gi|73762242|gb|AAZ83609.1| Hbb [Borreliella garinii]
+MSFSRRPKITKSDIVDQISLNIRNNNLKLEKKYIRLVIDAFFEELKGNLCLNNVIEFRSFGTFEVRKRKG
+RLNARNPQTGEYVKVLDHHVAYFRPGKDLKERVWGIKG
+
+>gi|426367146|ref|XP_004050595.1| PREDICTED: hemoglobin subunit beta [Gorilla gorilla gorilla]
+MVHLTPEEKSAVTALWGKVNVDEVGGEALGRLLVVYPWTQRFFESFGDLSTPDAVMGNPKVKAHGKKVLG
+AFSDGLAHLDNLKGTFATLSELHCDKLHVDPENFKLLGNVLVCVLAHHFGKEFTPPVQAAYQKVVAGVAN
+LSS
+
+>gi|49456781|emb|CAG46711.1| HBB, partial [Homo sapiens]
+MVHLTPEEKSAVTALWGKVNVDEVGGEALGRLLVVYPWTQRFFESFGDLSTPDAVMGNPKVKAHGKKVLG
+AFSDGLAHLDNLKGTFATLSELHCDKLHVDPENFRLLGNVLVCVLAHHFGKEFTPPVQAAYQKVVAGVAN
+ALAHKYH
+
+>gi|171854971|dbj|BAG16710.1| hemoglobin beta chain subunit [Mus musculus]
+MVHLTDAEKAAVSGLWGKVNSDEVGGEALGRLLVVYPWTQRYFDSFGDLSSASAIMGNAKVKAHGKKVIT
+AFNEGLNHLDSLKGTFASLSELHCDKLHVDPENFRLLGNMIVIVLGHHLGKDFTPAAQAAFQKVMAGVAT
+ALAHKYH
+
+>gi|431832732|gb|AGA93060.1| hemoglobin beta A subunit [Oxyura ferruginea]
+MVHWTAEEKQLITGLWGKVNVADCGAEALARLLIVYPWTQRFFSSFGNLSSPTAILGNPMVRAHGKKVLS
+SFGDAVKNLDNIKNTFAQLSELHCDKLHVDPENFRLLGDILIIVLAAHFSKDFTPDCQAAWQKLVRVVAH
+ALARKYH
+
+>gi|185132519|ref|NP_001117138.1| hemoglobin subunit beta [Salmo salar]
+MVDWTDAERSAIVGLWGKISVDEIGPQALARLLIVSPWTQRHFSTFGNLSTPAAIMGNPAVAKHGKTVMH
+GLDRAVQNLDDIKNAYTALSVMHSEKLHVDPDNFRLLADCITVCVAAKLGPTVFSADIQEAFQKFLAVVV
+SALGRQYH
+
+>gi|51593148|gb|AAH78472.1| Hbb protein, partial [Xenopus laevis]
+MVHLSADEKSAINAVWSKVNIENDGHDALTRLLVVFPWTQRYFSSFGNLSNVAAISGNAKVRAHGKKVLS
+AVDESIHHLDDIKKKKKKKKKKK
+```
+
+__(a)__ order the species listed above by how closely related you believe they are to humans. You may need to do a web search to find out what animals each of the scientific names in square brackets represents.
+
+__(b)__ order the species above by the length of the longest common subsequence between their HBB protein sequence and human HBB protein sequence. Does this serve to confirm your prior knowledge or to refute it? Any surprises?
+
+__Source:__ [National Center for Biotechnology Information](https://www.ncbi.nlm.nih.gov)  
+Here is how you find the data for the human HBB:
+
+![](ncbi_search.png)
+
+The first search result:
+
+![](ncbi_search2.png)
+
+Click on __FASTA__:
+
+![](ncbi_search3.png)
+
+__Acknowledgements:__ many thanks to Dr. Phil Heller, for the inspiration, discussions, pointers, suggestions, which made this problem possible.
 
 
-## Rubric
-
-This assignment is worth 20 points:
-
-* 8 points for the problem, 4 for a reasonable attempt on it and 4 for correctness.
-* 1 point for a correctly submitted assignment, that is, as a single PDF file that is legible (if you choose to take pictures, make sure the text is in focus, please check on a computer screen before submitting), properly oriented, etc.
-* 1 point for presentation and neatness.

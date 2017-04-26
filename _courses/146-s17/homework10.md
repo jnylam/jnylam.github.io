@@ -10,8 +10,13 @@ navorder: 0
 
 The goal of this assignment is to master the following skills and concepts:
 
-1. solve problems recursively and implement them using dynamic programming
-2. analyze the time and space complexity of an implementation which uses dynamic programming
+1. understand the Bellman-Ford algorithm:
+    * express the algorithm in prose, code or pseudocode
+    * give the analysis of the time complexity of the algorithm
+    * reason about the correctness and effect of variants of the algorithm
+
+2. solve problems recursively and implement them using dynamic programming
+3. analyze the time and space complexity of an implementation which uses dynamic programming
 
 # Submission
 

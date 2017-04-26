@@ -49,7 +49,7 @@ Th 4/20 | Recursion: quicksort [[slides](quicksort.pdf)] [[code](//github.com/jn
 S 4/ 23 | | | [Hw 10](homework10.html) due
 T 4/25 | [__Exam 2__: covers hw 5-9](#exam-2-topics)
 Th 4/27 | Data structures: priority queue implementation<br>heap, selection sort and heapsort | Ch 6
-S 4/30 | | | Hw 11 due
+S 4/30 | | | [Hw 11](homework11.html) due
 T 5/2 | Hardness: sorting lower bounds | 8.1
 Th 5/4 | Hardness: radix sort  | 8.3
 S 5/7 | | | Hw 12 due
