@@ -52,7 +52,7 @@ Th 4/27 | Data structures: priority queue implementation<br>heap, selection sort
 S 4/30 | | | [Hw 11](homework11.html) due
 T 5/2 | Hardness: sorting lower bounds | 8.1
 Th 5/4 | Hardness: radix sort  | 8.3
-S 5/7 | | | Hw 12 due
+S 5/7 | | | [Hw 12](homework12.html) due
 T 5/9 | Hardness: NP-completeness | Ch 34 (skim)
 Th 5/11 | Hardness: approximation algorithms | Ch 35 (skim)
 S 5/14 | | | Hw 13 due
