@@ -45,7 +45,7 @@ __(d)__ What is the time complexity and space complexity of this solution? Justi
 
 ### Problem 2: make change
 
-Recall that the [problem of making change](homework08.html/#problem-1-more-bactracking-and-memoization).
+Recall that the [problem of making change](homework08.html#problem-1-more-bactracking-and-memoization).
 
 __(a)__ In preparation for a dynamic programming solution, describe:
 
