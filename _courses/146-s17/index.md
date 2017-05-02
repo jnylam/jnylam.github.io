@@ -46,10 +46,10 @@ Th 4/13 | Recursion: dynamic programming (part 1) [[slides](dp1.pdf)] | 15.1, 15
 S 4/16 | | | [Hw 9](homework09.html) due<br>[Hw 9 solutions](hw09.pdf)
 T 4/18 | Recursion: dynamic programming (part 2) [[slides](dp2.pdf)] | 15.4, 25.2
 Th 4/20 | Recursion: quicksort [[slides](quicksort.pdf)] [[code](//github.com/jnylam/SJSU-cs146-s17/blob/master/09_Quicksort/src/cc/jennylam/cs146/Quicksort.java)] | Ch 7
-S 4/ 23 | | | [Hw 10](homework10.html) due
+S 4/ 23 | | | [Hw 10](homework10.html) due<br>[Hw 10 solutions](hw10.pdf)
 T 4/25 | [__Exam 2__: covers hw 5-9](#exam-2-topics)
 Th 4/27 | Data structures: priority queue implementation<br>heap, selection sort and heapsort [[slides](heaps.pdf)] [[code](//github.com/jnylam/SJSU-cs146-s17/blob/master/10_Heaps/src/cc/jennylam/cs146/Heaps.java)] | Ch 6
-S 4/30 | | | [Hw 11](homework11.html) due
+S 4/30 | | | [Hw 11](homework11.html) due<br>[Hw 11 solutions](hw11.pdf)
 T 5/2 | Hardness: sorting lower bounds | 8.1
 Th 5/4 | Hardness: radix sort  | 8.3
 S 5/7 | | | [Hw 12](homework12.html) due
