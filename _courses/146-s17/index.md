@@ -51,7 +51,7 @@ T 4/25 | [__Exam 2__: covers hw 5-9](#exam-2-topics)
 Th 4/27 | Data structures: priority queue implementation<br>heap, selection sort and heapsort [[slides](heaps.pdf)] [[code](//github.com/jnylam/SJSU-cs146-s17/blob/master/10_Heaps/src/cc/jennylam/cs146/Heaps.java)] | Ch 6
 S 4/30 | | | [Hw 11](homework11.html) due<br>[Hw 11 solutions](hw11.pdf)
 T 5/2 | Hardness: sorting lower bounds [[slides](lowerbounds.pdf)] | 8.1
-Th 5/4 | Hardness: radix sort  | 8.3
+Th 5/4 | Hardness: radix sort [[slides](linearsort.pdf)] [[code](//github.com/jnylam/SJSU-cs146-s17/blob/master/11_LinearTimeSorting/src/cc/jennylam/cs146/LinearTimeSorting.java)]| 8.3
 S 5/7 | | | [Hw 12](homework12.html) due
 T 5/9 | Hardness: NP-completeness | Ch 34 (skim)
 Th 5/11 | Hardness: approximation algorithms | Ch 35 (skim)
