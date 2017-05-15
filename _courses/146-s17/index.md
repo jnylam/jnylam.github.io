@@ -55,7 +55,7 @@ Th 5/4 | Hardness: radix sort [[slides](linearsort.pdf)] [[code](//github.com/jn
 S 5/7 | | | [Hw 12](homework12.html) due<br>[Hw 12 solutions](hw12.pdf)
 T 5/9 | Hardness: Computational complexity [[slides](complexity.pdf)] | Ch 34 (skim)
 Th 5/11 | Hardness: approximation algorithms [[slides](approximation.pdf)] | Ch 35 (skim)
-S 5/14 | | | [Hw 13 due](homework13.html)
+S 5/14 | | | [Hw 13 due](homework13.html)<br>[Hw 13 solutions](hw13.pdf)
 T 5/16 | Review |
 T 5/23 | __Section 5 final exam__ T 5/23  7:15AM&ndash;9:30AM, MH 222<br />
 W 5/24 | __Section 6 final exam__ W 5/24  9:45AM&ndash;12:00PM, MH 225
